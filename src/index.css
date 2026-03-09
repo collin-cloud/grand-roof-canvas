@@ -2,95 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 220 10% 8%;
+    --foreground: 40 20% 92%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 220 10% 12%;
+    --card-foreground: 40 20% 92%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 220 10% 12%;
+    --popover-foreground: 40 20% 92%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 40 40% 55%;
+    --primary-foreground: 220 10% 8%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 220 8% 16%;
+    --secondary-foreground: 40 20% 88%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 220 8% 18%;
+    --muted-foreground: 220 8% 55%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 40 40% 55%;
+    --accent-foreground: 220 10% 8%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 220 8% 20%;
+    --input: 220 8% 20%;
+    --ring: 40 40% 55%;
+
+    --radius: 0.5rem;
+
+    /* Custom tokens */
+    --gold: 40 40% 55%;
+    --gold-light: 40 50% 70%;
+    --gold-dark: 40 35% 40%;
+    --stone: 35 20% 90%;
+    --stone-foreground: 220 10% 15%;
+    --charcoal: 220 10% 12%;
+    --charcoal-deep: 220 10% 6%;
+    --slate: 220 8% 40%;
+
+    --sidebar-background: 220 10% 8%;
+    --sidebar-foreground: 40 20% 92%;
+    --sidebar-primary: 40 40% 55%;
+    --sidebar-primary-foreground: 220 10% 8%;
+    --sidebar-accent: 220 8% 16%;
+    --sidebar-accent-foreground: 40 20% 88%;
+    --sidebar-border: 220 8% 20%;
+    --sidebar-ring: 40 40% 55%;
   }
 }
 
@@ -100,6 +61,91 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-body antialiased;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .gold-gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(var(--gold-light)), hsl(var(--gold)), hsl(var(--gold-dark)));
+  }
+
+  .gold-line {
+    @apply h-px w-full;
+    background: linear-gradient(90deg, transparent, hsl(var(--gold) / 0.5), transparent);
+  }
+
+  .gold-line-vertical {
+    @apply w-px h-full;
+    background: linear-gradient(180deg, transparent, hsl(var(--gold) / 0.5), transparent);
+  }
+
+  .section-stone {
+    background-color: hsl(var(--stone));
+    color: hsl(var(--stone-foreground));
+  }
+
+  .section-dark {
+    background-color: hsl(var(--charcoal-deep));
+  }
+
+  .hero-gradient {
+    background: radial-gradient(ellipse at 50% 0%, hsl(var(--gold) / 0.08) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 50%, hsl(var(--gold) / 0.04) 0%, transparent 50%),
+                linear-gradient(180deg, hsl(var(--charcoal-deep)) 0%, hsl(var(--background)) 100%);
+  }
+
+  .card-luxury {
+    @apply bg-card border border-border/50 rounded-lg;
+    box-shadow: 0 4px 30px hsl(0 0% 0% / 0.3);
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 px-8 py-4 font-body font-semibold text-sm tracking-wider uppercase transition-all duration-300;
+    background: linear-gradient(135deg, hsl(var(--gold)), hsl(var(--gold-dark)));
+    color: hsl(var(--charcoal-deep));
+  }
+
+  .btn-gold:hover {
+    background: linear-gradient(135deg, hsl(var(--gold-light)), hsl(var(--gold)));
+    box-shadow: 0 0 30px hsl(var(--gold) / 0.3);
+    transform: translateY(-1px);
+  }
+
+  .btn-outline-gold {
+    @apply inline-flex items-center justify-center gap-2 px-8 py-4 font-body font-semibold text-sm tracking-wider uppercase transition-all duration-300 border;
+    border-color: hsl(var(--gold) / 0.4);
+    color: hsl(var(--gold-light));
+  }
+
+  .btn-outline-gold:hover {
+    border-color: hsl(var(--gold));
+    background: hsl(var(--gold) / 0.1);
+    box-shadow: 0 0 20px hsl(var(--gold) / 0.15);
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(var(--charcoal-deep));
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--gold) / 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--gold) / 0.5);
 }
