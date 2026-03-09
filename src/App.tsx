@@ -29,6 +29,7 @@ const serviceLocationRoutes = [
   { urlSlug: "tile-roof-lift-and-relay-las-vegas", configIndex: 3 },
   { urlSlug: "roof-inspection-las-vegas", configIndex: 4 },
   { urlSlug: "insurance-roof-claim-las-vegas", configIndex: 5 },
+  { urlSlug: "tile-roof-underlayment-replacement-las-vegas", configIndex: 6 },
 ];
 
 const App = () => (

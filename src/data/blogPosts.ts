@@ -741,4 +741,322 @@ If you're experiencing any of these common roofing issues — or simply want pea
 [Request Your Free Inspection →](/contact)
     `,
   },
+  {
+    slug: "how-much-does-roof-replacement-cost-las-vegas",
+    title: "How Much Does Roof Replacement Cost in Las Vegas?",
+    excerpt: "Understanding roof replacement costs in the Las Vegas Valley — factors that affect pricing, material options, and how to get the best value for your investment.",
+    category: "Roof Replacement",
+    date: "2026-03-01",
+    image: "/placeholder.svg",
+    content: `
+# How Much Does Roof Replacement Cost in Las Vegas?
+
+If your roof is nearing the end of its life, one of the first questions you'll ask is: *"How much will a new roof cost?"* The answer depends on several factors specific to your home, your roofing materials, and the demands of the Southern Nevada climate.
+
+At [Zenith Roofing Solutions](/about), we provide transparent, detailed proposals for every roof replacement project. Here's what Las Vegas homeowners should know about roof replacement costs in 2026.
+
+## Average Roof Replacement Cost in Las Vegas
+
+For a typical single-story home in the Las Vegas Valley, roof replacement costs generally range from **$8,000 to $25,000+** depending on the size of the roof, materials selected, and complexity of the project.
+
+### Asphalt Shingle Roofs
+
+- **Standard architectural shingles**: $8,000 – $14,000
+- **Premium high-wind rated shingles**: $12,000 – $18,000
+- **Designer or luxury shingles**: $15,000 – $22,000
+
+### Tile Roofs
+
+- **Concrete tile**: $15,000 – $25,000
+- **Clay tile**: $20,000 – $35,000
+- **Tile lift and relay** (reuse existing tiles): $8,000 – $15,000
+
+### Flat Roof Systems
+
+- **TPO or modified bitumen**: $6,000 – $12,000
+- **Foam roofing systems**: $8,000 – $15,000
+
+These are general estimates for standard-sized homes. Your actual cost will depend on the specific factors discussed below.
+
+## Factors That Affect Roof Replacement Cost
+
+### Roof Size
+
+The most significant factor is the total square footage of your roof. Roofing is typically priced per "square" — a 10x10 area (100 square feet). Larger roofs require more materials and labor.
+
+### Roofing Material
+
+Material costs vary significantly. Basic three-tab shingles are the most affordable, while clay tile and premium designer shingles cost considerably more. In Las Vegas, we recommend materials rated for extreme heat and UV exposure, which may cost slightly more upfront but last significantly longer.
+
+### Roof Complexity
+
+Homes with multiple valleys, dormers, skylights, chimneys, and complex angles require more labor and materials. A simple ranch-style roof costs less than a multi-faceted custom home.
+
+### Tear-Off and Disposal
+
+Most roof replacements in Las Vegas involve a complete tear-off of the existing roofing materials. The cost of removing and disposing of old materials — particularly heavy tile — adds to the total project cost.
+
+### Deck Repairs
+
+Once the old roof is removed, the underlying deck may need repairs. Water damage, rot, or deterioration discovered during tear-off adds to the cost but is essential for a proper installation.
+
+### Permits and Code Compliance
+
+Clark County requires permits for roof replacement. Permit costs and any code-related upgrades (such as improved ventilation) are factored into the project.
+
+### Accessibility
+
+Two-story homes, steep-pitch roofs, and properties with limited access require additional safety equipment and labor time.
+
+## How to Get the Best Value
+
+### Get Multiple Estimates
+
+We recommend getting 2-3 proposals from reputable roofing contractors. Be cautious of estimates that seem significantly lower than others — they may indicate inferior materials, shortcuts, or hidden costs.
+
+### Consider Long-Term Value
+
+The cheapest option isn't always the best value. A premium roofing system rated for the Las Vegas climate may cost more upfront but can last 10-15 years longer than a budget option — saving you money over time.
+
+### Ask About Material Warranties
+
+Manufacturer warranties vary significantly. Ask about coverage length, what's included, and whether the contractor is certified to install the specific product line.
+
+### Check for Insurance Coverage
+
+If your roof was damaged by a covered event like wind or hail, your [homeowners insurance](/roofing-resources/does-homeowners-insurance-cover-roof-replacement-nevada) may cover part or all of the replacement cost. Our team provides [insurance claim assistance](/services/insurance-claim-assistance) to help maximize your coverage.
+
+### Consider Tile Lift and Relay
+
+If you have a tile roof where the tiles are in good condition but the underlayment has failed, a [tile lift and relay](/services/tile-lift-and-relay) can save 40-60% compared to a full replacement. Learn more in our guide: [Tile Lift and Relay vs Full Roof Replacement](/roofing-resources/tile-lift-relay-vs-full-roof-replacement).
+
+## Why Choose Zenith Roofing Solutions
+
+We provide honest evaluations and transparent pricing for homeowners throughout Las Vegas, Henderson, Summerlin, North Las Vegas, Spring Valley, Enterprise, and Green Valley. Our proposals include detailed breakdowns with no hidden fees.
+
+With over 35 years of combined roofing experience, we use only premium materials rated for the extreme Southern Nevada climate and stand behind our workmanship.
+
+**Driven by Integrity. Defined by Service.**
+
+## Get Your Free Roof Replacement Estimate
+
+Ready to learn what your roof replacement will cost? [Contact us today](/contact) for a complimentary [roof inspection](/services/inspections-and-certifications) and detailed proposal.
+
+[Request Your Free Estimate →](/contact)
+    `,
+  },
+  {
+    slug: "what-causes-roof-leaks-las-vegas",
+    title: "What Causes Roof Leaks in Las Vegas Homes?",
+    excerpt: "Roof leaks in Las Vegas homes can stem from underlayment failure, damaged flashing, or monsoon storms. Learn the most common causes and how to address them.",
+    category: "Roof Repairs",
+    date: "2026-02-20",
+    image: "/placeholder.svg",
+    content: `
+# What Causes Roof Leaks in Las Vegas Homes?
+
+Roof leaks are one of the most common — and most stressful — issues homeowners face across Las Vegas, Henderson, Summerlin, and the greater Southern Nevada area. While the desert climate means less rainfall overall, when it does rain — particularly during monsoon season — the intensity can expose vulnerabilities in your roofing system quickly.
+
+At [Zenith Roofing Solutions](/about), we diagnose and repair roof leaks throughout the Las Vegas Valley every week. Here are the most common causes we encounter and what you can do about them.
+
+## 1. Deteriorated Underlayment
+
+**The #1 cause of roof leaks in Southern Nevada.**
+
+The underlayment beneath your tiles or shingles is the primary waterproofing barrier of your roof. In the Las Vegas climate, extreme heat — with roof surface temperatures exceeding 150°F — causes traditional felt underlayment to dry out, crack, and lose its ability to repel water.
+
+Most homes built 20+ years ago in Las Vegas have underlayment that has significantly deteriorated. The tiles or shingles may look fine from the ground, but water penetrates through the compromised layer underneath during any significant rainfall.
+
+**Solution**: A [tile lift and relay](/services/tile-lift-and-relay) replaces the underlayment while preserving your existing tiles — saving 40-60% compared to a full [roof replacement](/services/roof-replacement).
+
+## 2. Failed or Damaged Flashing
+
+Flashing is the metal material installed around roof penetrations — vents, pipes, chimneys, skylights, and where the roof meets walls. In the Las Vegas climate, the constant expansion and contraction from daily temperature swings (often 30-40°F variation) causes flashing sealant to crack and separate over time.
+
+When flashing fails, water follows the path of least resistance — down the penetration opening and into your attic and ceilings.
+
+**Solution**: Professional [roof repair](/services/roof-repairs) to replace or reseal compromised flashing. This is typically a straightforward fix when caught early.
+
+## 3. Cracked or Missing Tiles
+
+While tiles are durable, they can crack from thermal cycling, foot traffic (satellite dish installers, HVAC technicians walking on the roof), or impact from wind-driven debris during monsoon storms.
+
+Even a single cracked tile can allow water to reach the underlayment. If the underlayment is already compromised, water enters the home.
+
+**Solution**: Individual tile replacement for isolated damage. If multiple tiles are affected, a comprehensive [roof inspection](/services/inspections-and-certifications) can determine the full scope.
+
+## 4. Improper Roof Slope or Drainage
+
+Some Las Vegas homes — particularly those with flat or low-slope roof sections — experience ponding water after heavy rains. Standing water on a roof increases hydrostatic pressure, forcing moisture through seams, joints, and any minor imperfections in the roofing membrane.
+
+**Solution**: Improving drainage through tapered insulation, additional drains, or scupper modifications. Our team can assess your roof's drainage patterns during a free inspection.
+
+## 5. Monsoon Storm Damage
+
+Las Vegas monsoon season (June through September) brings sudden, intense storms with high winds, driving rain, and occasional hail. These events can:
+
+- Displace tiles or tear off shingles
+- Drive rain horizontally under overlapping roofing materials
+- Push debris into valleys and against flashing
+- Create temporary pools on flat roof sections
+
+After any significant storm, we recommend a professional [storm damage assessment](/services/storm-damage-response). Learn more: [How to Spot Roof Damage After a Wind Storm](/roofing-resources/how-to-spot-roof-damage-after-wind-storm).
+
+## 6. Poor Ventilation
+
+Inadequate [attic ventilation](/services/attic-ventilation-upgrades) creates extreme heat buildup in the attic space, which accelerates underlayment and roof deck deterioration from below. It can also cause condensation issues that mimic roof leaks — moisture forming on the underside of the roof deck and dripping onto insulation and ceilings.
+
+**Solution**: Installing proper ridge vents, soffit vents, or powered ventilation systems to maintain appropriate airflow.
+
+## 7. Previous Improper Repairs
+
+Unfortunately, we frequently see leaks caused by previous repairs that were done incorrectly — improper sealant application, misaligned tiles after repairs, or roofing cement used as a substitute for proper flashing.
+
+**Solution**: Professional assessment and proper repair using industry-standard methods and materials.
+
+## What to Do When You Find a Leak
+
+1. **Contain the damage** — place containers to catch dripping water and move valuables away from the area
+2. **Document the damage** — take photos for [insurance claim purposes](/services/insurance-claim-assistance)
+3. **Don't attempt DIY repairs on the roof** — climbing a wet roof is dangerous and improper repairs can void warranties
+4. **Call a professional** — prompt professional repair prevents further damage to your home's structure
+
+## Serving Homeowners Across the Las Vegas Valley
+
+Zenith Roofing Solutions provides expert leak diagnosis and repair throughout Las Vegas, Henderson, Summerlin, North Las Vegas, Spring Valley, Enterprise, Green Valley, Paradise, Anthem, and Mountains Edge.
+
+**Driven by Integrity. Defined by Service.**
+
+## Schedule Your Free Leak Assessment
+
+If you've noticed signs of a roof leak, don't wait — water damage only gets worse with time. [Contact us today](/contact) for a complimentary inspection and honest assessment.
+
+[Request Your Free Inspection →](/contact)
+    `,
+  },
+  {
+    slug: "tile-roof-underlayment-replacement-cost-las-vegas",
+    title: "Tile Roof Underlayment Replacement Cost in Las Vegas",
+    excerpt: "What does tile roof underlayment replacement cost in Las Vegas? Get a detailed breakdown of pricing, factors that affect cost, and how to save money.",
+    category: "Tile Roofing",
+    date: "2026-03-05",
+    image: "/placeholder.svg",
+    content: `
+# Tile Roof Underlayment Replacement Cost in Las Vegas
+
+For homeowners with tile roofs across Las Vegas, Henderson, Summerlin, and Southern Nevada, underlayment replacement is one of the most important — and most common — roofing investments you'll face. The extreme desert climate causes underlayment to deteriorate much faster than in other parts of the country, often requiring replacement while the tiles themselves are still in excellent condition.
+
+At [Zenith Roofing Solutions](/about), we perform tile underlayment replacements throughout the Las Vegas Valley every week. Here's a comprehensive look at what it costs and what factors affect pricing.
+
+## Average Cost of Tile Roof Underlayment Replacement
+
+For a typical single-story Las Vegas home, tile roof underlayment replacement (also called a tile lift and relay) generally costs:
+
+- **Small roof (1,200–1,600 sq ft)**: $7,000 – $11,000
+- **Medium roof (1,600–2,200 sq ft)**: $10,000 – $16,000
+- **Large roof (2,200–3,000+ sq ft)**: $14,000 – $22,000
+
+These ranges include the complete [tile lift and relay](/services/tile-lift-and-relay) process — tile removal, old underlayment tear-off, new synthetic underlayment installation, flashing replacement, and tile reinstallation.
+
+## What's Included in the Cost
+
+### Labor
+
+Labor is the largest component of underlayment replacement cost. The process is labor-intensive — requiring careful tile removal, stacking, underlayment work, and precise reinstallation. Experienced crews are essential to minimize tile breakage during handling.
+
+### Synthetic Underlayment Material
+
+Modern synthetic underlayments designed for the desert climate cost more than traditional felt but last significantly longer. We exclusively use premium synthetic products rated for extreme heat and UV exposure.
+
+### Flashing Replacement
+
+All roof flashing around vents, pipes, chimneys, and wall intersections is typically replaced during the process. New flashing ensures proper waterproofing at all penetration points.
+
+### Tile Replacement
+
+A small percentage of tiles (typically 2-5%) may break during removal and handling, even with careful techniques. The cost of replacement tiles is factored into the project estimate.
+
+### Permits and Disposal
+
+Clark County permit fees and disposal costs for old underlayment materials are included in our proposals.
+
+## Factors That Affect Cost
+
+### Roof Size and Pitch
+
+Larger roofs require more materials and labor time. Steeper pitches increase labor difficulty and safety requirements, adding to the cost.
+
+### Tile Type
+
+Heavier tiles (concrete and clay) require more labor to remove and reinstall safely. Specialty tiles or discontinued styles may require sourcing replacements, which adds cost.
+
+### Roof Complexity
+
+Roofs with multiple valleys, hips, dormers, or complex geometry require more detailed work — especially around flashing and transitions.
+
+### Deck Condition
+
+If the roof deck beneath the underlayment shows signs of water damage, rot, or deterioration, deck repairs add to the total project cost. This is typically discovered during the tear-off phase.
+
+### Number of Stories
+
+Two-story homes require additional safety equipment and staging, increasing labor costs compared to single-story homes.
+
+### Access
+
+Properties with limited access — narrow driveways, landscaping close to the roofline, or gated communities with restrictions — may require additional logistical planning.
+
+## Underlayment Replacement vs Full Roof Replacement
+
+Tile underlayment replacement typically costs **40-60% less** than a full roof replacement because you're reusing the existing tiles — which are often the most expensive component of the roofing system.
+
+For a detailed comparison, see our guide: [Tile Lift and Relay vs Full Roof Replacement](/roofing-resources/tile-lift-relay-vs-full-roof-replacement).
+
+## Signs You Need Underlayment Replacement
+
+Not sure if your underlayment needs replacement? Look for these warning signs:
+
+- Your tile roof is 20+ years old
+- Water stains on interior ceilings after rainstorms
+- Musty odors or mold in the attic
+- Visible underlayment deterioration during [roof inspection](/services/inspections-and-certifications)
+- Tiles shifting or lifting due to batten deterioration
+
+For a complete guide, read: [Signs Your Tile Roof Needs Underlayment Replacement](/roofing-resources/signs-tile-roof-needs-underlayment-replacement-las-vegas).
+
+## Insurance Coverage
+
+If your underlayment failure was caused or accelerated by a covered event (such as storm damage), your homeowners insurance may cover part of the replacement cost. Our team provides [insurance claim assistance](/services/insurance-claim-assistance) to help document damage and coordinate with adjusters.
+
+Learn more: [Does Homeowners Insurance Cover Roof Replacement in Nevada?](/roofing-resources/does-homeowners-insurance-cover-roof-replacement-nevada)
+
+## How to Get the Best Value
+
+### Get a Professional Inspection First
+
+A free [roof inspection](/services/inspections-and-certifications) from Zenith determines whether you actually need underlayment replacement or if targeted repairs can extend your roof's life.
+
+### Compare Proposals
+
+Get 2-3 detailed proposals from reputable contractors. Look for itemized breakdowns and be cautious of significantly lower bids — they may indicate inferior materials or shortcuts.
+
+### Choose Quality Materials
+
+Premium synthetic underlayment costs more upfront but is designed to last 30+ years in the Las Vegas climate — versus 15-20 years for standard products.
+
+## Why Las Vegas Homeowners Choose Zenith
+
+With decades of combined experience performing tile lift and relay projects across Las Vegas, Henderson, Summerlin, North Las Vegas, Spring Valley, Enterprise, Green Valley, and surrounding communities, we provide honest evaluations and transparent pricing.
+
+Every proposal includes a detailed cost breakdown with no hidden fees. We'll never recommend work that isn't genuinely necessary.
+
+**Driven by Integrity. Defined by Service.**
+
+## Get Your Free Estimate
+
+Ready to learn what your underlayment replacement will cost? [Contact us today](/contact) for a complimentary roof inspection and detailed proposal.
+
+[Request Your Free Estimate →](/contact)
+    `,
+  },
 ];

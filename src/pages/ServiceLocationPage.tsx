@@ -210,6 +210,43 @@ export const serviceLocationPages: ServiceLocationConfig[] = [
       { title: "What Causes Wind Damage to Roof Shingles?", slug: "what-causes-wind-damage-roof-shingles-las-vegas" },
     ],
   },
+  {
+    service: "Tile Roof Underlayment Replacement",
+    serviceSlug: "tile-lift-and-relay",
+    city: "Las Vegas",
+    citySlug: "las-vegas",
+    metaTitle: "Tile Roof Underlayment Replacement Las Vegas | Zenith Roofing Solutions",
+    metaDesc: "Professional tile roof underlayment replacement in Las Vegas. Tile lift and relay services that save 40-60% vs full replacement. Free inspections. Call 702-884-6320.",
+    h1: "Tile Roof Underlayment Replacement in Las Vegas",
+    intro: "If your Las Vegas home has a tile roof that's 20 or more years old, the underlayment beneath those tiles has likely deteriorated — even if the tiles still look great. At Zenith Roofing Solutions, we specialize in tile roof underlayment replacement throughout Las Vegas, Henderson, Summerlin, and the entire Southern Nevada area, helping homeowners protect their homes without the cost of a full roof replacement.",
+    sections: [
+      { heading: "What Is Tile Roof Underlayment?", content: "Underlayment is the waterproof or water-resistant barrier installed directly on your roof deck, beneath the tiles. It serves as the critical last line of defense against moisture intrusion. In the Las Vegas climate, traditional felt underlayment installed 20+ years ago was not designed to withstand the extreme and sustained heat exposure — with roof surface temperatures regularly exceeding 150°F during summer months. Modern synthetic underlayments are engineered specifically for harsh desert conditions and can last 30+ years." },
+      { heading: "Signs Your Underlayment Has Failed", content: "Common indicators that your underlayment needs replacement include: water stains on interior ceilings after rainstorms, your tile roof is over 20 years old, musty odors or mold growth in the attic space, visible underlayment cracking or brittleness during inspection, tiles shifting or lifting from deteriorated battens, and increased energy bills from compromised roof insulation. If you notice any of these signs, schedule a free roof inspection to assess the condition of your underlayment." },
+      { heading: "Tile Lift and Relay Process", content: "Our tile lift and relay process is thorough and systematic. First, we carefully remove and stack your existing tiles to minimize breakage. We then remove the old deteriorated underlayment and thoroughly inspect the roof deck for any damage. Next, we install premium synthetic underlayment rated for the extreme desert climate. All flashing around vents, pipes, chimneys, and wall intersections is replaced with new materials. Finally, we reinstall your original tiles in their proper pattern with correct alignment. The entire process typically takes 3-5 days for a standard residential roof." },
+      { heading: "Tile Roof Underlayment Replacement Cost", content: "For a typical single-story Las Vegas home, tile roof underlayment replacement generally ranges from $7,000 to $22,000 depending on roof size, tile type, complexity, and deck condition. This is typically 40-60% less expensive than a full roof replacement because you're reusing your existing tiles — which are often the most expensive component of the roofing system. We provide free inspections and detailed proposals with transparent pricing and no hidden fees." },
+      { heading: "Why Tile Roofs Fail in the Las Vegas Climate", content: "The Las Vegas Valley presents unique challenges for tile roofing systems. Extreme UV exposure over 300+ days of sunshine per year breaks down roofing materials at an accelerated rate. Daily temperature swings of 30-40°F cause constant expansion and contraction that loosens fasteners and separates sealants. Monsoon storms bring intense wind-driven rain that can penetrate compromised underlayment. And inadequate attic ventilation traps extreme heat beneath the roof, accelerating deterioration from below." },
+      { heading: "Why Homeowners Choose Zenith Roofing Solutions", content: "With decades of combined roofing experience across the Las Vegas Valley, our team has performed hundreds of tile underlayment replacement projects. We provide honest evaluations — if your roof doesn't need underlayment replacement, we'll tell you. Every proposal includes a detailed cost breakdown with no hidden fees. We use only premium synthetic underlayment products rated for the extreme Southern Nevada climate and stand behind our workmanship." },
+    ],
+    faqs: [
+      { q: "How much does tile roof underlayment replacement cost in Las Vegas?", a: "Costs typically range from $7,000 to $22,000 depending on roof size, tile type, and complexity. We provide free estimates with detailed breakdowns." },
+      { q: "How long does tile underlayment replacement take?", a: "Most residential projects are completed in 3-5 days depending on roof size and complexity." },
+      { q: "Will my tiles break during the process?", a: "Our experienced crews use careful handling techniques. A small percentage (2-5%) may break and are replaced as part of the project." },
+      { q: "Does insurance cover underlayment replacement?", a: "If the failure was caused or accelerated by a covered event like storm damage, your insurance may cover part of the cost. We assist with documentation and claims." },
+      { q: "How long does new underlayment last in Las Vegas?", a: "Modern synthetic underlayments rated for the desert climate are designed to last 30+ years — significantly longer than the felt products used 20 years ago." },
+    ],
+    relatedServices: [
+      { title: "Tile Roof Repair", slug: "tile-lift-and-relay" },
+      { title: "Roof Inspections", slug: "inspections-and-certifications" },
+      { title: "Insurance Claim Support", slug: "insurance-claim-assistance" },
+      { title: "Roof Replacement", slug: "roof-replacement" },
+    ],
+    relatedArticles: [
+      { title: "Tile Roof Underlayment Replacement Cost in Las Vegas", slug: "tile-roof-underlayment-replacement-cost-las-vegas" },
+      { title: "Signs Your Tile Roof Needs Underlayment Replacement", slug: "signs-tile-roof-needs-underlayment-replacement-las-vegas" },
+      { title: "Tile Lift and Relay vs Full Roof Replacement", slug: "tile-lift-relay-vs-full-roof-replacement" },
+      { title: "How Long Do Tile Roofs Last in Las Vegas?", slug: "how-long-do-tile-roofs-last-las-vegas" },
+    ],
+  },
 ];
 
 const ServiceLocationPage = ({ config }: { config: ServiceLocationConfig }) => {
