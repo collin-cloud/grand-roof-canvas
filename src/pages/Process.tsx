@@ -20,7 +20,7 @@ const steps = [
     icon: HardHat,
     num: "03",
     title: "Professional Installation",
-    desc: "Our in-house crew handles every phase of the project. We keep your property clean, respect your schedule, and deliver quality craftsmanship you can see.",
+    desc: "Our experienced crew handles every phase of the project with precision and care. We keep your property clean, respect your schedule, and deliver quality craftsmanship.",
   },
   {
     icon: ThumbsUp,
@@ -44,7 +44,7 @@ const Process = () => {
               How We <span className="gold-gradient-text">Work</span>
             </h1>
             <p className="text-lg text-muted-foreground font-body leading-relaxed">
-              A clear, professional process designed to keep you informed and confident from the first call to the final nail.
+              A clear, professional process designed to keep you informed and confident from the first call to the final walkthrough.
             </p>
           </AnimatedSection>
 

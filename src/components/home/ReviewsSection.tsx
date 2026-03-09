@@ -23,7 +23,7 @@ const reviews = [
   {
     name: "Jennifer M.",
     location: "Henderson, NV",
-    text: "I've dealt with contractors who subcontract everything. Zenith's in-house crew made all the difference. You can tell they take pride in their work.",
+    text: "Zenith's team made all the difference. You can tell they take pride in their work. The experience and professionalism really stood out compared to other contractors.",
     rating: 5,
   },
 ];

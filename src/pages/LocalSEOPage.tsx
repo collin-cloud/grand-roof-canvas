@@ -21,14 +21,14 @@ const LocalSEOPage = ({ city, slug }: Props) => {
               Roofing Company in <span className="gold-gradient-text">{city}</span>
             </h1>
             <p className="text-lg text-muted-foreground font-body leading-relaxed mb-10">
-              Zenith Roofing Solutions is {city}'s trusted choice for premium residential roofing. Our in-house crews deliver expert shingle replacement, tile roof services, repairs, inspections, and insurance claim support throughout {city} and surrounding communities.
+              Zenith Roofing Solutions is {city}'s trusted choice for premium residential and property management roofing. Our experienced crews deliver expert roof replacement, repairs, inspections, and insurance claim support throughout {city} and surrounding communities.
             </p>
           </AnimatedSection>
 
           <AnimatedSection>
             <div className="space-y-8 text-muted-foreground font-body leading-relaxed">
               <div>
-                <h2 className="font-display text-2xl font-semibold text-foreground mb-3">Residential Roofing Services in {city}</h2>
+                <h2 className="font-display text-2xl font-semibold text-foreground mb-3">Roofing Services in {city}</h2>
                 <p>
                   Whether you need a complete roof replacement, emergency repair, or annual inspection, our experienced team handles every project with the care and precision your home deserves. We specialize in the unique demands of the {city} climate — from extreme heat to monsoon seasons.
                 </p>
@@ -37,7 +37,7 @@ const LocalSEOPage = ({ city, slug }: Props) => {
                 <h2 className="font-display text-2xl font-semibold text-foreground mb-3">Why {city} Homeowners Choose Zenith</h2>
                 <ul className="space-y-2 mt-4">
                   {[
-                    `In-house crews — no subcontractors on your ${city} property`,
+                    "Over 35 years of combined roofing experience",
                     "Licensed and insured in the state of Nevada",
                     "Expert insurance claim documentation and support",
                     "Transparent pricing with no hidden fees",
@@ -55,11 +55,12 @@ const LocalSEOPage = ({ city, slug }: Props) => {
                 <h2 className="font-display text-2xl font-semibold text-foreground mb-3">Our {city} Roofing Services</h2>
                 <div className="grid md:grid-cols-2 gap-4 mt-4">
                   {[
-                    { title: "Shingle Roof Replacement", href: "/services#shingle-roof-replacement" },
-                    { title: "Tile Roof Services", href: "/services#tile-roof-services" },
-                    { title: "Roof Repairs", href: "/services#roof-repairs" },
-                    { title: "Roof Inspections", href: "/services#roof-inspections" },
-                    { title: "Insurance Claim Support", href: "/services#insurance-claim-support" },
+                    { title: "Roof Replacement", href: "/services/roof-replacement" },
+                    { title: "Roof Repairs", href: "/services/roof-repairs" },
+                    { title: "Inspections & Certifications", href: "/services/inspections-and-certifications" },
+                    { title: "Insurance Claim Assistance", href: "/services/insurance-claim-assistance" },
+                    { title: "Tile Lift & Relay", href: "/services/tile-lift-and-relay" },
+                    { title: "Storm Damage Response", href: "/services/storm-damage-response" },
                   ].map((s) => (
                     <Link key={s.title} to={s.href} className="card-luxury p-5 hover:border-gold/30 transition-colors group">
                       <span className="font-body font-semibold text-sm text-foreground group-hover:text-gold transition-colors">{s.title}</span>

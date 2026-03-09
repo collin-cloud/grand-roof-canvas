@@ -5,10 +5,6 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const faqs = [
   {
-    q: "Do you use subcontractors?",
-    a: "No. Every member of our crew works directly for Zenith Roofing Solutions. This ensures consistent quality, accountability, and clear communication on every project.",
-  },
-  {
     q: "How long does a typical roof replacement take?",
     a: "Most residential roof replacements are completed in 1–3 days depending on the size and complexity of the project. We'll provide a clear timeline in your proposal.",
   },
@@ -18,7 +14,7 @@ const faqs = [
   },
   {
     q: "What areas do you serve?",
-    a: "We serve Las Vegas and Henderson, Nevada. Our team specializes in the unique roofing needs of the Southern Nevada climate.",
+    a: "We serve homeowners and property managers throughout Southern Nevada, including Las Vegas, Henderson, Summerlin, North Las Vegas, and surrounding communities.",
   },
   {
     q: "Do you offer free inspections?",
@@ -26,7 +22,11 @@ const faqs = [
   },
   {
     q: "What types of roofing materials do you work with?",
-    a: "We work with shingle, tile, and flat roofing systems. We'll recommend the best materials for your specific needs, budget, and the Las Vegas climate.",
+    a: "We work with shingle, tile, and flat roofing systems. We'll recommend the best materials for your specific needs, budget, and climate conditions.",
+  },
+  {
+    q: "Do you work with property managers?",
+    a: "Yes. We provide roofing services for multi-family properties and work with property managers on maintenance programs, inspections, and full replacement projects.",
   },
 ];
 

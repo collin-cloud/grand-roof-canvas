@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Index from "./pages/Index";
 import Services from "./pages/Services";
+import ServicePage from "./pages/ServicePage";
 import About from "./pages/About";
 import Process from "./pages/Process";
 import Reviews from "./pages/Reviews";
@@ -26,7 +27,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/services" element={<Services />} />
-            <Route path="/services/:slug" element={<Services />} />
+            <Route path="/services/:slug" element={<ServicePage />} />
             <Route path="/about" element={<About />} />
             <Route path="/process" element={<Process />} />
             <Route path="/reviews" element={<Reviews />} />

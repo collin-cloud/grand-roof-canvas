@@ -18,7 +18,7 @@ const steps = [
     icon: HardHat,
     num: "03",
     title: "Expert Installation",
-    desc: "Our in-house crew handles every detail of the installation with precision and professionalism.",
+    desc: "Our experienced crew handles every detail of the installation with precision and professionalism.",
   },
   {
     icon: ThumbsUp,

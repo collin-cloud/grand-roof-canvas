@@ -5,16 +5,16 @@ import { motion, AnimatePresence } from "framer-motion";
 import CTASection from "@/components/home/CTASection";
 
 const faqs = [
-  { q: "Do you use subcontractors?", a: "No. Every member of our crew works directly for Zenith Roofing Solutions. This ensures consistent quality, accountability, and clear communication on every project." },
   { q: "How long does a typical roof replacement take?", a: "Most residential roof replacements are completed in 1–3 days depending on the size and complexity of the project. We'll provide a clear timeline in your proposal." },
   { q: "Do you help with insurance claims?", a: "Absolutely. We provide thorough documentation, meet with adjusters, and guide you through the entire insurance claim process from start to finish." },
-  { q: "What areas do you serve?", a: "We serve Las Vegas and Henderson, Nevada. Our team specializes in the unique roofing needs of the Southern Nevada climate." },
+  { q: "What areas do you serve?", a: "We serve homeowners and property managers throughout Southern Nevada, including Las Vegas, Henderson, Summerlin, North Las Vegas, Spring Valley, Enterprise, Paradise, Green Valley, Anthem, and Mountains Edge." },
   { q: "Do you offer free inspections?", a: "Yes. We provide complimentary roof inspections with detailed assessments and honest recommendations — no pressure, no obligations." },
-  { q: "What types of roofing materials do you work with?", a: "We work with shingle, tile, and flat roofing systems. We'll recommend the best materials for your specific needs, budget, and the Las Vegas climate." },
+  { q: "What types of roofing materials do you work with?", a: "We work with shingle, tile, and flat roofing systems. We'll recommend the best materials for your specific needs, budget, and climate conditions." },
   { q: "How do I know if my roof needs to be replaced?", a: "Common signs include missing or curling shingles, leaks, granule loss, sagging, and age (most shingle roofs last 20–30 years). Our free inspection will give you a clear picture." },
   { q: "Do you offer financing?", a: "We can discuss payment options during your consultation. Contact us to learn about the options available for your project." },
   { q: "Are you licensed and insured?", a: "Yes. Zenith Roofing Solutions is fully licensed and insured in the state of Nevada. We carry comprehensive liability and workers' compensation coverage." },
   { q: "What warranty do you offer?", a: "We offer a workmanship warranty on all our installations in addition to manufacturer material warranties. Specific terms are outlined in your proposal." },
+  { q: "Do you work with property managers?", a: "Yes. We provide roofing services for multi-family properties and work with property managers on maintenance programs, inspections, and full replacement projects across Southern Nevada." },
 ];
 
 const FAQ = () => {

@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="absolute inset-0">
         <img
           src={heroImage}
-          alt="Premium roofing on a luxury Las Vegas home at sunset"
+          alt="Premium roofing on a luxury Southern Nevada home at sunset"
           className="w-full h-full object-cover"
           loading="eager"
         />
@@ -33,7 +33,7 @@ const Hero = () => {
           >
             <div className="h-px w-12 bg-gold" />
             <span className="text-xs font-body font-semibold uppercase tracking-[0.3em] text-gold">
-              No Subs, No Compromises
+              Driven by Integrity. Defined by Service.
             </span>
           </motion.div>
 
@@ -44,9 +44,8 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="font-display text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[0.95] mb-8"
           >
-            Premium Roofing in{" "}
-            <span className="gold-gradient-text">Las Vegas</span>
-            {" "}& <span className="gold-gradient-text">Henderson</span>
+            Trusted Roofing Experts Serving{" "}
+            <span className="gold-gradient-text">Southern Nevada</span>
           </motion.h1>
 
           {/* Subheadline */}
@@ -54,9 +53,19 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.6 }}
-            className="text-lg sm:text-xl text-muted-foreground max-w-xl leading-relaxed mb-12 font-body"
+            className="text-lg sm:text-xl text-muted-foreground max-w-xl leading-relaxed mb-6 font-body"
           >
-            In-house crews. No subcontractors. Clear communication from inspection to final walkthrough.
+            Residential and property management roofing solutions built on integrity, experience, and lasting craftsmanship.
+          </motion.p>
+
+          {/* Service area line */}
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.7 }}
+            className="text-sm text-muted-foreground/80 max-w-xl leading-relaxed mb-12 font-body"
+          >
+            Serving homeowners and property managers throughout the Las Vegas Valley and surrounding Southern Nevada communities.
           </motion.p>
 
           {/* CTAs */}
@@ -88,7 +97,7 @@ const Hero = () => {
         <div className="container mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 divide-x divide-gold/10">
             {[
-              "In-House Crews Only",
+              "35+ Years Combined Experience",
               "Licensed & Insured",
               "Insurance Claim Specialists",
               "Workmanship Warranty",
