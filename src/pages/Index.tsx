@@ -1,9 +1,9 @@
 import Hero from "@/components/home/Hero";
+import BrandPositioning from "@/components/home/BrandPositioning";
 import ServicesOverview from "@/components/home/ServicesOverview";
-import WhyChooseUs from "@/components/home/WhyChooseUs";
 import ProcessSection from "@/components/home/ProcessSection";
-import ReviewsSection from "@/components/home/ReviewsSection";
 import ServiceAreas from "@/components/home/ServiceAreas";
+import ReviewsSection from "@/components/home/ReviewsSection";
 import FAQPreview from "@/components/home/FAQPreview";
 import CTASection from "@/components/home/CTASection";
 
@@ -11,11 +11,11 @@ const Index = () => {
   return (
     <>
       <Hero />
+      <BrandPositioning />
       <ServicesOverview />
-      <WhyChooseUs />
       <ProcessSection />
-      <ReviewsSection />
       <ServiceAreas />
+      <ReviewsSection />
       <FAQPreview />
       <CTASection />
     </>
