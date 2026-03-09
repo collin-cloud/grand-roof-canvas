@@ -25,9 +25,9 @@ const Footer = () => {
               {[
                 { name: "Roof Replacement", slug: "roof-replacement" },
                 { name: "Roof Repairs", slug: "roof-repairs" },
-                { name: "Inspections & Certifications", slug: "inspections-and-certifications" },
-                { name: "Insurance Claim Assistance", slug: "insurance-claim-assistance" },
                 { name: "Tile Lift & Relay", slug: "tile-lift-and-relay" },
+                { name: "Inspections", slug: "inspections-and-certifications" },
+                { name: "Insurance Claims", slug: "insurance-claim-assistance" },
               ].map((s) => (
                 <li key={s.slug}>
                   <Link to={`/services/${s.slug}`} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
@@ -48,10 +48,11 @@ const Footer = () => {
                 { name: "Summerlin", slug: "summerlin" },
                 { name: "North Las Vegas", slug: "north-las-vegas" },
                 { name: "Spring Valley", slug: "spring-valley" },
+                { name: "Green Valley", slug: "green-valley" },
                 { name: "Enterprise", slug: "enterprise" },
               ].map((area) => (
                 <li key={area.slug}>
-                  <Link to={`/roofing-company-${area.slug}`} className="text-sm text-muted-foreground hover:text-foreground transition-colors">{area.name}, NV</Link>
+                  <Link to={`/roofing-contractor-${area.slug}`} className="text-sm text-muted-foreground hover:text-foreground transition-colors">{area.name}, NV</Link>
                 </li>
               ))}
             </ul>
@@ -74,6 +75,10 @@ const Footer = () => {
                 <span>Serving Southern Nevada</span>
               </li>
             </ul>
+            <div className="mt-6 space-y-2">
+              <Link to="/roofing-resources" className="block text-sm text-muted-foreground hover:text-foreground transition-colors">Roofing Resources</Link>
+              <Link to="/faq" className="block text-sm text-muted-foreground hover:text-foreground transition-colors">FAQ</Link>
+            </div>
           </div>
         </div>
 
@@ -83,6 +88,7 @@ const Footer = () => {
           <p>© {new Date().getFullYear()} Zenith Roofing Solutions. All rights reserved.</p>
           <div className="flex gap-6">
             <Link to="/faq" className="hover:text-foreground transition-colors">FAQ</Link>
+            <Link to="/roofing-resources" className="hover:text-foreground transition-colors">Resources</Link>
             <Link to="/contact" className="hover:text-foreground transition-colors">Contact</Link>
           </div>
         </div>
