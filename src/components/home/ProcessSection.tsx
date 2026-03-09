@@ -1,71 +1,117 @@
-import AnimatedSection from "@/components/AnimatedSection";
-import { Phone, ClipboardCheck, HardHat, ThumbsUp } from "lucide-react";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+import { Search, FileText, ClipboardList, HardHat, ShieldCheck } from "lucide-react";
 
 const steps = [
   {
-    icon: Phone,
+    icon: Search,
     num: "01",
-    title: "Free Inspection",
-    desc: "Schedule a no-obligation roof inspection. We'll assess your roof's condition and answer all your questions.",
+    title: "Inspection & Evaluation",
+    desc: "We start with a thorough assessment of your roof's condition, documenting everything with photos and honest findings.",
   },
   {
-    icon: ClipboardCheck,
+    icon: FileText,
     num: "02",
-    title: "Detailed Proposal",
-    desc: "Receive a clear, written proposal with scope, timeline, and pricing — no hidden fees or surprises.",
+    title: "Clear Recommendations",
+    desc: "You'll receive straightforward options with transparent pricing — no pressure, no hidden costs, no surprises.",
+  },
+  {
+    icon: ClipboardList,
+    num: "03",
+    title: "Detailed Planning",
+    desc: "We plan materials, timeline, and logistics to ensure a smooth project with minimal disruption to your routine.",
   },
   {
     icon: HardHat,
-    num: "03",
-    title: "Expert Installation",
-    desc: "Our experienced crew handles every detail of the installation with precision and professionalism.",
+    num: "04",
+    title: "Professional Installation",
+    desc: "Experienced crews execute every phase with precision, keeping your property clean and your project on schedule.",
   },
   {
-    icon: ThumbsUp,
-    num: "04",
-    title: "Final Walkthrough",
-    desc: "We walk you through the completed project, ensure your satisfaction, and back it with our warranty.",
+    icon: ShieldCheck,
+    num: "05",
+    title: "Final Walkthrough & Protection",
+    desc: "We walk you through the completed work, confirm your satisfaction, and back it with our workmanship warranty.",
   },
 ];
 
 const ProcessSection = () => {
-  return (
-    <section className="py-24 lg:py-32 bg-background">
-      <div className="container mx-auto px-6 lg:px-8">
-        <AnimatedSection className="text-center mb-16">
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <div className="h-px w-8 bg-gold/50" />
-            <span className="text-xs font-body font-semibold uppercase tracking-[0.3em] text-gold">Our Process</span>
-            <div className="h-px w-8 bg-gold/50" />
-          </div>
-          <h2 className="font-display text-4xl lg:text-5xl font-bold mb-4">
-            From Inspection to <span className="gold-gradient-text">Completion</span>
-          </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto font-body">
-            A clear, structured process that keeps you informed and confident every step of the way.
-          </p>
-        </AnimatedSection>
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-80px" });
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {steps.map((step, i) => (
-            <AnimatedSection key={step.num} delay={i * 0.15}>
-              <div className="text-center group">
-                <div className="relative inline-flex items-center justify-center w-20 h-20 rounded-full border border-gold/20 mb-6 group-hover:border-gold/50 transition-colors duration-300">
-                  <step.icon className="w-8 h-8 text-gold" />
-                  <span className="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-gold text-primary-foreground text-xs font-body font-bold flex items-center justify-center">
+  return (
+    <section ref={ref} className="py-28 lg:py-36 section-dark relative overflow-hidden">
+      {/* Background glow */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_0%,hsl(var(--gold)/0.04)_0%,transparent_60%)]" />
+
+      <div className="relative container mx-auto px-6 lg:px-8">
+        <div className="text-center mb-20">
+          <motion.div
+            className="flex items-center justify-center gap-3 mb-4"
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6 }}
+          >
+            <div className="h-px w-8 bg-gold/50" />
+            <span className="text-xs font-body font-semibold uppercase tracking-[0.3em] text-gold">Our Approach</span>
+            <div className="h-px w-8 bg-gold/50" />
+          </motion.div>
+          <motion.h2
+            className="font-display text-4xl lg:text-5xl font-bold mb-5"
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.1 }}
+          >
+            A Process You Can <span className="gold-gradient-text">Trust</span>
+          </motion.h2>
+          <motion.p
+            className="text-muted-foreground max-w-2xl mx-auto font-body leading-relaxed"
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            Every project follows a structured approach designed to keep you informed and confident from start to finish.
+          </motion.p>
+        </div>
+
+        {/* Steps with connecting line */}
+        <div className="relative max-w-4xl mx-auto">
+          {/* Vertical connecting line (desktop) */}
+          <motion.div
+            className="hidden lg:block absolute left-[39px] top-0 bottom-0 w-px"
+            style={{ background: "linear-gradient(to bottom, transparent, hsl(var(--gold) / 0.2), hsl(var(--gold) / 0.2), transparent)" }}
+            initial={{ scaleY: 0, transformOrigin: "top" }}
+            animate={isInView ? { scaleY: 1 } : {}}
+            transition={{ duration: 1.5, delay: 0.3, ease: "easeOut" }}
+          />
+
+          <div className="space-y-6 lg:space-y-8">
+            {steps.map((step, i) => (
+              <motion.div
+                key={step.num}
+                className="relative flex gap-6 lg:gap-10 items-start"
+                initial={{ opacity: 0, x: -30 }}
+                animate={isInView ? { opacity: 1, x: 0 } : {}}
+                transition={{ duration: 0.6, delay: 0.3 + i * 0.12 }}
+              >
+                {/* Step number circle */}
+                <div className="relative z-10 shrink-0">
+                  <div className="w-20 h-20 rounded-full border border-gold/20 bg-charcoal-deep flex items-center justify-center group">
+                    <step.icon className="w-8 h-8 text-gold" />
+                  </div>
+                  <span className="absolute -top-1 -right-1 w-7 h-7 rounded-full bg-gold text-primary-foreground text-xs font-body font-bold flex items-center justify-center">
                     {step.num}
                   </span>
                 </div>
-                <h3 className="font-display text-xl font-semibold mb-3">{step.title}</h3>
-                <p className="text-sm text-muted-foreground font-body leading-relaxed">{step.desc}</p>
-              </div>
-              {i < steps.length - 1 && (
-                <div className="hidden lg:block absolute top-10 right-0 w-full">
-                  {/* Connecting line handled via layout */}
+
+                {/* Content */}
+                <div className="pt-3 pb-2">
+                  <h3 className="font-display text-xl lg:text-2xl font-semibold mb-2">{step.title}</h3>
+                  <p className="text-sm text-muted-foreground font-body leading-relaxed max-w-lg">{step.desc}</p>
                 </div>
-              )}
-            </AnimatedSection>
-          ))}
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
