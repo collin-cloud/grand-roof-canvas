@@ -1,50 +1,67 @@
 import AnimatedSection from "@/components/AnimatedSection";
 import { Link } from "react-router-dom";
-import { ArrowRight, Layers, Grid3X3, Wrench, Search, Shield, RotateCw } from "lucide-react";
+import { ArrowRight, Layers, Grid3X3, Wrench, Search, Shield, RotateCw, CloudLightning, Wind, Sun } from "lucide-react";
 
 const services = [
   {
     icon: Layers,
     title: "Roof Replacement",
-    desc: "Complete tear-off and installation with premium materials designed for the Southern Nevada climate.",
+    desc: "Complete tear-off and replacement using premium roofing systems designed to withstand the extreme Southern Nevada climate. Every layer installed with precision and long-term durability in mind.",
     href: "/services/roof-replacement",
   },
   {
     icon: Grid3X3,
     title: "Tile Roof Services",
-    desc: "Expert tile installation, lift & relay, and repair to extend the life of your tile roofing system.",
+    desc: "Expert installation, repair, and maintenance for concrete and clay tile roofing systems commonly found throughout Southern Nevada homes. From broken tiles to full underlayment replacement.",
     href: "/services/tile-lift-and-relay",
   },
   {
     icon: Wrench,
     title: "Roof Repairs",
-    desc: "Fast, reliable repairs for leaks, storm damage, and general wear — diagnosed and fixed right.",
+    desc: "Fast and reliable repairs for leaks, storm damage, and everyday roof wear. Our team quickly identifies the problem, explains your options clearly, and delivers dependable repairs.",
     href: "/services/roof-repairs",
   },
   {
     icon: Search,
     title: "Roof Inspections",
-    desc: "Thorough inspections with detailed photo reports for real estate, insurance, and maintenance.",
+    desc: "Professional roof inspections with detailed photo documentation and honest evaluations. Ideal for home buyers, insurance claims, and preventative maintenance.",
     href: "/services/inspections-and-certifications",
   },
   {
     icon: Shield,
     title: "Insurance Claim Support",
-    desc: "Expert documentation and adjuster coordination to guide you through the claims process.",
+    desc: "We assist homeowners with documenting roof damage, coordinating with insurance adjusters, and helping navigate the claims process.",
     href: "/services/insurance-claim-assistance",
   },
   {
     icon: RotateCw,
     title: "Roof Maintenance",
-    desc: "Proactive maintenance programs to extend roof life and prevent costly future repairs.",
+    desc: "Preventative maintenance services designed to extend the life of your roof and identify issues before they become major repairs.",
     href: "/services/roof-maintenance",
+  },
+  {
+    icon: CloudLightning,
+    title: "Storm Damage Response",
+    desc: "Rapid response for roofs affected by wind, debris, or severe weather events across Southern Nevada.",
+    href: "/services/storm-damage-response",
+  },
+  {
+    icon: Wind,
+    title: "Attic Ventilation Upgrades",
+    desc: "Improve energy efficiency and roof performance with proper attic ventilation designed for the intense desert climate.",
+    href: "/services/attic-ventilation-upgrades",
+  },
+  {
+    icon: Sun,
+    title: "Skylight Installation & Repair",
+    desc: "Professional skylight installation and repair services that enhance natural lighting while protecting the integrity of your roofing system.",
+    href: "/services/skylight-installation-and-repair",
   },
 ];
 
 const ServicesOverview = () => {
   return (
     <section className="py-28 lg:py-36 bg-background relative" id="services">
-      {/* Subtle top gradient */}
       <div className="absolute top-0 inset-x-0 h-32 bg-gradient-to-b from-charcoal-deep/50 to-transparent" />
 
       <div className="relative container mx-auto px-6 lg:px-8">
@@ -55,7 +72,7 @@ const ServicesOverview = () => {
             <div className="h-px w-8 bg-gold/50" />
           </div>
           <h2 className="font-display text-4xl lg:text-5xl font-bold mb-5">
-            Roofing Solutions Built to <span className="gold-gradient-text">Last</span>
+            Roofing Solutions Built to Last
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto font-body leading-relaxed">
             Comprehensive roofing services delivered with precision, integrity, and the care your home deserves.
@@ -64,7 +81,7 @@ const ServicesOverview = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, i) => (
-            <AnimatedSection key={service.title} delay={i * 0.08}>
+            <AnimatedSection key={service.title} delay={i * 0.06}>
               <Link
                 to={service.href}
                 className="card-luxury p-8 h-full flex flex-col group hover:border-gold/30 hover:bg-card/80 transition-all duration-500"
