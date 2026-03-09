@@ -144,9 +144,19 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 1.0 }}
-            className="text-lg sm:text-xl text-muted-foreground max-w-xl leading-relaxed mb-12 font-body"
+            className="text-lg sm:text-xl text-muted-foreground max-w-xl leading-relaxed mb-4 font-body"
           >
             Experienced roofing professionals delivering quality craftsmanship, honest guidance, and reliable protection for homes and properties throughout the Las Vegas Valley.
+          </motion.p>
+
+          {/* Tagline */}
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 1.1 }}
+            className="text-base font-display italic text-gold mb-12"
+          >
+            Driven by Integrity. Defined by Service.
           </motion.p>
 
           {/* CTAs */}

@@ -42,9 +42,16 @@ const Footer = () => {
           <div>
             <h4 className="font-display text-sm font-semibold uppercase tracking-wider text-gold mb-4">Service Areas</h4>
             <ul className="space-y-2">
-              {["Las Vegas", "Henderson", "Summerlin", "North Las Vegas", "Spring Valley", "Enterprise"].map((area) => (
-                <li key={area}>
-                  <span className="text-sm text-muted-foreground">{area}, NV</span>
+              {[
+                { name: "Las Vegas", slug: "las-vegas" },
+                { name: "Henderson", slug: "henderson" },
+                { name: "Summerlin", slug: "summerlin" },
+                { name: "North Las Vegas", slug: "north-las-vegas" },
+                { name: "Spring Valley", slug: "spring-valley" },
+                { name: "Enterprise", slug: "enterprise" },
+              ].map((area) => (
+                <li key={area.slug}>
+                  <Link to={`/roofing-company-${area.slug}`} className="text-sm text-muted-foreground hover:text-foreground transition-colors">{area.name}, NV</Link>
                 </li>
               ))}
             </ul>

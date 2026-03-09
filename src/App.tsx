@@ -35,6 +35,10 @@ const App = () => (
             <Route path="/contact" element={<Contact />} />
             <Route path="/roofing-company-las-vegas" element={<LocalSEOPage city="Las Vegas" slug="las-vegas" />} />
             <Route path="/roofing-company-henderson" element={<LocalSEOPage city="Henderson" slug="henderson" />} />
+            <Route path="/roofing-company-summerlin" element={<LocalSEOPage city="Summerlin" slug="summerlin" />} />
+            <Route path="/roofing-company-north-las-vegas" element={<LocalSEOPage city="North Las Vegas" slug="north-las-vegas" />} />
+            <Route path="/roofing-company-spring-valley" element={<LocalSEOPage city="Spring Valley" slug="spring-valley" />} />
+            <Route path="/roofing-company-enterprise" element={<LocalSEOPage city="Enterprise" slug="enterprise" />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
