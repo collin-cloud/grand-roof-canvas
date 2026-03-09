@@ -1,19 +1,19 @@
 import AnimatedSection from "@/components/AnimatedSection";
 import { Link } from "react-router-dom";
-import { ArrowRight, Layers, Grid3X3, Wrench, Search, Shield } from "lucide-react";
+import { ArrowRight, Layers, Wrench, Search, Shield, Hammer, Grid3X3 } from "lucide-react";
 
 const services = [
   {
     icon: Layers,
-    title: "Shingle Roof Replacement",
-    desc: "Complete shingle roof removal and installation with premium materials built for Las Vegas heat.",
-    href: "/services/shingle-roof-replacement",
+    title: "Roof Replacement",
+    desc: "Complete roof removal and installation with premium materials built for the Southern Nevada climate.",
+    href: "/services/roof-replacement",
   },
   {
-    icon: Grid3X3,
-    title: "Tile Roof Services",
-    desc: "Expert tile roof installation, repair, and maintenance for lasting desert protection.",
-    href: "/services/tile-roof-services",
+    icon: Hammer,
+    title: "New Roof Installation",
+    desc: "Expert installation for new construction, additions, and remodels with lasting quality.",
+    href: "/services/new-roof-installation",
   },
   {
     icon: Wrench,
@@ -23,15 +23,21 @@ const services = [
   },
   {
     icon: Search,
-    title: "Roof Inspections",
+    title: "Inspections & Certifications",
     desc: "Thorough inspections with detailed reports to keep your investment protected.",
-    href: "/services/roof-inspections",
+    href: "/services/inspections-and-certifications",
   },
   {
     icon: Shield,
-    title: "Insurance Claim Support",
+    title: "Insurance Claim Assistance",
     desc: "We guide you through every step of the insurance claim process with expert documentation.",
-    href: "/services/insurance-claim-support",
+    href: "/services/insurance-claim-assistance",
+  },
+  {
+    icon: Grid3X3,
+    title: "Tile Lift & Relay",
+    desc: "Expert tile removal, underlayment replacement, and precision re-laying to extend roof life.",
+    href: "/services/tile-lift-and-relay",
   },
 ];
 
@@ -49,7 +55,7 @@ const ServicesOverview = () => {
             Roofing Solutions Built to <span className="gold-gradient-text">Last</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto font-body">
-            Every service delivered by our in-house crews with the precision and care your home deserves.
+            Comprehensive roofing services delivered with precision, integrity, and care your home deserves.
           </p>
         </AnimatedSection>
 

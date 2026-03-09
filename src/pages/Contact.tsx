@@ -77,7 +77,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-xs text-muted-foreground font-body uppercase tracking-wider">Service Area</p>
-                  <p className="font-body font-semibold">Las Vegas & Henderson, Nevada</p>
+                  <p className="font-body font-semibold">Southern Nevada</p>
                 </div>
               </div>
             </div>

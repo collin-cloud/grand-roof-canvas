@@ -10,8 +10,11 @@ const Footer = () => {
           <div>
             <span className="font-display text-2xl font-bold gold-gradient-text">ZENITH</span>
             <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground mt-1 mb-4">Roofing Solutions</p>
+            <p className="text-sm text-muted-foreground leading-relaxed mb-3">
+              Driven by Integrity. Defined by Service.
+            </p>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              No Subs, No Compromises. Premium roofing for Las Vegas & Henderson homeowners.
+              Premium roofing solutions for Southern Nevada homeowners and property managers.
             </p>
           </div>
 
@@ -19,10 +22,16 @@ const Footer = () => {
           <div>
             <h4 className="font-display text-sm font-semibold uppercase tracking-wider text-gold mb-4">Services</h4>
             <ul className="space-y-2">
-              {["Shingle Roof Replacement", "Tile Roof Services", "Roof Repairs", "Roof Inspections", "Insurance Claim Support"].map((s) => (
-                <li key={s}>
-                  <Link to="/services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                    {s}
+              {[
+                { name: "Roof Replacement", slug: "roof-replacement" },
+                { name: "Roof Repairs", slug: "roof-repairs" },
+                { name: "Inspections & Certifications", slug: "inspections-and-certifications" },
+                { name: "Insurance Claim Assistance", slug: "insurance-claim-assistance" },
+                { name: "Tile Lift & Relay", slug: "tile-lift-and-relay" },
+              ].map((s) => (
+                <li key={s.slug}>
+                  <Link to={`/services/${s.slug}`} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                    {s.name}
                   </Link>
                 </li>
               ))}
@@ -33,16 +42,11 @@ const Footer = () => {
           <div>
             <h4 className="font-display text-sm font-semibold uppercase tracking-wider text-gold mb-4">Service Areas</h4>
             <ul className="space-y-2">
-              <li>
-                <Link to="/roofing-company-las-vegas" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Las Vegas, NV
-                </Link>
-              </li>
-              <li>
-                <Link to="/roofing-company-henderson" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Henderson, NV
-                </Link>
-              </li>
+              {["Las Vegas", "Henderson", "Summerlin", "North Las Vegas", "Spring Valley", "Enterprise"].map((area) => (
+                <li key={area}>
+                  <span className="text-sm text-muted-foreground">{area}, NV</span>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -60,7 +64,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start gap-3 text-sm text-muted-foreground">
                 <MapPin className="w-4 h-4 text-gold mt-0.5" />
-                <span>Las Vegas & Henderson, Nevada</span>
+                <span>Serving Southern Nevada</span>
               </li>
             </ul>
           </div>

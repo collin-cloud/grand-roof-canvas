@@ -11,6 +11,9 @@ const CTASection = () => {
       <div className="relative container mx-auto px-6 lg:px-8 text-center">
         <AnimatedSection>
           <div className="max-w-2xl mx-auto">
+            <p className="text-xs font-body font-semibold uppercase tracking-[0.3em] text-gold mb-6">
+              Driven by Integrity. Defined by Service.
+            </p>
             <h2 className="font-display text-4xl lg:text-6xl font-bold mb-6">
               Ready to Protect Your <span className="gold-gradient-text">Investment</span>?
             </h2>

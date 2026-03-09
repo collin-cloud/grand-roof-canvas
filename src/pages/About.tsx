@@ -1,5 +1,4 @@
 import AnimatedSection from "@/components/AnimatedSection";
-import { CheckCircle } from "lucide-react";
 import CTASection from "@/components/home/CTASection";
 import aboutImage from "@/assets/about-roof.jpg";
 
@@ -17,24 +16,16 @@ const About = () => {
               <h1 className="font-display text-5xl lg:text-6xl font-bold mb-6">
                 Roofing Done <span className="gold-gradient-text">Right</span>
               </h1>
-              <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
-                <p>
-                  Zenith Roofing Solutions was built on a straightforward commitment: deliver premium roofing services with in-house crews, transparent pricing, and clear communication at every step.
-                </p>
-                <p>
-                  We don't use subcontractors. Every person on your job site works directly for us. That means accountability, consistency, and craftsmanship you can see in the finished product.
-                </p>
-                <p>
-                  Based in Las Vegas and serving the greater Henderson area, we specialize in residential roofing — from full replacements to repairs and inspections. We also guide homeowners through insurance claims with expert documentation and support.
-                </p>
-              </div>
+              <p className="text-lg text-muted-foreground font-body leading-relaxed italic">
+                Over 35 years of combined roofing knowledge. A commitment to integrity that never wavers.
+              </p>
             </AnimatedSection>
 
             <AnimatedSection direction="right">
               <div className="relative">
                 <img
                   src={aboutImage}
-                  alt="Zenith Roofing Solutions premium craftsmanship on a Las Vegas home"
+                  alt="Zenith Roofing Solutions premium craftsmanship on a Southern Nevada home"
                   className="w-full h-[500px] object-cover rounded-lg"
                   loading="lazy"
                 />
@@ -44,23 +35,40 @@ const About = () => {
             </AnimatedSection>
           </div>
 
-          <AnimatedSection className="mt-24">
-            <div className="gold-line mb-16" />
-            <h2 className="font-display text-3xl lg:text-4xl font-bold mb-10 text-center">
-              Our <span className="gold-gradient-text">Values</span>
-            </h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              {[
-                { title: "Craftsmanship", desc: "We take pride in every nail, every shingle, every seam. Quality isn't a goal — it's a standard." },
-                { title: "Transparency", desc: "Clear pricing, honest assessments, and real-time updates. You'll always know what's happening." },
-                { title: "Accountability", desc: "In-house crews mean we stand behind every project. No finger-pointing, no excuses." },
-              ].map((v) => (
-                <div key={v.title} className="card-luxury p-8 text-center">
-                  <CheckCircle className="w-8 h-8 text-gold mx-auto mb-4" />
-                  <h3 className="font-display text-xl font-semibold mb-3">{v.title}</h3>
-                  <p className="text-sm text-muted-foreground font-body">{v.desc}</p>
-                </div>
-              ))}
+          {/* Story content */}
+          <AnimatedSection className="mt-20 max-w-3xl mx-auto">
+            <div className="space-y-8 text-muted-foreground font-body leading-relaxed text-lg">
+              <p>
+                At Zenith Roofing Solutions, we bring over 35 years of combined roofing knowledge and hands-on experience to every project we take on. Decades in the field have taught us more than just how to install a quality roof — they've shown us what truly matters: doing the right thing, standing behind your word, and putting people first.
+              </p>
+
+              <div className="gold-line" />
+
+              <p>
+                In an industry where honesty and accountability are often hard to come by, we've built Zenith on a different foundation — one rooted in integrity, transparency, and service. Whether we're working on a single-family home or an entire multi-building complex, our commitment remains the same: clear communication, quality products, and results you can rely on.
+              </p>
+
+              <p>
+                We understand the importance of a roof — not just as a structure, but as protection for everything that matters underneath it. That's why every project is approached with careful planning, experienced oversight, and a commitment to quality that never cuts corners. We guide our clients through the process with honesty, explain every step, and follow through on what we promise — every time.
+              </p>
+
+              <div className="gold-line" />
+
+              <p>
+                Proudly serving homeowners and property managers across Southern Nevada, Zenith Roofing Solutions exists to raise the bar for what a roofing company should be. We don't aim to be the biggest — we aim to be the most trusted.
+              </p>
+            </div>
+          </AnimatedSection>
+
+          {/* Promise */}
+          <AnimatedSection className="mt-20 text-center">
+            <div className="max-w-2xl mx-auto">
+              <div className="gold-line mb-10" />
+              <p className="text-sm font-body font-semibold uppercase tracking-[0.3em] text-gold mb-4">Our Promise</p>
+              <h2 className="font-display text-4xl lg:text-5xl font-bold">
+                Driven by <span className="gold-gradient-text">Integrity</span>. Defined by <span className="gold-gradient-text">Service</span>.
+              </h2>
+              <div className="gold-line mt-10" />
             </div>
           </AnimatedSection>
         </div>

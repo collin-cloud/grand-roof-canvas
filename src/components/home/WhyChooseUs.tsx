@@ -3,12 +3,12 @@ import { CheckCircle } from "lucide-react";
 import aboutImage from "@/assets/about-roof.jpg";
 
 const reasons = [
-  { title: "In-House Crews", desc: "Every team member works directly for us — no subcontractors, no surprises." },
+  { title: "35+ Years Experience", desc: "Decades of combined roofing knowledge and hands-on expertise across Southern Nevada." },
   { title: "Clear Communication", desc: "Real-time updates from start to finish. You'll never be left wondering." },
   { title: "Licensed & Insured", desc: "Fully licensed in Nevada with comprehensive insurance coverage." },
-  { title: "Workmanship Warranty", desc: "We stand behind our work with a solid workmanship warranty." },
+  { title: "Workmanship Warranty", desc: "We stand behind our work with a solid workmanship warranty on every project." },
   { title: "Insurance Experts", desc: "We handle the documentation and coordination for your insurance claims." },
-  { title: "Las Vegas Specialists", desc: "We understand the unique roofing challenges of the desert climate." },
+  { title: "Southern Nevada Specialists", desc: "We understand the unique roofing challenges of the desert climate." },
 ];
 
 const WhyChooseUs = () => {
@@ -20,12 +20,11 @@ const WhyChooseUs = () => {
             <div className="relative">
               <img
                 src={aboutImage}
-                alt="Modern luxury home with premium tile roofing in Henderson Nevada"
+                alt="Premium roofing craftsmanship on a Southern Nevada home"
                 className="w-full h-[500px] object-cover rounded-lg"
                 loading="lazy"
               />
               <div className="absolute inset-0 rounded-lg border border-gold/10" />
-              {/* Gold corner accents */}
               <div className="absolute -top-3 -left-3 w-12 h-12 border-t-2 border-l-2 border-gold/40 rounded-tl-lg" />
               <div className="absolute -bottom-3 -right-3 w-12 h-12 border-b-2 border-r-2 border-gold/40 rounded-br-lg" />
             </div>
@@ -40,10 +39,10 @@ const WhyChooseUs = () => {
               Built on <span className="gold-gradient-text">Integrity</span>
             </h2>
             <p className="text-muted-foreground mb-10 font-body leading-relaxed">
-              We founded Zenith Roofing Solutions on a simple belief: homeowners deserve better. Better craftsmanship, better communication, and a better experience from start to finish.
+              We founded Zenith Roofing Solutions on a simple belief: homeowners and property managers deserve better. Better craftsmanship, better communication, and a better experience from start to finish.
             </p>
             <div className="grid gap-5">
-              {reasons.map((r, i) => (
+              {reasons.map((r) => (
                 <div key={r.title} className="flex gap-4 items-start group">
                   <CheckCircle className="w-5 h-5 text-gold mt-0.5 shrink-0" />
                   <div>
