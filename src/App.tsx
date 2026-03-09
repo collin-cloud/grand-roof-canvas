@@ -21,6 +21,16 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
+// Map service+location pages to URL slugs
+const serviceLocationRoutes = [
+  { urlSlug: "roof-replacement-las-vegas", configIndex: 0 },
+  { urlSlug: "roof-repair-las-vegas", configIndex: 1 },
+  { urlSlug: "tile-roof-repair-las-vegas", configIndex: 2 },
+  { urlSlug: "tile-roof-lift-and-relay-las-vegas", configIndex: 3 },
+  { urlSlug: "roof-inspection-las-vegas", configIndex: 4 },
+  { urlSlug: "insurance-roof-claim-las-vegas", configIndex: 5 },
+];
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
@@ -40,7 +50,7 @@ const App = () => (
             <Route path="/roofing-resources" element={<BlogIndex />} />
             <Route path="/roofing-resources/:slug" element={<BlogPost />} />
 
-            {/* Location pages - new SEO architecture */}
+            {/* Location pages */}
             <Route path="/roofing-contractor-las-vegas" element={<LocationPage city="Las Vegas" slug="las-vegas" />} />
             <Route path="/roofing-contractor-henderson" element={<LocationPage city="Henderson" slug="henderson" />} />
             <Route path="/roofing-contractor-summerlin" element={<LocationPage city="Summerlin" slug="summerlin" />} />
@@ -50,11 +60,11 @@ const App = () => (
             <Route path="/roofing-contractor-enterprise" element={<LocationPage city="Enterprise" slug="enterprise" />} />
 
             {/* Service + Location pages */}
-            {serviceLocationPages.map((config) => (
+            {serviceLocationRoutes.map((route) => (
               <Route
-                key={`${config.serviceSlug}-${config.citySlug}`}
-                path={`/${config.serviceSlug === "roof-replacement" ? "roof-replacement" : config.serviceSlug === "roof-repairs" ? "roof-repair" : config.serviceSlug === "tile-lift-and-relay" && config.service === "Tile Roof Repair" ? "tile-roof-repair" : config.serviceSlug === "tile-lift-and-relay" && config.service === "Tile Roof Lift and Relay" ? "tile-roof-lift-and-relay" : config.serviceSlug === "inspections-and-certifications" ? "roof-inspection" : "insurance-roof-claim"}-${config.citySlug}`}
-                element={<ServiceLocationPage config={config} />}
+                key={route.urlSlug}
+                path={`/${route.urlSlug}`}
+                element={<ServiceLocationPage config={serviceLocationPages[route.configIndex]} />}
               />
             ))}
 
