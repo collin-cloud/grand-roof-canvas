@@ -8,7 +8,7 @@ const reviews = [
   { name: "David Sablan", location: "Verified Google Review", text: "I am really very satisfied with the professional results that Zenith Roofing Solutions did on my property. They accomplished a very professional job and communicated closely with me on all aspects of the project. If I could rate them a sixth star I would do so without hesitation. They earned it.", rating: 5 },
   { name: "Brenda Phillips", location: "Verified Google Review", text: "Collin and his crew are totally awesome. Anybody who needs roofing done, he will work with you to get everything done and get it done right. Collin was totally patient, answered all my questions, and helped me in any way he could to get through this process.", rating: 5 },
   { name: "Bridget Lund", location: "Verified Google Review", text: "I am so impressed by the quality, personnel, and genuine care of Zenith Roofing. They are outstanding in their commitment to me. I am so grateful for the service and recommend to my family and friends how professional and friendly you are.", rating: 5 },
-  { name: "Idorphie Carlos Diaz Del Valle", location: "Verified Google Review", text: "Zenith was great to work with. We had a wonderful relationship throughout the entire process. I'd refer them to anyone that's in need of a reliable roofing company.", rating: 5 },
+  { name: "Carlos Diaz Del Valle", location: "Verified Google Review", text: "Zenith was great to work with. We had a wonderful relationship throughout the entire process. I'd refer them to anyone that's in need of a reliable roofing company.", rating: 5 },
 ];
 
 const Reviews = () => {
