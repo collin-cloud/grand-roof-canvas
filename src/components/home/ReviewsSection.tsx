@@ -94,7 +94,7 @@ const ReviewsSection = () => {
                     {review.name.charAt(0)}
                   </div>
                   <div>
-                    <p className="font-body font-semibold text-sm">{review.name}</p>
+                    <p className="font-display font-bold text-sm">{review.name}</p>
                     <p className="text-xs text-muted-foreground font-body">{review.location}</p>
                   </div>
                 </div>
