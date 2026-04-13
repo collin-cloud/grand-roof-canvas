@@ -3,14 +3,12 @@ import { Star } from "lucide-react";
 import CTASection from "@/components/home/CTASection";
 
 const reviews = [
-  { name: "Michael T.", location: "Las Vegas, NV", text: "Zenith replaced our tile roof and the quality of work was outstanding. The crew was professional, on time, and the communication throughout was exceptional. Highly recommend.", rating: 5 },
-  { name: "Sarah & David K.", location: "Henderson, NV", text: "We had storm damage and Zenith handled everything — the inspection, insurance paperwork, and the full replacement. It was seamless. Our new roof looks incredible.", rating: 5 },
-  { name: "Robert L.", location: "Las Vegas, NV", text: "What stood out was the transparency. No hidden fees, no surprises. They showed up when they said they would and the finished product speaks for itself.", rating: 5 },
-  { name: "Jennifer M.", location: "Henderson, NV", text: "Zenith's team was professional and thorough from start to finish. The experience and integrity really showed — you can tell they take pride in every project.", rating: 5 },
-  { name: "Carlos R.", location: "Las Vegas, NV", text: "From the initial inspection to the final walkthrough, everything was professional and well-organized. Our shingle replacement looks fantastic and was done in two days.", rating: 5 },
-  { name: "Amanda P.", location: "Henderson, NV", text: "The insurance claim process was so much easier with Zenith. They documented everything thoroughly and worked directly with our insurance company. Couldn't be happier.", rating: 5 },
-  { name: "Tom & Linda W.", location: "Las Vegas, NV", text: "We got quotes from five companies. Zenith wasn't the cheapest, but they were the most thorough and transparent. The quality of their work justified every penny.", rating: 5 },
-  { name: "Maria S.", location: "Summerlin, NV", text: "Our roof had been leaking for months. Zenith found the issue quickly, explained our options, and had it repaired the same week. Professional and reliable.", rating: 5 },
+  { name: "Review 1", location: "Verified Google Review", text: "I had some wind damage to my roof, and Zenith took care of the entire process. Very professional attitudes from the owner to the laborers, with quality work and no upselling. My insurance company was being difficult, and Collin handled them like a seasoned professional. Highly recommend Zenith. They were just that good!", rating: 5 },
+  { name: "Review 2", location: "Verified Google Review", text: "Outstanding service from start to finish! Collin and Todd were professional, punctual and extremely knowledgeable. Zenith completed the job on time, the quality of workmanship exceeded our expectations and communication was clear throughout the entire process. Highly recommend this roofing company.", rating: 5 },
+  { name: "Review 3", location: "Verified Google Review", text: "I am really very satisfied with the professional results that Zenith Roofing Solutions did on my property. They accomplished a very professional job and communicated closely with me on all aspects of the project. If I could rate them a sixth star I would do so without hesitation. They earned it.", rating: 5 },
+  { name: "Review 4", location: "Verified Google Review", text: "Collin and his crew are totally awesome. Anybody who needs roofing done, he will work with you to get everything done and get it done right. Collin was totally patient, answered all my questions, and helped me in any way he could to get through this process.", rating: 5 },
+  { name: "Review 5", location: "Verified Google Review", text: "I am so impressed by the quality, personnel, and genuine care of Zenith Roofing. They are outstanding in their commitment to me. I am so grateful for the service and recommend to my family and friends how professional and friendly you are.", rating: 5 },
+  { name: "Review 6", location: "Verified Google Review", text: "Zenith was great to work with. We had a wonderful relationship throughout the entire process. I'd refer them to anyone that's in need of a reliable roofing company.", rating: 5 },
 ];
 
 const Reviews = () => {
