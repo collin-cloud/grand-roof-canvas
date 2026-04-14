@@ -1,3 +1,8 @@
+export interface BlogPostFAQ {
+  question: string;
+  answer: string;
+}
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -6,7 +11,14 @@ export interface BlogPost {
   date: string;
   image: string;
   content: string;
+  faqs: BlogPostFAQ[];
 }
+
+export const blogAuthor = {
+  name: "Collin",
+  title: "Owner of Zenith Roofing Solutions",
+  bio: "Collin is the owner of Zenith Roofing Solutions, a Las Vegas-based roofing company serving homeowners and property managers across Southern Nevada. With over 35 years of combined team experience behind the company, Zenith specializes in residential roofing, tile roof systems, roof replacements, roof repairs, and insurance claim assistance. Collin and the Zenith team are committed to honest guidance, quality workmanship, and dependable roofing solutions built to last.",
+};
 
 export const blogPosts: BlogPost[] = [
   {
@@ -73,6 +85,13 @@ If your tile roof is over 15 years old, don't wait for a leak to take action. [C
 
 [Request Your Free Inspection →](/contact)
     `,
+    faqs: [
+      { question: "How long does tile roof underlayment last in Las Vegas?", answer: "In the Las Vegas climate, traditional felt underlayment typically lasts 20 to 25 years due to extreme heat. Modern synthetic underlayments can last 30+ years with proper installation." },
+      { question: "Can tile roof underlayment be replaced without replacing the tiles?", answer: "Yes. A tile lift and relay allows our team to carefully remove the existing tiles, replace the deteriorated underlayment, and reinstall the original tiles — saving 40-60% compared to a full roof replacement." },
+      { question: "What are the signs of underlayment failure on a tile roof?", answer: "Common signs include water stains on interior ceilings, musty odors in the attic, tiles shifting or lifting, and visible cracking or brittleness when underlayment is inspected during a professional roof evaluation." },
+      { question: "How much does underlayment replacement cost in Las Vegas?", answer: "Costs vary based on roof size and complexity, but typically range from $7,000 to $22,000 for a standard Las Vegas home. Contact us for a free inspection and detailed estimate." },
+      { question: "Does homeowners insurance cover underlayment replacement?", answer: "If the underlayment failure was caused or accelerated by a covered event such as storm damage, your insurance may cover part of the cost. Our team can assist with insurance claim documentation." },
+    ],
   },
   {
     slug: "does-homeowners-insurance-cover-roof-replacement-nevada",
@@ -162,6 +181,12 @@ If your roof has been damaged and you're unsure about your insurance coverage, [
 
 [Schedule Your Free Inspection →](/contact)
     `,
+    faqs: [
+      { question: "Does insurance cover roof replacement due to normal wear and tear in Nevada?", answer: "No. Homeowners insurance in Nevada does not cover roof replacement caused by normal aging, wear and tear, or lack of maintenance. Coverage applies to sudden, unexpected events like storms, hail, or fire." },
+      { question: "What is the difference between ACV and RCV roof insurance policies?", answer: "Replacement Cost Value (RCV) pays the full cost of a new roof minus your deductible. Actual Cash Value (ACV) factors in depreciation based on your roof's age, meaning you may only receive a portion of the replacement cost." },
+      { question: "How do I file a roof insurance claim in Las Vegas?", answer: "Document all visible damage with photos, file a claim with your insurance company promptly, and schedule a professional roof inspection. Our team provides free inspections and helps coordinate with adjusters to support your claim." },
+      { question: "Can a roofing company help with my insurance claim?", answer: "Yes. Zenith Roofing Solutions provides insurance claim assistance including detailed damage documentation, adjuster coordination, and full project management once the claim is approved." },
+    ],
   },
   {
     slug: "how-long-do-tile-roofs-last-las-vegas",
@@ -247,6 +272,12 @@ Don't wait for a leak to discover underlayment problems. [Contact us today](/con
 
 [Request Your Free Inspection →](/contact)
     `,
+    faqs: [
+      { question: "How long do concrete tile roofs last in Las Vegas?", answer: "Concrete tiles are rated to last 40 to 50 years, but the underlayment beneath them typically fails after 20 to 25 years in the Las Vegas climate due to extreme heat exposure." },
+      { question: "Do tile roofs need maintenance in the desert?", answer: "Yes. Regular inspections every 2-3 years, prompt repair of cracked tiles, and proper attic ventilation help extend the life of your tile roofing system in Southern Nevada." },
+      { question: "What causes tile roofs to fail in Las Vegas?", answer: "The most common cause of tile roof failure in Las Vegas is underlayment deterioration from extreme heat, not the tiles themselves. Monsoon storms, poor ventilation, and installation quality also affect lifespan." },
+      { question: "Is it better to replace or repair a tile roof?", answer: "If the tiles are in good condition but the underlayment has failed, a tile lift and relay is more cost-effective. If tiles are extensively cracked or the roof deck is damaged, a full replacement may be the better investment." },
+    ],
   },
   {
     slug: "what-causes-wind-damage-roof-shingles-las-vegas",
@@ -342,6 +373,12 @@ If your roof has been exposed to high winds, [contact us today](/contact) for a 
 
 [Request Your Free Inspection →](/contact)
     `,
+    faqs: [
+      { question: "What wind speed causes roof damage in Las Vegas?", answer: "Shingle damage can begin at sustained winds of 45-60 mph, which are common during Las Vegas monsoon season. Severe microbursts can exceed 80 mph and cause significant shingle loss and tile displacement." },
+      { question: "How can I tell if my roof has wind damage?", answer: "Look for missing or displaced shingles, lifted shingle edges, damaged ridge caps, debris on the roof, and granules in your gutters. Interior signs include new water stains on ceilings after storms." },
+      { question: "Does insurance cover wind damage to roofs in Nevada?", answer: "Yes, wind damage is generally covered under standard homeowners insurance policies in Nevada as a covered peril. Document the damage promptly and file your claim within the required timeframe." },
+      { question: "What should I do immediately after a wind storm damages my roof?", answer: "Document all visible damage with photos, prevent further damage with emergency tarping if needed, contact your insurance company, and schedule a professional roof inspection." },
+    ],
   },
   {
     slug: "tile-lift-relay-vs-full-roof-replacement",
@@ -442,6 +479,12 @@ Not sure which option is right for your home? [Contact us](/contact) for a free 
 
 [Request Your Free Inspection →](/contact)
     `,
+    faqs: [
+      { question: "Is a tile lift and relay cheaper than a full roof replacement?", answer: "Yes, a tile lift and relay typically costs 40-60% less than a full roof replacement because you're reusing the existing tiles, which are often the most expensive component." },
+      { question: "How long does a tile lift and relay take?", answer: "Most tile lift and relay projects on standard Las Vegas homes are completed within 3-5 days, depending on roof size and complexity." },
+      { question: "Can all tile roofs be lifted and relayed?", answer: "Not always. If more than 30% of tiles are cracked or broken, or if the roof deck has structural damage, a full replacement may be more appropriate. A professional inspection determines the best option." },
+      { question: "How long does the new underlayment last after a tile lift and relay?", answer: "Modern synthetic underlayments installed during a tile lift and relay are rated to last 30+ years in the Las Vegas climate, significantly longer than the original felt underlayment." },
+    ],
   },
   {
     slug: "how-to-spot-roof-damage-after-wind-storm",
@@ -545,6 +588,12 @@ After a wind event, don't guess — know. [Contact us today](/contact) for a com
 
 [Request Your Free Inspection →](/contact)
     `,
+    faqs: [
+      { question: "What does wind damage look like on a roof?", answer: "Wind damage may appear as missing shingles, lifted or curled edges, damaged ridge caps, displaced flashing, or debris impact marks. Inside, look for new water stains on ceilings or wet spots in the attic." },
+      { question: "Should I get a roof inspection after every storm in Las Vegas?", answer: "Yes, we recommend a professional inspection after any significant wind event or monsoon storm. Many types of damage are not visible from the ground and can worsen quickly if left unaddressed." },
+      { question: "How soon after a storm should I file an insurance claim?", answer: "File your claim as soon as possible. Most insurance policies require timely reporting — typically within 30-60 days. Prompt documentation and a professional inspection report strengthen your claim." },
+      { question: "Can I inspect my own roof for storm damage?", answer: "You can check for visible signs from the ground, but never climb on a damaged roof. A professional inspection examines the entire surface, including hidden damage, and provides documentation for insurance purposes." },
+    ],
   },
   {
     slug: "how-often-schedule-roof-inspection-las-vegas",
@@ -643,6 +692,12 @@ Don't wait for a leak to find out your roof needs attention. [Contact us today](
 
 [Request Your Free Inspection →](/contact)
     `,
+    faqs: [
+      { question: "How often should I get a roof inspection in Las Vegas?", answer: "Every 2-3 years for newer roofs, annually for roofs over 15 years old, and after every major storm. The extreme Las Vegas climate accelerates wear on roofing materials." },
+      { question: "Are roof inspections free in Las Vegas?", answer: "Zenith Roofing Solutions provides complimentary roof inspections for homeowners throughout the Las Vegas Valley, with no pressure and no obligations — just honest evaluations." },
+      { question: "What does a professional roof inspection include?", answer: "A thorough inspection covers shingles or tiles, flashing, ridge caps, gutters, vents, attic condition, ventilation, and the roof deck. You'll receive detailed photo documentation and a written report." },
+      { question: "Can a roof inspection help with my insurance claim?", answer: "Yes. Professional inspection documentation with photos and detailed reports strengthens insurance claims by clearly demonstrating the extent of damage caused by covered events." },
+    ],
   },
   {
     slug: "most-common-roofing-problems-southern-nevada",
@@ -740,6 +795,11 @@ If you're experiencing any of these common roofing issues — or simply want pea
 
 [Request Your Free Inspection →](/contact)
     `,
+    faqs: [
+      { question: "What is the most common roofing problem in Las Vegas?", answer: "Underlayment deterioration is the most common issue we see across Southern Nevada. The extreme heat causes traditional felt underlayment to dry out and crack, often failing after 20-25 years." },
+      { question: "How do I know if my roof has problems?", answer: "Common signs include water stains on ceilings, missing or cracked tiles, granules in gutters, musty odors in the attic, and visible sagging. Regular professional inspections catch problems early." },
+      { question: "Does the Las Vegas climate damage roofs faster?", answer: "Yes. Extreme UV exposure, temperatures exceeding 110°F, thermal cycling, and intense monsoon storms all accelerate roofing material deterioration compared to milder climates." },
+    ],
   },
   {
     slug: "how-much-does-roof-replacement-cost-las-vegas",
@@ -844,6 +904,12 @@ Ready to learn what your roof replacement will cost? [Contact us today](/contact
 
 [Request Your Free Estimate →](/contact)
     `,
+    faqs: [
+      { question: "How much does roof replacement cost in Las Vegas in 2026?", answer: "Costs range from $8,000-$14,000 for standard shingles to $15,000-$35,000 for tile roofs, depending on roof size, materials, and complexity. Tile lift and relay options cost $8,000-$15,000." },
+      { question: "What roofing material is best for the Las Vegas climate?", answer: "Concrete and clay tiles offer excellent durability and fire resistance for Las Vegas. Premium high-wind rated shingles are also a strong choice. We recommend materials specifically rated for extreme heat and UV." },
+      { question: "How long does a roof replacement take in Las Vegas?", answer: "Most residential roof replacements are completed within 2-5 days, depending on the size and complexity of the roof. Tile roofs may take slightly longer than shingle roofs." },
+      { question: "Can I finance a new roof in Las Vegas?", answer: "Many homeowners explore financing options for roof replacement. Additionally, if your roof was damaged by a covered event, your homeowners insurance may cover part or all of the replacement cost." },
+    ],
   },
   {
     slug: "what-causes-roof-leaks-las-vegas",
@@ -933,6 +999,12 @@ If you've noticed signs of a roof leak, don't wait — water damage only gets wo
 
 [Request Your Free Inspection →](/contact)
     `,
+    faqs: [
+      { question: "What causes most roof leaks in Las Vegas?", answer: "Deteriorated underlayment is the #1 cause. The extreme heat causes traditional felt underlayment to dry out and crack over time, allowing water to penetrate during rainstorms even when tiles look fine." },
+      { question: "Can a roof leak be repaired without replacing the whole roof?", answer: "Yes, many leaks can be fixed with targeted repairs such as replacing damaged flashing, cracked tiles, or resealing penetration points. A professional inspection determines the best approach." },
+      { question: "How quickly should I address a roof leak?", answer: "Immediately. Water damage gets worse over time, leading to mold growth, structural damage, and more expensive repairs. Contact a professional as soon as you notice signs of a leak." },
+      { question: "Does insurance cover roof leak repairs in Las Vegas?", answer: "If the leak was caused by a covered event like a storm, your insurance likely covers repairs. Leaks from wear and tear or neglect are typically not covered." },
+    ],
   },
   {
     slug: "tile-roof-underlayment-replacement-cost-las-vegas",
@@ -1058,5 +1130,11 @@ Ready to learn what your underlayment replacement will cost? [Contact us today](
 
 [Request Your Free Estimate →](/contact)
     `,
+    faqs: [
+      { question: "How much does tile roof underlayment replacement cost in Las Vegas?", answer: "Costs typically range from $7,000-$22,000 depending on roof size, tile type, and complexity. This includes tile removal, new synthetic underlayment, flashing replacement, and tile reinstallation." },
+      { question: "Is underlayment replacement worth it or should I get a new roof?", answer: "If your tiles are in good condition, underlayment replacement (tile lift and relay) saves 40-60% compared to a full replacement and extends your roof's life by 25-30+ years." },
+      { question: "How long does tile underlayment replacement take?", answer: "Most projects are completed in 3-5 days for a standard Las Vegas home. Larger or more complex roofs may take slightly longer." },
+      { question: "What type of underlayment is best for Las Vegas tile roofs?", answer: "Premium synthetic underlayments rated for extreme heat and UV exposure are recommended for Las Vegas. They last 30+ years compared to 15-20 years for traditional felt products." },
+    ],
   },
 ];
