@@ -2,8 +2,14 @@ import { useParams, Link, Navigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import AnimatedSection from "@/components/AnimatedSection";
 import CTASection from "@/components/home/CTASection";
-import { blogPosts } from "@/data/blogPosts";
-import { Calendar, ArrowLeft, ArrowRight } from "lucide-react";
+import { blogPosts, blogAuthor } from "@/data/blogPosts";
+import { Calendar, ArrowLeft, ArrowRight, User } from "lucide-react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -37,7 +43,6 @@ const BlogPost = () => {
     };
 
     const processInlineLinks = (text: string): string => {
-      // Convert [text](url) to <a> tags
       return text.replace(
         /\[([^\]]+)\]\(([^)]+)\)/g,
         '<a href="$2" class="text-gold hover:text-gold-light underline underline-offset-2 transition-colors">$1</a>'
@@ -65,7 +70,6 @@ const BlogPost = () => {
       flushList();
 
       if (line.startsWith("# ")) {
-        // Skip H1, already rendered in header
         continue;
       } else if (line.startsWith("### ")) {
         elements.push(
@@ -91,7 +95,6 @@ const BlogPost = () => {
           );
         }
       } else if (line.match(/^\d+\./)) {
-        // Numbered list item
         listItems.push(line.replace(/^\d+\.\s*/, ""));
       } else {
         elements.push(
@@ -142,6 +145,18 @@ const BlogPost = () => {
               {post.title}
             </h1>
 
+            {/* Author byline */}
+            <div className="flex items-center gap-3 mb-8">
+              <div className="w-10 h-10 rounded-full bg-gold/10 border border-gold/20 flex items-center justify-center">
+                <User className="w-5 h-5 text-gold" />
+              </div>
+              <div>
+                <p className="text-sm font-body font-semibold text-foreground">
+                  Written by {blogAuthor.name}, {blogAuthor.title}
+                </p>
+              </div>
+            </div>
+
             <div className="gold-line mb-10" />
           </AnimatedSection>
 
@@ -149,6 +164,55 @@ const BlogPost = () => {
             <article className="prose-luxury">
               {renderContent(post.content)}
             </article>
+          </AnimatedSection>
+
+          {/* FAQ Section */}
+          {post.faqs && post.faqs.length > 0 && (
+            <AnimatedSection delay={0.15} className="mt-16">
+              <div className="gold-line mb-10" />
+              <h2 className="font-display text-2xl lg:text-3xl font-semibold mb-8">
+                Frequently Asked Questions
+              </h2>
+              <Accordion type="single" collapsible className="space-y-3">
+                {post.faqs.map((faq, i) => (
+                  <AccordionItem
+                    key={i}
+                    value={`faq-${i}`}
+                    className="card-luxury border border-white/5 rounded-lg px-6 hover:border-gold/20 transition-colors"
+                  >
+                    <AccordionTrigger className="font-body font-semibold text-left text-foreground hover:no-underline py-5 text-sm lg:text-base">
+                      {faq.question}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground font-body leading-relaxed pb-5">
+                      {faq.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </AnimatedSection>
+          )}
+
+          {/* Author Bio */}
+          <AnimatedSection delay={0.2} className="mt-16">
+            <div className="gold-line mb-10" />
+            <div className="card-luxury p-6 lg:p-8 border border-white/5">
+              <div className="flex items-start gap-4">
+                <div className="w-14 h-14 rounded-full bg-gold/10 border border-gold/20 flex items-center justify-center shrink-0">
+                  <User className="w-7 h-7 text-gold" />
+                </div>
+                <div>
+                  <p className="font-display font-bold text-lg text-foreground mb-1">
+                    About {blogAuthor.name}
+                  </p>
+                  <p className="text-xs font-body font-semibold uppercase tracking-wider text-gold/70 mb-3">
+                    {blogAuthor.title}
+                  </p>
+                  <p className="text-sm text-muted-foreground font-body leading-relaxed">
+                    {blogAuthor.bio}
+                  </p>
+                </div>
+              </div>
+            </div>
           </AnimatedSection>
 
           {/* Related Articles */}
@@ -192,7 +256,11 @@ const BlogPost = () => {
             headline: post.title,
             description: post.excerpt,
             datePublished: post.date,
-            author: { "@type": "Organization", name: "Zenith Roofing Solutions" },
+            author: {
+              "@type": "Person",
+              name: `${blogAuthor.name}`,
+              jobTitle: blogAuthor.title,
+            },
             publisher: {
               "@type": "Organization",
               name: "Zenith Roofing Solutions",
@@ -205,6 +273,27 @@ const BlogPost = () => {
           }),
         }}
       />
+
+      {/* FAQ Schema */}
+      {post.faqs && post.faqs.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: post.faqs.map((faq) => ({
+                "@type": "Question",
+                name: faq.question,
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: faq.answer,
+                },
+              })),
+            }),
+          }}
+        />
+      )}
     </>
   );
 };
