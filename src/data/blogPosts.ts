@@ -1,3 +1,8 @@
+export interface BlogPostFAQ {
+  question: string;
+  answer: string;
+}
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -6,7 +11,14 @@ export interface BlogPost {
   date: string;
   image: string;
   content: string;
+  faqs: BlogPostFAQ[];
 }
+
+export const blogAuthor = {
+  name: "Collin",
+  title: "Owner of Zenith Roofing Solutions",
+  bio: "Collin is the owner of Zenith Roofing Solutions, a Las Vegas-based roofing company serving homeowners and property managers across Southern Nevada. With over 35 years of combined team experience behind the company, Zenith specializes in residential roofing, tile roof systems, roof replacements, roof repairs, and insurance claim assistance. Collin and the Zenith team are committed to honest guidance, quality workmanship, and dependable roofing solutions built to last.",
+};
 
 export const blogPosts: BlogPost[] = [
   {
