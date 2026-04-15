@@ -3,6 +3,19 @@ import { useState } from "react";
 import { Phone, Mail, MapPin, Send } from "lucide-react";
 import { z } from "zod";
 
+declare global {
+  interface Window {
+    grecaptcha: {
+      ready: (cb: () => void) => void;
+      execute: (siteKey: string, options: { action: string }) => Promise<string>;
+    };
+    gtag?: (...args: unknown[]) => void;
+  }
+}
+
+const RECAPTCHA_SITE_KEY = "6LdkWqgqAAAAAH2xJ4kNZwm3hs0N7IvsBgIqhtBr";
+const ACCULYNX_ENDPOINT = "https://leads.acculynx.com/api/leads/submit-new-lead?formID=71ea1e9a-8cc1-44bc-b7ab-cea5078cfa51";
+
 const contactSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100),
   phone: z.string().trim().min(1, "Phone is required").max(20),
@@ -18,9 +31,13 @@ const Contact = () => {
   const [form, setForm] = useState<FormData>({ name: "", phone: "", email: "", address: "", roofType: "", message: "" });
   const [errors, setErrors] = useState<Partial<Record<keyof FormData, string>>>({});
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setSubmitError(null);
+
     const result = contactSchema.safeParse(form);
     if (!result.success) {
       const fieldErrors: typeof errors = {};
@@ -31,7 +48,54 @@ const Contact = () => {
       return;
     }
     setErrors({});
-    setSubmitted(true);
+    setSubmitting(true);
+
+    try {
+      // Split full name into first/last
+      const nameParts = form.name.trim().split(/\s+/);
+      const firstName = nameParts[0] || "";
+      const lastName = nameParts.slice(1).join(" ") || firstName;
+
+      // Get reCAPTCHA token
+      const token = await new Promise<string>((resolve, reject) => {
+        window.grecaptcha.ready(() => {
+          window.grecaptcha
+            .execute(RECAPTCHA_SITE_KEY, { action: "submit" })
+            .then(resolve)
+            .catch(reject);
+        });
+      });
+
+      // Build FormData with AccuLynx field names
+      const leadData = new window.FormData();
+      leadData.append("FirstName", firstName);
+      leadData.append("LastName", lastName);
+      leadData.append("Email", form.email);
+      leadData.append("Phone", form.phone);
+      leadData.append("Message", form.message || "");
+      leadData.append("RecaptchaToken", token);
+
+      await fetch(ACCULYNX_ENDPOINT, {
+        method: "post",
+        mode: "no-cors",
+        body: leadData,
+      });
+
+      // Fire GA4 conversion event
+      if (window.gtag) {
+        window.gtag("event", "contact_form_submit", {
+          event_category: "lead",
+          event_label: "contact_page",
+        });
+      }
+
+      setSubmitted(true);
+    } catch (error) {
+      console.error("WebLeadForm Submit Error:", error);
+      setSubmitError("Something went wrong. Please call us at 702-884-6320 or try again.");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const inputClass = "w-full bg-secondary border border-border/50 rounded-md px-4 py-3 text-sm font-body text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-gold/50 focus:ring-1 focus:ring-gold/30 transition-colors";
@@ -89,13 +153,19 @@ const Contact = () => {
                 <div className="w-16 h-16 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-6">
                   <Send className="w-7 h-7 text-gold" />
                 </div>
-                <h3 className="font-display text-2xl font-semibold mb-3">Message Received</h3>
-                <p className="text-muted-foreground font-body">Thank you for reaching out. We'll be in touch within 24 hours.</p>
+                <h3 className="font-display text-2xl font-semibold mb-3">Your Message Was Sent!</h3>
+                <p className="text-muted-foreground font-body">Thank you — we'll be in touch soon.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="card-luxury p-8 lg:p-10 space-y-5">
                 <h3 className="font-display text-xl font-semibold mb-2">Request a Free Inspection</h3>
                 <div className="gold-line mb-4" />
+
+                {submitError && (
+                  <div className="bg-destructive/10 border border-destructive/30 rounded-md px-4 py-3 text-sm font-body text-destructive">
+                    {submitError}
+                  </div>
+                )}
 
                 <div>
                   <input type="text" placeholder="Full Name *" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} className={inputClass} />
@@ -120,9 +190,9 @@ const Contact = () => {
                   <option value="other">Other / Not Sure</option>
                 </select>
                 <textarea placeholder="Message (optional)" rows={4} value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} className={inputClass + " resize-none"} />
-                <button type="submit" className="btn-gold w-full">
-                  Submit Request
-                  <Send className="w-4 h-4" />
+                <button type="submit" className="btn-gold w-full" disabled={submitting}>
+                  {submitting ? "Submitting…" : "Submit Request"}
+                  {!submitting && <Send className="w-4 h-4" />}
                 </button>
               </form>
             )}
