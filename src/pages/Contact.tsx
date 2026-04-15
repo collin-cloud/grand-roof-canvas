@@ -54,7 +54,39 @@ const Contact = () => {
       // Split full name into first/last
       const nameParts = form.name.trim().split(/\s+/);
       const firstName = nameParts[0] || "";
-      const lastName = nameParts.slice(1).join(" ") || firstName;
+      const lastName = nameParts.slice(1).join(" ") || "-";
+
+      // Strip non-digit characters from phone
+      const cleanPhone = form.phone.replace(/\D/g, "");
+
+      // Parse property address into Street, City, State, Zip
+      let street = "";
+      let city = "";
+      let state = "";
+      let zip = "";
+      const rawAddress = (form.address || "").trim();
+      if (rawAddress) {
+        const parts = rawAddress.split(",").map((p) => p.trim());
+        if (parts.length === 4) {
+          street = parts[0];
+          city = parts[1];
+          state = parts[2];
+          zip = parts[3];
+        } else if (parts.length === 3) {
+          street = parts[0];
+          city = parts[1];
+          const stateZip = parts[2].trim().split(/\s+/);
+          state = stateZip[0] || "";
+          zip = stateZip.slice(1).join(" ") || "";
+        } else {
+          street = rawAddress;
+        }
+      }
+
+      // Build safety-net Message
+      const roofLabel = form.roofType || "Not specified";
+      const userMsg = form.message?.trim() || "No message provided";
+      const fullMessage = `Property Address: ${rawAddress || "Not provided"}\nRoof Type: ${roofLabel}\n---\n${userMsg}`;
 
       // Get reCAPTCHA token
       const token = await new Promise<string>((resolve, reject) => {
@@ -71,8 +103,12 @@ const Contact = () => {
       leadData.append("FirstName", firstName);
       leadData.append("LastName", lastName);
       leadData.append("Email", form.email);
-      leadData.append("Phone", form.phone);
-      leadData.append("Message", form.message || "");
+      leadData.append("Phone", cleanPhone);
+      leadData.append("Street", street);
+      leadData.append("City", city);
+      leadData.append("State", state);
+      leadData.append("Zip", zip);
+      leadData.append("Message", fullMessage);
       leadData.append("RecaptchaToken", token);
 
       await fetch(ACCULYNX_ENDPOINT, {
