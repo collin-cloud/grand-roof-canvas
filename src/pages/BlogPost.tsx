@@ -258,8 +258,8 @@ const BlogPost = () => {
             datePublished: post.date,
             author: {
               "@type": "Person",
-              name: `${blogAuthor.name}`,
-              jobTitle: blogAuthor.title,
+              name: "Collin Martinez",
+              jobTitle: "Owner",
             },
             publisher: {
               "@type": "Organization",

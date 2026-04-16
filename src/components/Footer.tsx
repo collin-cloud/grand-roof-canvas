@@ -13,8 +13,17 @@ const Footer = () => {
             <p className="text-sm text-muted-foreground leading-relaxed mb-3">
               Driven by Integrity. Defined by Service.
             </p>
-            <p className="text-sm text-muted-foreground leading-relaxed">
-              Premium roofing solutions for Southern Nevada homeowners and property managers.
+            <address className="not-italic text-sm text-muted-foreground leading-relaxed mb-3">
+              62 E Serene Ave Unit 302<br />
+              Las Vegas, NV 89123
+            </address>
+            <a href="tel:7028846320" className="block text-sm text-muted-foreground hover:text-foreground transition-colors mb-3">
+              702-884-6320
+            </a>
+            <p className="text-xs text-muted-foreground/80 leading-relaxed border-t border-gold/10 pt-3">
+              Licensed, Bonded &amp; Insured in Nevada<br />
+              <span className="text-gold/80">NV License #0092744</span><br />
+              Serving the Las Vegas Valley
             </p>
           </div>
 
