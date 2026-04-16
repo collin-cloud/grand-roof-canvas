@@ -1,5 +1,6 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Navbar from "@/components/Navbar";
@@ -33,11 +34,43 @@ const serviceLocationRoutes = [
   { urlSlug: "tile-roof-underlayment-replacement-las-vegas", configIndex: 6 },
 ];
 
+/** Track SPA route changes + phone clicks in GA4 */
+const AnalyticsTracker = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (window.gtag) {
+      window.gtag("event", "page_view", {
+        page_path: location.pathname + location.search,
+        page_title: document.title,
+      });
+    }
+  }, [location]);
+
+  // Global phone-click tracking
+  useEffect(() => {
+    const handler = (e: MouseEvent) => {
+      const anchor = (e.target as HTMLElement).closest?.('a[href^="tel:"]');
+      if (anchor && window.gtag) {
+        window.gtag("event", "phone_click", {
+          event_category: "engagement",
+          link_url: (anchor as HTMLAnchorElement).href,
+        });
+      }
+    };
+    document.addEventListener("click", handler);
+    return () => document.removeEventListener("click", handler);
+  }, []);
+
+  return null;
+};
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Sonner />
       <BrowserRouter>
+        <AnalyticsTracker />
         <ScrollToTop />
         <Navbar />
         <main>
