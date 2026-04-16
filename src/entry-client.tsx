@@ -14,9 +14,15 @@ const tree = (
   </HelmetProvider>
 );
 
-// If pre-rendered HTML is present, hydrate; otherwise mount fresh.
-if (container.hasChildNodes()) {
+// Hydrate only if real pre-rendered DOM exists (production build).
+// In dev, #root contains only the unprocessed `<!--app-html-->` comment, so mount fresh.
+const hasPrerenderedContent = Array.from(container.childNodes).some(
+  (node) => node.nodeType === Node.ELEMENT_NODE
+);
+
+if (hasPrerenderedContent) {
   hydrateRoot(container, tree);
 } else {
+  container.innerHTML = "";
   createRoot(container).render(tree);
 }
