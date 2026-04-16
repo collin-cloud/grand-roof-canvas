@@ -1,6 +1,8 @@
 import { renderToString } from "react-dom/server";
 import { StaticRouter } from "react-router-dom/server";
 import { HelmetProvider } from "react-helmet-async";
+import App from "./App";
+import "./index.css";
 
 interface HelmetTag {
   toString(): string;
@@ -13,8 +15,6 @@ interface HelmetData {
   htmlAttributes: HelmetTag;
   bodyAttributes: HelmetTag;
 }
-import App from "./App";
-import "./index.css";
 
 export interface RenderResult {
   html: string;
@@ -29,11 +29,12 @@ export interface RenderResult {
 }
 
 export function render(url: string): RenderResult {
-  // Helmet's typed context is awkward to import across versions; cast to any locally.
   const helmetContext: { helmet?: HelmetData } = {};
 
   const html = renderToString(
-    <HelmetProvider context={helmetContext}>
+    // Helmet's exported context type varies between versions; cast for compatibility.
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    <HelmetProvider context={helmetContext as any}>
       <StaticRouter location={url}>
         <App />
       </StaticRouter>
