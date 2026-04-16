@@ -197,6 +197,13 @@ const ServicePage = () => {
 
   return (
     <>
+      <Helmet>
+        <title>{service.metaTitle}</title>
+        <meta name="description" content={service.metaDesc} />
+        <meta property="og:title" content={service.metaTitle} />
+        <meta property="og:description" content={service.metaDesc} />
+        <link rel="canonical" href={`https://zenithroofingsolutions.com/services/${slug}`} />
+      </Helmet>
       <section className="pt-32 pb-24 lg:pt-40 lg:pb-32 bg-background">
         <div className="container mx-auto px-6 lg:px-8 max-w-4xl">
           <AnimatedSection>
