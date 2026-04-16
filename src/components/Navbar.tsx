@@ -73,13 +73,22 @@ const Navbar = () => {
             </a>
           </div>
 
-          <button
-            onClick={() => setMobileOpen(!mobileOpen)}
-            className="lg:hidden text-foreground p-2"
-            aria-label="Toggle menu"
-          >
-            {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+          <div className="lg:hidden flex items-center gap-1">
+            <a
+              href="tel:7028846320"
+              className="text-gold hover:text-gold-light transition-colors p-2.5 flex items-center justify-center min-w-[44px] min-h-[44px]"
+              aria-label="Call 702-884-6320"
+            >
+              <Phone className="w-5 h-5" fill="currentColor" strokeWidth={1.5} />
+            </a>
+            <button
+              onClick={() => setMobileOpen(!mobileOpen)}
+              className="text-foreground p-2"
+              aria-label="Toggle menu"
+            >
+              {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
         </div>
       </motion.nav>
 
