@@ -1,5 +1,5 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -34,12 +34,12 @@ const serviceLocationRoutes = [
   { urlSlug: "tile-roof-underlayment-replacement-las-vegas", configIndex: 6 },
 ];
 
-/** Track SPA route changes + phone clicks in GA4 */
+/** Track SPA route changes + phone clicks in GA4 (client-only, safe under SSR) */
 const AnalyticsTracker = () => {
   const location = useLocation();
 
   useEffect(() => {
-    if (window.gtag) {
+    if (typeof window !== "undefined" && window.gtag) {
       window.gtag("event", "page_view", {
         page_path: location.pathname + location.search,
         page_title: document.title,
@@ -49,6 +49,7 @@ const AnalyticsTracker = () => {
 
   // Global phone-click tracking
   useEffect(() => {
+    if (typeof window === "undefined") return;
     const handler = (e: MouseEvent) => {
       const anchor = (e.target as HTMLElement).closest?.('a[href^="tel:"]');
       if (anchor && window.gtag) {
@@ -69,53 +70,51 @@ const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Sonner />
-      <BrowserRouter>
-        <AnalyticsTracker />
-        <ScrollToTop />
-        <Navbar />
-        <main>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/services/:slug" element={<ServicePage />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/process" element={<Process />} />
-            <Route path="/reviews" element={<Reviews />} />
-            <Route path="/faq" element={<FAQ />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/roofing-resources" element={<BlogIndex />} />
-            <Route path="/roofing-resources/:slug" element={<BlogPost />} />
+      <AnalyticsTracker />
+      <ScrollToTop />
+      <Navbar />
+      <main>
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/services/:slug" element={<ServicePage />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/process" element={<Process />} />
+          <Route path="/reviews" element={<Reviews />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/roofing-resources" element={<BlogIndex />} />
+          <Route path="/roofing-resources/:slug" element={<BlogPost />} />
 
-            {/* Location pages */}
-            <Route path="/roofing-contractor-las-vegas" element={<LocationPage city="Las Vegas" slug="las-vegas" />} />
-            <Route path="/roofing-contractor-henderson" element={<LocationPage city="Henderson" slug="henderson" />} />
-            <Route path="/roofing-contractor-summerlin" element={<LocationPage city="Summerlin" slug="summerlin" />} />
-            <Route path="/roofing-contractor-north-las-vegas" element={<LocationPage city="North Las Vegas" slug="north-las-vegas" />} />
-            <Route path="/roofing-contractor-spring-valley" element={<LocationPage city="Spring Valley" slug="spring-valley" />} />
-            <Route path="/roofing-contractor-green-valley" element={<LocationPage city="Green Valley" slug="green-valley" />} />
-            <Route path="/roofing-contractor-enterprise" element={<LocationPage city="Enterprise" slug="enterprise" />} />
+          {/* Location pages */}
+          <Route path="/roofing-contractor-las-vegas" element={<LocationPage city="Las Vegas" slug="las-vegas" />} />
+          <Route path="/roofing-contractor-henderson" element={<LocationPage city="Henderson" slug="henderson" />} />
+          <Route path="/roofing-contractor-summerlin" element={<LocationPage city="Summerlin" slug="summerlin" />} />
+          <Route path="/roofing-contractor-north-las-vegas" element={<LocationPage city="North Las Vegas" slug="north-las-vegas" />} />
+          <Route path="/roofing-contractor-spring-valley" element={<LocationPage city="Spring Valley" slug="spring-valley" />} />
+          <Route path="/roofing-contractor-green-valley" element={<LocationPage city="Green Valley" slug="green-valley" />} />
+          <Route path="/roofing-contractor-enterprise" element={<LocationPage city="Enterprise" slug="enterprise" />} />
 
-            {/* Service + Location pages */}
-            {serviceLocationRoutes.map((route) => (
-              <Route
-                key={route.urlSlug}
-                path={`/${route.urlSlug}`}
-                element={<ServiceLocationPage config={serviceLocationPages[route.configIndex]} />}
-              />
-            ))}
+          {/* Service + Location pages */}
+          {serviceLocationRoutes.map((route) => (
+            <Route
+              key={route.urlSlug}
+              path={`/${route.urlSlug}`}
+              element={<ServiceLocationPage config={serviceLocationPages[route.configIndex]} />}
+            />
+          ))}
 
-            {/* Legacy location pages */}
-            <Route path="/roofing-company-las-vegas" element={<LocalSEOPage city="Las Vegas" slug="las-vegas" />} />
-            <Route path="/roofing-company-henderson" element={<LocalSEOPage city="Henderson" slug="henderson" />} />
-            <Route path="/roofing-company-summerlin" element={<LocalSEOPage city="Summerlin" slug="summerlin" />} />
-            <Route path="/roofing-company-north-las-vegas" element={<LocalSEOPage city="North Las Vegas" slug="north-las-vegas" />} />
-            <Route path="/roofing-company-spring-valley" element={<LocalSEOPage city="Spring Valley" slug="spring-valley" />} />
-            <Route path="/roofing-company-enterprise" element={<LocalSEOPage city="Enterprise" slug="enterprise" />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </main>
-        <Footer />
-      </BrowserRouter>
+          {/* Legacy location pages */}
+          <Route path="/roofing-company-las-vegas" element={<LocalSEOPage city="Las Vegas" slug="las-vegas" />} />
+          <Route path="/roofing-company-henderson" element={<LocalSEOPage city="Henderson" slug="henderson" />} />
+          <Route path="/roofing-company-summerlin" element={<LocalSEOPage city="Summerlin" slug="summerlin" />} />
+          <Route path="/roofing-company-north-las-vegas" element={<LocalSEOPage city="North Las Vegas" slug="north-las-vegas" />} />
+          <Route path="/roofing-company-spring-valley" element={<LocalSEOPage city="Spring Valley" slug="spring-valley" />} />
+          <Route path="/roofing-company-enterprise" element={<LocalSEOPage city="Enterprise" slug="enterprise" />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </main>
+      <Footer />
     </TooltipProvider>
   </QueryClientProvider>
 );
