@@ -13,18 +13,20 @@
       gtag('js', new Date());
       gtag('config', 'G-GW1HJ9PB15', { send_page_view: false });
     </script>
+    <!-- Default fallback meta — overridden per route by Helmet at build time -->
     <title>Zenith Roofing Solutions | Premium Roofing in Southern Nevada</title>
     <meta name="description" content="Zenith Roofing Solutions provides premium roofing services across Southern Nevada. Over 35 years of combined experience. Call 702-884-6320." />
     <meta name="author" content="Zenith Roofing Solutions" />
     <link rel="canonical" href="https://zenithroofingsolutions.com" />
 
-    <meta property="og:title" content="Zenith Roofing Solutions | Premium Roofing Southern Nevada" />
-    <meta property="og:description" content="Premium roofing solutions across Southern Nevada. Driven by Integrity. Defined by Service. Call 702-884-6320." />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <!-- Per-route meta tags injected here by the prerender script -->
+    <!--app-head-->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,7 +56,7 @@
   </head>
 
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <div id="root"><!--app-html--></div>
+    <script type="module" src="/src/entry-client.tsx"></script>
   </body>
 </html>

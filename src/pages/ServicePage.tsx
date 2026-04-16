@@ -1,4 +1,5 @@
 import { useParams, Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import AnimatedSection from "@/components/AnimatedSection";
 import CTASection from "@/components/home/CTASection";
 import { ArrowRight, Layers, Grid3X3, Wrench, Search, Shield, RotateCw, Hammer, CloudLightning, Wind, Sun } from "lucide-react";
@@ -196,6 +197,13 @@ const ServicePage = () => {
 
   return (
     <>
+      <Helmet>
+        <title>{service.metaTitle}</title>
+        <meta name="description" content={service.metaDesc} />
+        <meta property="og:title" content={service.metaTitle} />
+        <meta property="og:description" content={service.metaDesc} />
+        <link rel="canonical" href={`https://zenithroofingsolutions.com/services/${slug}`} />
+      </Helmet>
       <section className="pt-32 pb-24 lg:pt-40 lg:pb-32 bg-background">
         <div className="container mx-auto px-6 lg:px-8 max-w-4xl">
           <AnimatedSection>
