@@ -9,6 +9,8 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
+import { parse } from "node-html-parser";
+import TurndownService from "turndown";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -96,7 +98,47 @@ const { render } = (await import(pathToFileURL(ssrEntry).href)) as {
   };
 };
 
-// --- 3. Render every route --------------------------------------------------
+// --- 3. Markdown converter setup -------------------------------------------
+const turndown = new TurndownService({
+  headingStyle: "atx",
+  codeBlockStyle: "fenced",
+  bulletListMarker: "-",
+});
+// Strip SVG icons + interactive UI noise from markdown output.
+turndown.remove(["svg", "script", "style", "button", "form", "input", "textarea", "select"]);
+
+/**
+ * Strip site chrome (nav, footer, floating phone, CTA section) and convert the
+ * remaining <main> content to markdown for the .md mirror of each page.
+ */
+function htmlToMarkdown(rawHtml: string): string {
+  const root = parse(`<div>${rawHtml}</div>`);
+
+  // Remove navigation, footer, floating CTA buttons, and the homepage CTA section.
+  root.querySelectorAll("nav, footer").forEach((el) => el.remove());
+  // Floating mobile call button (anchor with tel: href and "Call" aria-label).
+  root.querySelectorAll('a[aria-label*="Call"]').forEach((el) => el.remove());
+  // The reusable CTASection component renders an h2 containing "Schedule" / "Free Inspection";
+  // remove the last <section> as a heuristic since CTASection is always appended last.
+  const main = root.querySelector("main");
+  if (main) {
+    const sections = main.querySelectorAll("section");
+    if (sections.length > 1) {
+      const last = sections[sections.length - 1];
+      const txt = last.text.toLowerCase();
+      if (txt.includes("free inspection") || txt.includes("schedule") || txt.includes("ready to")) {
+        last.remove();
+      }
+    }
+  }
+
+  const target = main ?? root;
+  const md = turndown.turndown(target.innerHTML);
+  // Collapse 3+ blank lines to 2 for cleanliness.
+  return md.replace(/\n{3,}/g, "\n\n").trim() + "\n";
+}
+
+// --- 4. Render every route --------------------------------------------------
 let success = 0;
 const failures: { route: string; error: string }[] = [];
 
@@ -115,18 +157,28 @@ for (const route of allRoutes) {
     const outDir = route === "/" ? distDir : path.join(distDir, route);
     fs.mkdirSync(outDir, { recursive: true });
     fs.writeFileSync(path.join(outDir, "index.html"), finalHtml);
+
+    // Companion .md mirror at <route>.md (e.g. /about.md, /services/roof-replacement.md)
+    const md = htmlToMarkdown(html);
+    const mdPath =
+      route === "/"
+        ? path.join(distDir, "index.md")
+        : path.join(distDir, `${route.replace(/^\//, "")}.md`);
+    fs.mkdirSync(path.dirname(mdPath), { recursive: true });
+    fs.writeFileSync(mdPath, md);
+
     success++;
   } catch (err) {
     failures.push({ route, error: err instanceof Error ? err.message : String(err) });
   }
 }
 
-console.log(`[prerender] ✓ Rendered ${success}/${allRoutes.length} routes`);
+console.log(`[prerender] ✓ Rendered ${success}/${allRoutes.length} routes (HTML + .md)`);
 if (failures.length) {
   console.error(`[prerender] ✗ ${failures.length} failures:`);
   for (const f of failures) console.error(`  ${f.route}: ${f.error}`);
   process.exit(1);
 }
 
-// --- 4. Cleanup SSR bundle (not needed in production) ----------------------
+// --- 5. Cleanup SSR bundle (not needed in production) ----------------------
 fs.rmSync(ssrDir, { recursive: true, force: true });
