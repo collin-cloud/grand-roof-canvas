@@ -1,6 +1,18 @@
 import { renderToString } from "react-dom/server";
 import { StaticRouter } from "react-router-dom/server";
-import { HelmetProvider, type FilledContext } from "react-helmet-async";
+import { HelmetProvider } from "react-helmet-async";
+
+interface HelmetTag {
+  toString(): string;
+}
+interface HelmetData {
+  title: HelmetTag;
+  meta: HelmetTag;
+  link: HelmetTag;
+  script: HelmetTag;
+  htmlAttributes: HelmetTag;
+  bodyAttributes: HelmetTag;
+}
 import App from "./App";
 import "./index.css";
 
@@ -17,7 +29,7 @@ export interface RenderResult {
 }
 
 export function render(url: string): RenderResult {
-  const helmetContext: Partial<FilledContext> = {};
+  const helmetContext: { helmet?: HelmetData } = {};
 
   const html = renderToString(
     <HelmetProvider context={helmetContext}>
@@ -27,7 +39,7 @@ export function render(url: string): RenderResult {
     </HelmetProvider>
   );
 
-  const { helmet } = helmetContext as FilledContext;
+  const helmet = helmetContext.helmet!;
 
   return {
     html,
