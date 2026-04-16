@@ -29,6 +29,7 @@ export interface RenderResult {
 }
 
 export function render(url: string): RenderResult {
+  // Helmet's typed context is awkward to import across versions; cast to any locally.
   const helmetContext: { helmet?: HelmetData } = {};
 
   const html = renderToString(
