@@ -18,4 +18,8 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  ssr: {
+    // Bundle these for the SSR build so dynamic imports resolve cleanly.
+    noExternal: ["framer-motion", "react-helmet-async"],
+  },
 }));
