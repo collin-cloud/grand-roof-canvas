@@ -230,6 +230,9 @@ const Contact = () => {
                   {submitting ? "Submitting…" : "Submit Request"}
                   {!submitting && <Send className="w-4 h-4" />}
                 </button>
+                <p className="text-[11px] leading-relaxed text-muted-foreground/70 text-left mt-3">
+                  By submitting this form, you consent to being contacted by Zenith Roofing Solutions via phone, email, or text regarding your inquiry. Standard message and data rates may apply.
+                </p>
               </form>
             )}
           </AnimatedSection>
