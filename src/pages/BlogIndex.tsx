@@ -6,6 +6,10 @@ import { blogPosts } from "@/data/blogPosts";
 import { Calendar, ArrowRight } from "lucide-react";
 
 const BlogIndex = () => {
+  const sortedPosts = [...blogPosts].sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
+
   return (
     <>
       <Helmet>
@@ -32,7 +36,7 @@ const BlogIndex = () => {
           </AnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {blogPosts.map((post, i) => (
+            {sortedPosts.map((post, i) => (
               <AnimatedSection key={post.slug} delay={i * 0.06}>
                 <Link
                   to={`/roofing-resources/${post.slug}`}
