@@ -37,7 +37,7 @@ const About = () => {
           </div>
 
           {/* Meet the Founder */}
-          <AnimatedSection className="mt-24 lg:mt-32">
+          <AnimatedSection className="mt-16 lg:mt-20">
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               <AnimatedSection direction="left">
                 <div className="relative">
