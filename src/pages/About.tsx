@@ -35,6 +35,52 @@ const About = () => {
             </AnimatedSection>
           </div>
 
+          {/* Meet the Founder */}
+          <AnimatedSection className="mt-24 lg:mt-32">
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+              <AnimatedSection direction="left">
+                <div className="relative">
+                  <div className="w-full h-[500px] lg:h-[600px] bg-muted/30 border border-gold/20 rounded-lg flex items-center justify-center">
+                    <div className="text-center">
+                      <div className="h-px w-12 bg-gold/40 mx-auto mb-4" />
+                      <p className="font-body text-sm uppercase tracking-[0.3em] text-muted-foreground">Photo Coming Soon</p>
+                      <div className="h-px w-12 bg-gold/40 mx-auto mt-4" />
+                    </div>
+                  </div>
+                  <div className="absolute -top-3 -left-3 w-12 h-12 border-t-2 border-l-2 border-gold/40 rounded-tl-lg" />
+                  <div className="absolute -bottom-3 -right-3 w-12 h-12 border-b-2 border-r-2 border-gold/40 rounded-br-lg" />
+                </div>
+              </AnimatedSection>
+
+              <AnimatedSection direction="right">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="h-px w-8 bg-gold/50" />
+                  <span className="text-xs font-body font-semibold uppercase tracking-[0.3em] text-gold">Meet the Founder</span>
+                </div>
+                <h2 className="font-display text-4xl lg:text-5xl font-bold mb-3">
+                  Meet <span className="gold-gradient-text">Collin Martinez</span>
+                </h2>
+                <p className="font-body text-base text-muted-foreground italic mb-8">
+                  Founder, Zenith Roofing Solutions
+                </p>
+                <div className="space-y-5 text-muted-foreground font-body leading-relaxed">
+                  <p>
+                    Before Collin Martinez ever set foot on a rooftop, he spent years in two industries that demand one thing above all else: an exceptional client experience.
+                  </p>
+                  <p>
+                    Collin's career began in Las Vegas hospitality, where he learned firsthand what it takes to deliver premium, detail-oriented service. That foundation carried him into luxury real estate at Huntington & Ellis, where he earned the designation of Luxury Agent, closed over 100 transactions, and was recognized four consecutive years as a Top 20 Real Estate Agent by Deluxe Version Magazine (2019–2022). His portfolio included multi-million dollar homes in Summerlin and MacDonald Highlands — including setting the record for highest price per square foot in Canyon Fairways history.
+                  </p>
+                  <p>
+                    That experience gave Collin something most roofing contractors don't have: a deep understanding of what a home represents. He's sat across the table from homeowners making the biggest financial decision of their lives. He knows what's at stake when it comes to protecting that investment — and he saw firsthand how often the roofing industry falls short on communication, transparency, and follow-through.
+                  </p>
+                  <p>
+                    Collin founded Zenith Roofing Solutions in 2024 to bring a different standard to residential roofing in Southern Nevada. Zenith operates with a fully paperless, streamlined process, clear communication at every step, and a team of experienced professionals who treat every project like their own home is on the line. From roof replacements to insurance claim support, Zenith delivers the kind of service Collin built his entire career around — because your roof isn't just shingles and underlayment. It's the first line of defense for everything that matters to you.
+                  </p>
+                </div>
+              </AnimatedSection>
+            </div>
+          </AnimatedSection>
+
           {/* Story content */}
           <AnimatedSection className="mt-20 max-w-3xl mx-auto">
             <div className="space-y-8 text-muted-foreground font-body leading-relaxed text-lg">
