@@ -18,14 +18,49 @@ const services = [
   { title: "Storm Damage Response", slug: "storm-damage-response", icon: CloudLightning, desc: "Rapid response for weather-related damage" },
 ];
 
+const seoBySlug: Record<string, { title: string; description: string }> = {
+  "las-vegas": {
+    title: "Roofing Contractor Las Vegas NV | Zenith Roofing Solutions",
+    description: "Trusted roofing contractor serving Las Vegas, NV. Roof replacement, repairs, inspections, and insurance claims. 4.7 stars on Google. Call 702-884-6320.",
+  },
+  "henderson": {
+    title: "Roofing Contractor Henderson NV | Zenith Roofing Solutions",
+    description: "Professional roofing services in Henderson, NV. Roof replacement, tile work, inspections, and insurance claim assistance. Call 702-884-6320.",
+  },
+  "summerlin": {
+    title: "Roofing Contractor Summerlin NV | Zenith Roofing Solutions",
+    description: "Expert roofing services in Summerlin, NV. Specializing in roof replacement, repairs, and inspections for Southern Nevada homes. Call 702-884-6320.",
+  },
+  "north-las-vegas": {
+    title: "Roofing Contractor North Las Vegas NV | Zenith Roofing Solutions",
+    description: "Reliable roofing contractor in North Las Vegas, NV. Quality roof replacement, repairs, and ongoing maintenance. Call 702-884-6320.",
+  },
+  "spring-valley": {
+    title: "Roofing Contractor Spring Valley NV | Zenith Roofing Solutions",
+    description: "Roofing services in Spring Valley, NV. Professional roof replacement, repairs, inspections, and insurance support. Call 702-884-6320.",
+  },
+  "green-valley": {
+    title: "Roofing Contractor Green Valley NV | Zenith Roofing Solutions",
+    description: "Trusted roofing contractor in Green Valley, NV. Quality roof replacement, tile work, and certified inspections. Call 702-884-6320.",
+  },
+  "enterprise": {
+    title: "Roofing Contractor Enterprise NV | Zenith Roofing Solutions",
+    description: "Professional roofing services in Enterprise, NV. Roof replacement, repairs, and full insurance claim assistance. Call 702-884-6320.",
+  },
+};
+
 const LocationPage = ({ city, slug }: Props) => {
+  const seo = seoBySlug[slug] ?? {
+    title: `Roofing Contractor in ${city}, NV | Zenith Roofing Solutions`,
+    description: `Zenith Roofing Solutions is ${city}'s trusted roofing contractor. We provide roof replacement, repair, tile services, inspections, and insurance claim support throughout ${city} and Southern Nevada. Call 702-884-6320.`,
+  };
   return (
     <>
       <Helmet>
-        <title>Roofing Contractor in {city}, NV | Zenith Roofing Solutions</title>
-        <meta name="description" content={`Zenith Roofing Solutions is ${city}'s trusted roofing contractor. We provide roof replacement, repair, tile services, inspections, and insurance claim support throughout ${city} and Southern Nevada. Call 702-884-6320.`} />
-        <meta property="og:title" content={`Roofing Contractor in ${city} | Zenith Roofing Solutions`} />
-        <meta property="og:description" content={`Professional roofing services in ${city}, Nevada. Roof replacement, repairs, inspections, and insurance claim support.`} />
+        <title>{seo.title}</title>
+        <meta name="description" content={seo.description} />
+        <meta property="og:title" content={seo.title} />
+        <meta property="og:description" content={seo.description} />
         <link rel="canonical" href={`https://zenithroofingsolutions.com/roofing-contractor-${slug}`} />
       </Helmet>
 
