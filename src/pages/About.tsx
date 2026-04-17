@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import AnimatedSection from "@/components/AnimatedSection";
 import CTASection from "@/components/home/CTASection";
 import aboutImage from "@/assets/about-roof.jpg";
@@ -6,6 +7,13 @@ import founderImage from "@/assets/founder-collin.jpg";
 const About = () => {
   return (
     <>
+      <Helmet>
+        <title>About Zenith Roofing Solutions | Meet Founder Collin Martinez</title>
+        <meta name="description" content="Meet the team behind Zenith Roofing Solutions. Founded by Collin Martinez, bringing premium service standards from luxury real estate to Las Vegas roofing." />
+        <meta property="og:title" content="About Zenith Roofing Solutions | Meet Founder Collin Martinez" />
+        <meta property="og:description" content="Meet the team behind Zenith Roofing Solutions. Founded by Collin Martinez, bringing premium service standards from luxury real estate to Las Vegas roofing." />
+        <link rel="canonical" href="https://zenithroofingsolutions.com/about" />
+      </Helmet>
       <section className="pt-32 pb-24 lg:pt-40 lg:pb-32 bg-background">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">

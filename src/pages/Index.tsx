@@ -15,9 +15,9 @@ const Index = () => {
     <>
       <Helmet>
         <title>Zenith Roofing Solutions | Las Vegas Roofing Contractor</title>
-        <meta name="description" content="Zenith Roofing Solutions provides roof replacement, roof repair, tile roof services, and insurance claim support for homeowners throughout the Las Vegas Valley. Call 702-884-6320." />
+        <meta name="description" content="Las Vegas roofing contractor with 35+ years combined experience. Roof replacement, repairs, tile work & insurance claims. Call 702-884-6320 for a free inspection." />
         <meta property="og:title" content="Zenith Roofing Solutions | Las Vegas Roofing Contractor" />
-        <meta property="og:description" content="Premium roofing solutions for homeowners across Southern Nevada. Roof replacement, repairs, inspections, and insurance claim support." />
+        <meta property="og:description" content="Las Vegas roofing contractor with 35+ years combined experience. Roof replacement, repairs, tile work & insurance claims. Call 702-884-6320 for a free inspection." />
         <link rel="canonical" href="https://zenithroofingsolutions.com" />
       </Helmet>
 

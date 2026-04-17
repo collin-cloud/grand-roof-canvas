@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import AnimatedSection from "@/components/AnimatedSection";
 import { Phone, ClipboardCheck, HardHat, ThumbsUp, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -33,6 +34,13 @@ const steps = [
 const Process = () => {
   return (
     <>
+      <Helmet>
+        <title>Our Roofing Process | Zenith Roofing Solutions</title>
+        <meta name="description" content="See how Zenith Roofing Solutions handles your project from start to finish. Fully paperless process, clear communication, and experienced oversight at every step." />
+        <meta property="og:title" content="Our Roofing Process | Zenith Roofing Solutions" />
+        <meta property="og:description" content="See how Zenith Roofing Solutions handles your project from start to finish. Fully paperless process, clear communication, and experienced oversight at every step." />
+        <link rel="canonical" href="https://zenithroofingsolutions.com/process" />
+      </Helmet>
       <section className="pt-32 pb-24 lg:pt-40 lg:pb-32 bg-background">
         <div className="container mx-auto px-6 lg:px-8">
           <AnimatedSection className="max-w-3xl mb-20">

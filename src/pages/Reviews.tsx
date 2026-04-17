@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import AnimatedSection from "@/components/AnimatedSection";
 import { Star } from "lucide-react";
 import CTASection from "@/components/home/CTASection";
@@ -16,6 +17,13 @@ const reviews = [
 const Reviews = () => {
   return (
     <>
+      <Helmet>
+        <title>Customer Reviews | Zenith Roofing Solutions Las Vegas</title>
+        <meta name="description" content="Read what Las Vegas homeowners say about Zenith Roofing Solutions. 4.7 stars on Google. Real results, real testimonials from Southern Nevada homeowners." />
+        <meta property="og:title" content="Customer Reviews | Zenith Roofing Solutions Las Vegas" />
+        <meta property="og:description" content="Read what Las Vegas homeowners say about Zenith Roofing Solutions. 4.7 stars on Google. Real results, real testimonials from Southern Nevada homeowners." />
+        <link rel="canonical" href="https://zenithroofingsolutions.com/reviews" />
+      </Helmet>
       <section className="pt-32 pb-24 lg:pt-40 lg:pb-32 bg-background">
         <div className="container mx-auto px-6 lg:px-8">
           <AnimatedSection className="max-w-3xl mb-20">
