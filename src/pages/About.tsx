@@ -1,6 +1,7 @@
 import AnimatedSection from "@/components/AnimatedSection";
 import CTASection from "@/components/home/CTASection";
 import aboutImage from "@/assets/about-roof.jpg";
+import founderImage from "@/assets/founder-collin.jpg";
 
 const About = () => {
   return (
