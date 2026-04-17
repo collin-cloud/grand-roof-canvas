@@ -41,12 +41,13 @@ const About = () => {
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               <AnimatedSection direction="left">
                 <div className="relative">
-                  <div className="w-full h-[500px] lg:h-[600px] bg-muted/30 border border-gold/20 rounded-lg flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="h-px w-12 bg-gold/40 mx-auto mb-4" />
-                      <p className="font-body text-sm uppercase tracking-[0.3em] text-muted-foreground">Photo Coming Soon</p>
-                      <div className="h-px w-12 bg-gold/40 mx-auto mt-4" />
-                    </div>
+                  <div className="w-full h-[500px] lg:h-[600px] overflow-hidden rounded-lg border border-gold/20">
+                    <img
+                      src={founderImage}
+                      alt="Collin Martinez, Founder of Zenith Roofing Solutions, on a Southern Nevada job site"
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
                   </div>
                   <div className="absolute -top-3 -left-3 w-12 h-12 border-t-2 border-l-2 border-gold/40 rounded-tl-lg" />
                   <div className="absolute -bottom-3 -right-3 w-12 h-12 border-b-2 border-r-2 border-gold/40 rounded-br-lg" />
