@@ -6,7 +6,9 @@ import { blogPosts } from "@/data/blogPosts";
 import { Calendar, ArrowRight } from "lucide-react";
 
 const BlogIndex = () => {
-  return (
+  const sortedPosts = [...blogPosts].sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
     <>
       <Helmet>
         <title>Roofing Resources & Blog | Zenith Roofing Solutions</title>
