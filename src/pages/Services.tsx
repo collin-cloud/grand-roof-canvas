@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import AnimatedSection from "@/components/AnimatedSection";
 import { Link } from "react-router-dom";
 import { ArrowRight, Layers, Grid3X3, Wrench, Search, Shield, RotateCw, Hammer, CloudLightning, Wind, Sun } from "lucide-react";
@@ -72,6 +73,13 @@ const services = [
 const Services = () => {
   return (
     <>
+      <Helmet>
+        <title>Roofing Services in Las Vegas | Zenith Roofing Solutions</title>
+        <meta name="description" content="Full-service roofing in Las Vegas: roof replacement, repairs, tile lift & relay, inspections, insurance claims, and more. Free inspections. Call 702-884-6320." />
+        <meta property="og:title" content="Roofing Services in Las Vegas | Zenith Roofing Solutions" />
+        <meta property="og:description" content="Full-service roofing in Las Vegas: roof replacement, repairs, tile lift & relay, inspections, insurance claims, and more. Free inspections. Call 702-884-6320." />
+        <link rel="canonical" href="https://zenithroofingsolutions.com/services" />
+      </Helmet>
       <section className="pt-32 pb-24 lg:pt-40 lg:pb-32 bg-background">
         <div className="container mx-auto px-6 lg:px-8">
           <AnimatedSection className="max-w-3xl mb-20">

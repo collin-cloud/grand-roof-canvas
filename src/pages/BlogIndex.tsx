@@ -9,10 +9,10 @@ const BlogIndex = () => {
   return (
     <>
       <Helmet>
-        <title>Roofing Resources | Las Vegas Roofing Tips & Guides | Zenith Roofing Solutions</title>
-        <meta name="description" content="Expert roofing guides, tips, and resources for Las Vegas Valley homeowners. Learn about roof replacement, tile roof maintenance, insurance claims, and storm damage from Zenith Roofing Solutions." />
-        <meta property="og:title" content="Roofing Resources | Zenith Roofing Solutions" />
-        <meta property="og:description" content="Expert roofing guides and tips for Las Vegas Valley homeowners from Zenith Roofing Solutions." />
+        <title>Roofing Resources & Blog | Zenith Roofing Solutions</title>
+        <meta name="description" content="Expert roofing tips, guides, and industry insights for Las Vegas homeowners. Learn about roof maintenance, insurance claims, and more from Zenith Roofing Solutions." />
+        <meta property="og:title" content="Roofing Resources & Blog | Zenith Roofing Solutions" />
+        <meta property="og:description" content="Expert roofing tips, guides, and industry insights for Las Vegas homeowners. Learn about roof maintenance, insurance claims, and more from Zenith Roofing Solutions." />
         <link rel="canonical" href="https://zenithroofingsolutions.com/roofing-resources" />
       </Helmet>
 

@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import AnimatedSection from "@/components/AnimatedSection";
 import { useState } from "react";
 import { Phone, Mail, MapPin, Send } from "lucide-react";
@@ -137,7 +138,15 @@ const Contact = () => {
   const inputClass = "w-full bg-secondary border border-border/50 rounded-md px-4 py-3 text-sm font-body text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-gold/50 focus:ring-1 focus:ring-gold/30 transition-colors";
 
   return (
-    <section className="pt-32 pb-24 lg:pt-40 lg:pb-32 bg-background">
+    <>
+      <Helmet>
+        <title>Contact Zenith Roofing Solutions | Free Roof Inspection Las Vegas</title>
+        <meta name="description" content="Contact Zenith Roofing Solutions for a free roof inspection in Las Vegas. Call 702-884-6320 or fill out our online form. Serving all of Southern Nevada." />
+        <meta property="og:title" content="Contact Zenith Roofing Solutions | Free Roof Inspection Las Vegas" />
+        <meta property="og:description" content="Contact Zenith Roofing Solutions for a free roof inspection in Las Vegas. Call 702-884-6320 or fill out our online form. Serving all of Southern Nevada." />
+        <link rel="canonical" href="https://zenithroofingsolutions.com/contact" />
+      </Helmet>
+      <section className="pt-32 pb-24 lg:pt-40 lg:pb-32 bg-background">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16">
           <AnimatedSection>
@@ -238,7 +247,8 @@ const Contact = () => {
           </AnimatedSection>
         </div>
       </div>
-    </section>
+      </section>
+    </>
   );
 };
 

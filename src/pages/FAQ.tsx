@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import AnimatedSection from "@/components/AnimatedSection";
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
@@ -22,6 +23,13 @@ const FAQ = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Roofing FAQ | Zenith Roofing Solutions Las Vegas</title>
+        <meta name="description" content="Get answers to common roofing questions from Zenith Roofing Solutions. Learn about roof replacement, insurance claims, tile roofs, and more in Las Vegas." />
+        <meta property="og:title" content="Roofing FAQ | Zenith Roofing Solutions Las Vegas" />
+        <meta property="og:description" content="Get answers to common roofing questions from Zenith Roofing Solutions. Learn about roof replacement, insurance claims, tile roofs, and more in Las Vegas." />
+        <link rel="canonical" href="https://zenithroofingsolutions.com/faq" />
+      </Helmet>
       <section className="pt-32 pb-24 lg:pt-40 lg:pb-32 bg-background">
         <div className="container mx-auto px-6 lg:px-8 max-w-3xl">
           <AnimatedSection className="text-center mb-16">
