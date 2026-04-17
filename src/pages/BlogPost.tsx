@@ -11,11 +11,31 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
+const blogSeoBySlug: Record<string, { title: string; description: string }> = {
+  "does-homeowners-insurance-cover-roof-replacement-nevada": {
+    title: "Does Insurance Cover Roof Replacement in Nevada? | Zenith Roofing",
+    description: "Learn whether your homeowners insurance covers roof replacement in Nevada. Expert guidance on filing claims and getting the coverage you deserve.",
+  },
+  "how-long-do-tile-roofs-last-las-vegas": {
+    title: "How Long Do Tile Roofs Last in Las Vegas? | Zenith Roofing",
+    description: "Find out how long tile roofs last in the Las Vegas desert climate and when to consider underlayment replacement. Expert insights from local roofers.",
+  },
+  "signs-tile-roof-needs-underlayment-replacement-las-vegas": {
+    title: "Signs Your Tile Roof Needs Underlayment Replacement | Zenith Roofing",
+    description: "Learn the warning signs that your Las Vegas tile roof's underlayment needs replacement. Catch hidden damage before it becomes a costly repair.",
+  },
+};
+
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
   const post = blogPosts.find((p) => p.slug === slug);
 
   if (!post) return <Navigate to="/roofing-resources" replace />;
+
+  const seo = (slug && blogSeoBySlug[slug]) || {
+    title: `${post.title} | Zenith Roofing Solutions`,
+    description: post.excerpt,
+  };
 
   const otherPosts = blogPosts.filter((p) => p.slug !== slug).slice(0, 3);
 
@@ -113,10 +133,10 @@ const BlogPost = () => {
   return (
     <>
       <Helmet>
-        <title>{post.title} | Zenith Roofing Solutions</title>
-        <meta name="description" content={post.excerpt} />
-        <meta property="og:title" content={`${post.title} | Zenith Roofing Solutions`} />
-        <meta property="og:description" content={post.excerpt} />
+        <title>{seo.title}</title>
+        <meta name="description" content={seo.description} />
+        <meta property="og:title" content={seo.title} />
+        <meta property="og:description" content={seo.description} />
         <link rel="canonical" href={`https://zenithroofingsolutions.com/roofing-resources/${post.slug}`} />
       </Helmet>
 
