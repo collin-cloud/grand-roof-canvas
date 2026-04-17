@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, Instagram, Facebook } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -95,7 +95,36 @@ const Footer = () => {
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
           <p>© {new Date().getFullYear()} Zenith Roofing Solutions. All rights reserved.</p>
-          <div className="flex gap-6">
+          <div className="flex items-center gap-6">
+            <div className="flex items-center gap-3">
+              <a
+                href="https://www.instagram.com/zenithroofingsolutions/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Zenith Roofing Solutions on Instagram"
+                className="w-8 h-8 rounded-full border border-gold/20 flex items-center justify-center text-gold/70 hover:text-gold hover:border-gold/50 transition-colors"
+              >
+                <Instagram className="w-4 h-4" />
+              </a>
+              <a
+                href="https://www.facebook.com/Zenithroofingsolutions/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Zenith Roofing Solutions on Facebook"
+                className="w-8 h-8 rounded-full border border-gold/20 flex items-center justify-center text-gold/70 hover:text-gold hover:border-gold/50 transition-colors"
+              >
+                <Facebook className="w-4 h-4" />
+              </a>
+              <a
+                href="https://www.google.com/search?q=Zenith+Roofing+Solutions+Las+Vegas"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Zenith Roofing Solutions on Google"
+                className="w-8 h-8 rounded-full border border-gold/20 flex items-center justify-center text-gold/70 hover:text-gold hover:border-gold/50 transition-colors text-[11px] font-display font-bold"
+              >
+                G
+              </a>
+            </div>
             <Link to="/faq" className="hover:text-foreground transition-colors">FAQ</Link>
             <Link to="/roofing-resources" className="hover:text-foreground transition-colors">Resources</Link>
             <Link to="/contact" className="hover:text-foreground transition-colors">Contact</Link>
