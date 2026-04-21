@@ -307,6 +307,14 @@ const ServicePage = () => {
           </AnimatedSection>
         </div>
       </section>
+      {slug && galleryBySlug[slug] && (
+        <ProjectGallery
+          eyebrow={galleryBySlug[slug].eyebrow}
+          heading={galleryBySlug[slug].heading}
+          columns={galleryBySlug[slug].columns}
+          photos={galleryBySlug[slug].photos}
+        />
+      )}
       <CTASection />
     </>
   );
