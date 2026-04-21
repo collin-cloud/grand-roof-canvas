@@ -95,7 +95,11 @@ const BlogIndex = () => {
               headline: post.title,
               description: post.excerpt,
               datePublished: post.date,
-              author: { "@type": "Organization", name: "Zenith Roofing Solutions" },
+              author: {
+                "@type": "Person",
+                name: "Collin Martinez",
+                jobTitle: "Founder, Zenith Roofing Solutions",
+              },
             })),
           }),
         }}

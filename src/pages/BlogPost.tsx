@@ -279,7 +279,35 @@ const BlogPost = () => {
             author: {
               "@type": "Person",
               name: "Collin Martinez",
-              jobTitle: "Owner",
+              jobTitle: "Founder, Zenith Roofing Solutions",
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "Zenith Roofing Solutions",
+              url: "https://zenithroofingsolutions.com",
+            },
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": `https://zenithroofingsolutions.com/roofing-resources/${post.slug}`,
+            },
+          }),
+        }}
+      />
+
+      {/* Article schema (in addition to BlogPosting) */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: post.title,
+            description: post.excerpt,
+            datePublished: post.date,
+            author: {
+              "@type": "Person",
+              name: "Collin Martinez",
+              jobTitle: "Founder, Zenith Roofing Solutions",
             },
             publisher: {
               "@type": "Organization",

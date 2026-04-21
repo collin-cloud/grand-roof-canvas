@@ -21,6 +21,59 @@ const Index = () => {
         <meta property="og:description" content="Las Vegas roofing contractor with 35+ years combined experience. Roof replacement, repairs, tile work & insurance claims. Call 702-884-6320 for a free inspection." />
         <link rel="canonical" href="https://zenithroofingsolutions.com" />
         <link rel="preload" as="image" href={heroImage} />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "RoofingContractor",
+            name: "Zenith Roofing Solutions",
+            image: `https://zenithroofingsolutions.com${heroImage}`,
+            url: "https://zenithroofingsolutions.com",
+            telephone: "702-884-6320",
+            address: {
+              "@type": "PostalAddress",
+              addressLocality: "Las Vegas",
+              addressRegion: "NV",
+              addressCountry: "US",
+            },
+            geo: {
+              "@type": "GeoCoordinates",
+              latitude: 36.1699,
+              longitude: -115.1398,
+            },
+            areaServed: [
+              "Las Vegas",
+              "Henderson",
+              "Summerlin",
+              "North Las Vegas",
+              "Spring Valley",
+              "Green Valley",
+              "Enterprise",
+            ],
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: "4.7",
+              reviewCount: "19",
+            },
+            priceRange: "$$",
+            openingHoursSpecification: {
+              "@type": "OpeningHoursSpecification",
+              dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+              opens: "07:00",
+              closes: "18:00",
+            },
+            sameAs: [
+              "https://www.instagram.com/zenithroofingsolutions/",
+              "https://www.facebook.com/Zenithroofingsolutions/",
+            ],
+            founder: {
+              "@type": "Person",
+              name: "Collin Martinez",
+              jobTitle: "Founder",
+            },
+            description:
+              "Las Vegas roofing contractor specializing in roof replacement, repairs, tile work, inspections, and insurance claim assistance. 4.7 stars on Google.",
+          })}
+        </script>
       </Helmet>
 
       <Hero />
