@@ -29,6 +29,10 @@ const Hero = () => {
           alt="Premium roofing on a luxury Southern Nevada home"
           className="w-full h-[120%] object-cover"
           loading="eager"
+          fetchPriority="high"
+          decoding="async"
+          width={1920}
+          height={1080}
         />
       </motion.div>
 
