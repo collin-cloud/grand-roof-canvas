@@ -23,6 +23,9 @@ const WhyChooseUs = () => {
                 alt="Premium roofing craftsmanship on a Southern Nevada home"
                 className="w-full h-[500px] object-cover rounded-lg"
                 loading="lazy"
+                decoding="async"
+                width={1200}
+                height={800}
               />
               <div className="absolute inset-0 rounded-lg border border-gold/10" />
               <div className="absolute -top-3 -left-3 w-12 h-12 border-t-2 border-l-2 border-gold/40 rounded-tl-lg" />
