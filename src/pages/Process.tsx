@@ -1,8 +1,26 @@
 import { Helmet } from "react-helmet-async";
 import AnimatedSection from "@/components/AnimatedSection";
-import { Phone, ClipboardCheck, HardHat, ThumbsUp, ArrowRight } from "lucide-react";
+import { Phone, ClipboardCheck, HardHat, ThumbsUp, ArrowRight, FileCheck2, MessagesSquare, Eye } from "lucide-react";
 import { Link } from "react-router-dom";
 import CTASection from "@/components/home/CTASection";
+
+const whyPoints = [
+  {
+    icon: FileCheck2,
+    title: "100% Paperless",
+    desc: "Every document, contract, and update is digital. No lost paperwork, no delays.",
+  },
+  {
+    icon: MessagesSquare,
+    title: "Clear Communication",
+    desc: "You'll always know exactly where your project stands. No guessing, no chasing.",
+  },
+  {
+    icon: Eye,
+    title: "Experienced Oversight",
+    desc: "Every project is personally overseen from first inspection to final walkthrough.",
+  },
+];
 
 const steps = [
   {
