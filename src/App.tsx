@@ -6,62 +6,75 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Navbar from "@/components/Navbar";
 import ScrollToTop from "@/components/ScrollToTop";
 import Footer from "@/components/Footer";
-
-// Eagerly-imported page modules (used for SSR + as fallback for the client).
-// On the client we re-export them through React.lazy() so each page becomes
-// its own code-split chunk. On the server we use the modules directly so the
-// prerendered HTML contains the real page content (not a Suspense fallback).
-import * as IndexMod from "./pages/Index";
-import * as ServicesMod from "./pages/Services";
-import * as ServicePageMod from "./pages/ServicePage";
-import * as AboutMod from "./pages/About";
-import * as ProcessMod from "./pages/Process";
-import * as ReviewsMod from "./pages/Reviews";
-import * as FAQMod from "./pages/FAQ";
-import * as ContactMod from "./pages/Contact";
-import * as LocalSEOPageMod from "./pages/LocalSEOPage";
-import * as LocationPageMod from "./pages/LocationPage";
-import * as BlogIndexMod from "./pages/BlogIndex";
-import * as BlogPostMod from "./pages/BlogPost";
-import * as ServiceLocationPageMod from "./pages/ServiceLocationPage";
-import * as NotFoundMod from "./pages/NotFound";
 import { serviceLocationPages } from "./pages/ServiceLocationPage";
 
-const isSSR = typeof window === "undefined";
-
 /**
- * Wrap a static module + a dynamic import so that:
- *  - on the server we render the eagerly-imported component (preserves SSR HTML
- *    and SEO — renderToString does not support React.lazy)
- *  - on the client we use React.lazy() with a dynamic import so the page lands
- *    in its own code-split chunk and isn't downloaded until visited.
+ * Route-based code splitting.
+ *
+ *  - On the CLIENT: every page is loaded via React.lazy() so each route lands
+ *    in its own JS chunk and is fetched on demand.
+ *  - On the SERVER (SSR / prerender): renderToString does not support
+ *    React.lazy(), so we synchronously require each page module via Vite's
+ *    `ssrLoadModule`-friendly pattern. The `import.meta.env.SSR` branch is
+ *    removed from the client bundle by Vite, so this does NOT defeat code
+ *    splitting on the client.
  */
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-function pageComponent<T extends ComponentType<any>>(
-  staticMod: { default: T },
+type AnyComp = ComponentType<any>;
+
+function makePage<T extends AnyComp>(
+  // Async import used on the client (becomes its own chunk).
   dynamicImport: () => Promise<{ default: T }>,
+  // Eagerly-loaded server module — only referenced under `import.meta.env.SSR`.
+  ssrModule: { default: T } | undefined,
 ): T {
-  if (isSSR) return staticMod.default;
+  if (import.meta.env.SSR && ssrModule) {
+    return ssrModule.default;
+  }
   return lazy(dynamicImport) as unknown as T;
 }
 
-const Index = pageComponent(IndexMod, () => import("./pages/Index"));
-const Services = pageComponent(ServicesMod, () => import("./pages/Services"));
-const ServicePage = pageComponent(ServicePageMod, () => import("./pages/ServicePage"));
-const About = pageComponent(AboutMod, () => import("./pages/About"));
-const Process = pageComponent(ProcessMod, () => import("./pages/Process"));
-const Reviews = pageComponent(ReviewsMod, () => import("./pages/Reviews"));
-const FAQ = pageComponent(FAQMod, () => import("./pages/FAQ"));
-const Contact = pageComponent(ContactMod, () => import("./pages/Contact"));
-const LocalSEOPage = pageComponent(LocalSEOPageMod, () => import("./pages/LocalSEOPage"));
-const LocationPage = pageComponent(LocationPageMod, () => import("./pages/LocationPage"));
-const BlogIndex = pageComponent(BlogIndexMod, () => import("./pages/BlogIndex"));
-const BlogPost = pageComponent(BlogPostMod, () => import("./pages/BlogPost"));
-const ServiceLocationPage = pageComponent(
-  ServiceLocationPageMod,
+// SSR-only eager imports. Vite tree-shakes this whole block out of the client
+// bundle because it's behind `import.meta.env.SSR`.
+/* eslint-disable @typescript-eslint/no-require-imports, @typescript-eslint/no-explicit-any */
+const ssrPages: Record<string, { default: AnyComp } | undefined> = (() => {
+  if (!import.meta.env.SSR) return {};
+  return {
+    Index: require("./pages/Index"),
+    Services: require("./pages/Services"),
+    ServicePage: require("./pages/ServicePage"),
+    About: require("./pages/About"),
+    Process: require("./pages/Process"),
+    Reviews: require("./pages/Reviews"),
+    FAQ: require("./pages/FAQ"),
+    Contact: require("./pages/Contact"),
+    LocalSEOPage: require("./pages/LocalSEOPage"),
+    LocationPage: require("./pages/LocationPage"),
+    BlogIndex: require("./pages/BlogIndex"),
+    BlogPost: require("./pages/BlogPost"),
+    ServiceLocationPage: require("./pages/ServiceLocationPage"),
+    NotFound: require("./pages/NotFound"),
+  };
+})();
+/* eslint-enable @typescript-eslint/no-require-imports, @typescript-eslint/no-explicit-any */
+
+const Index = makePage(() => import("./pages/Index"), ssrPages.Index);
+const Services = makePage(() => import("./pages/Services"), ssrPages.Services);
+const ServicePage = makePage(() => import("./pages/ServicePage"), ssrPages.ServicePage);
+const About = makePage(() => import("./pages/About"), ssrPages.About);
+const Process = makePage(() => import("./pages/Process"), ssrPages.Process);
+const Reviews = makePage(() => import("./pages/Reviews"), ssrPages.Reviews);
+const FAQ = makePage(() => import("./pages/FAQ"), ssrPages.FAQ);
+const Contact = makePage(() => import("./pages/Contact"), ssrPages.Contact);
+const LocalSEOPage = makePage(() => import("./pages/LocalSEOPage"), ssrPages.LocalSEOPage);
+const LocationPage = makePage(() => import("./pages/LocationPage"), ssrPages.LocationPage);
+const BlogIndex = makePage(() => import("./pages/BlogIndex"), ssrPages.BlogIndex);
+const BlogPost = makePage(() => import("./pages/BlogPost"), ssrPages.BlogPost);
+const ServiceLocationPage = makePage(
   () => import("./pages/ServiceLocationPage"),
+  ssrPages.ServiceLocationPage,
 );
-const NotFound = pageComponent(NotFoundMod, () => import("./pages/NotFound"));
+const NotFound = makePage(() => import("./pages/NotFound"), ssrPages.NotFound);
 
 const queryClient = new QueryClient();
 
