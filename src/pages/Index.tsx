@@ -20,7 +20,7 @@ const Index = () => {
         <meta property="og:title" content="Zenith Roofing Solutions | Las Vegas Roofing Contractor" />
         <meta property="og:description" content="Las Vegas roofing contractor with 35+ years combined experience. Roof replacement, repairs, tile work & insurance claims. Call 702-884-6320 for a free inspection." />
         <link rel="canonical" href="https://zenithroofingsolutions.com" />
-        <link rel="preload" as="image" href={heroImage} fetchpriority="high" />
+        <link rel="preload" as="image" href={heroImage} />
       </Helmet>
 
       <Hero />
