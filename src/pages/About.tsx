@@ -37,6 +37,9 @@ const About = () => {
                   alt="Zenith Roofing Solutions premium craftsmanship on a Southern Nevada home"
                   className="w-full h-[500px] object-cover rounded-lg"
                   loading="lazy"
+                  decoding="async"
+                  width={1200}
+                  height={800}
                 />
                 <div className="absolute -top-3 -left-3 w-12 h-12 border-t-2 border-l-2 border-gold/40 rounded-tl-lg" />
                 <div className="absolute -bottom-3 -right-3 w-12 h-12 border-b-2 border-r-2 border-gold/40 rounded-br-lg" />
@@ -55,6 +58,9 @@ const About = () => {
                       alt="Collin Martinez, Founder of Zenith Roofing Solutions, on a Southern Nevada job site"
                       className="w-full h-full object-cover object-top"
                       loading="lazy"
+                      decoding="async"
+                      width={1200}
+                      height={1500}
                     />
                   </div>
                   <div className="absolute -top-3 -left-3 w-12 h-12 border-t-2 border-l-2 border-gold/40 rounded-tl-lg" />

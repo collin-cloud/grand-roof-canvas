@@ -9,6 +9,7 @@ import ReviewsSection from "@/components/home/ReviewsSection";
 import BlogPreview from "@/components/home/BlogPreview";
 import FAQPreview from "@/components/home/FAQPreview";
 import CTASection from "@/components/home/CTASection";
+import heroImage from "@/assets/hero-roof.jpg";
 
 const Index = () => {
   return (
@@ -19,6 +20,7 @@ const Index = () => {
         <meta property="og:title" content="Zenith Roofing Solutions | Las Vegas Roofing Contractor" />
         <meta property="og:description" content="Las Vegas roofing contractor with 35+ years combined experience. Roof replacement, repairs, tile work & insurance claims. Call 702-884-6320 for a free inspection." />
         <link rel="canonical" href="https://zenithroofingsolutions.com" />
+        <link rel="preload" as="image" href={heroImage} />
       </Helmet>
 
       <Hero />
