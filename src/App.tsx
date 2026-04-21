@@ -26,10 +26,10 @@ function makePage<T extends AnyComp>(
   // Async import used on the client (becomes its own chunk).
   dynamicImport: () => Promise<{ default: T }>,
   // Eagerly-loaded server module — only referenced under `import.meta.env.SSR`.
-  ssrModule: { default: T } | undefined,
+  ssrModule: { default: AnyComp } | undefined,
 ): T {
   if (import.meta.env.SSR && ssrModule) {
-    return ssrModule.default;
+    return ssrModule.default as T;
   }
   return lazy(dynamicImport) as unknown as T;
 }
