@@ -2,7 +2,44 @@ import { useParams, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import AnimatedSection from "@/components/AnimatedSection";
 import CTASection from "@/components/home/CTASection";
+import ProjectGallery, { type ProjectPhoto } from "@/components/ProjectGallery";
 import { ArrowRight, Layers, Grid3X3, Wrench, Search, Shield, RotateCw, Hammer, CloudLightning, Wind, Sun } from "lucide-react";
+
+/**
+ * Per-service project gallery configuration.
+ * Add a new entry here to enable an "Our Work" section on a service page.
+ * Replace the empty `{}` photo slots with `{ src, alt, caption }` as real
+ * project photography becomes available — the page will pick it up automatically.
+ */
+const galleryBySlug: Record<
+  string,
+  { eyebrow?: string; heading?: string; columns?: 2 | 3 | 4; photos: ProjectPhoto[] }
+> = {
+  "roof-replacement": {
+    eyebrow: "Recent Projects",
+    heading: "Our Work",
+    columns: 4,
+    photos: [{}, {}, {}, {}],
+  },
+  "roof-repairs": {
+    eyebrow: "Recent Projects",
+    heading: "Our Work",
+    columns: 4,
+    photos: [{}, {}, {}, {}],
+  },
+  "tile-lift-and-relay": {
+    eyebrow: "Recent Projects",
+    heading: "Our Work",
+    columns: 4,
+    photos: [{}, {}, {}, {}],
+  },
+  "inspections-and-certifications": {
+    eyebrow: "Recent Projects",
+    heading: "Our Work",
+    columns: 3,
+    photos: [{}, {}, {}],
+  },
+};
 
 const serviceData: Record<string, {
   icon: typeof Layers;
@@ -270,6 +307,14 @@ const ServicePage = () => {
           </AnimatedSection>
         </div>
       </section>
+      {slug && galleryBySlug[slug] && (
+        <ProjectGallery
+          eyebrow={galleryBySlug[slug].eyebrow}
+          heading={galleryBySlug[slug].heading}
+          columns={galleryBySlug[slug].columns}
+          photos={galleryBySlug[slug].photos}
+        />
+      )}
       <CTASection />
     </>
   );
