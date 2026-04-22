@@ -1,14 +1,23 @@
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Phone, ArrowRight, CreditCard } from "lucide-react";
+import { Phone, ArrowRight, CreditCard, ShieldCheck } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useRef } from "react";
 import heroImage from "@/assets/hero-roof.jpg";
 
-const trustItems = [
-  "35+ Years Combined Roofing Experience",
-  "Residential & Property Management Solutions",
-  "Insurance Claim Guidance",
-  "Serving the Las Vegas Valley & Southern Nevada",
+const BBB_URL =
+  "https://www.bbb.org/us/nv/las-vegas/profile/roofing-contractors/zenith-roofing-solutions-llc-1086-90092760";
+
+type TrustItem = {
+  label: string;
+  href?: string;
+  icon?: typeof ShieldCheck;
+};
+
+const trustItems: TrustItem[] = [
+  { label: "35+ Years Combined Roofing Experience" },
+  { label: "Residential & Property Management Solutions" },
+  { label: "BBB Accredited — Rated A", href: BBB_URL, icon: ShieldCheck },
+  { label: "Serving the Las Vegas Valley & Southern Nevada" },
 ];
 
 const Hero = () => {
