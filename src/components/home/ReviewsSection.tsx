@@ -103,6 +103,12 @@ const ReviewsSection = () => {
             </motion.div>
           ))}
         </div>
+
+        <AnimatedSection className="text-center mt-12" delay={0.3}>
+          <Link to="/reviews" className="btn-outline-gold">
+            View All Reviews <ArrowRight className="w-4 h-4" />
+          </Link>
+        </AnimatedSection>
       </div>
     </section>
   );
