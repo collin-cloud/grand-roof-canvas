@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin, Instagram, Facebook } from "lucide-react";
+import { Phone, Mail, MapPin, Instagram, Facebook, ShieldCheck } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -25,6 +25,25 @@ const Footer = () => {
               <span className="text-gold/80">NV License #0092744</span><br />
               Serving the Las Vegas Valley
             </p>
+
+            {/* BBB Accredited Badge */}
+            <a
+              href="https://www.bbb.org/us/nv/las-vegas/profile/roofing-contractors/zenith-roofing-solutions-llc-1086-90092760"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Zenith Roofing Solutions — BBB Accredited Business, Rated A. Opens BBB profile in a new tab."
+              className="mt-5 inline-flex items-center gap-3 rounded-md border border-gold/40 bg-charcoal-deep/60 px-4 py-3 hover:border-gold hover:bg-charcoal-deep transition-colors group"
+            >
+              <ShieldCheck className="w-8 h-8 text-gold shrink-0" strokeWidth={1.75} />
+              <span className="flex flex-col leading-tight">
+                <span className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground font-body">
+                  BBB Accredited
+                </span>
+                <span className="font-display text-sm text-foreground">
+                  Rating: <span className="text-gold font-bold text-lg">A</span>
+                </span>
+              </span>
+            </a>
           </div>
 
           {/* Services */}
