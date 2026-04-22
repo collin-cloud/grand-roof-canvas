@@ -210,19 +210,37 @@ const Hero = () => {
       >
         <div className="container mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 divide-x divide-gold/10">
-            {trustItems.map((item, i) => (
-              <motion.div
-                key={item}
-                className="py-5 px-4 text-center"
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 1.6 + i * 0.1 }}
-              >
-                <span className="text-xs sm:text-sm font-body font-medium uppercase tracking-wider text-gold/80">
-                  {item}
+            {trustItems.map((item, i) => {
+              const Icon = item.icon;
+              const content = (
+                <span className="inline-flex items-center justify-center gap-2 text-xs sm:text-sm font-body font-medium uppercase tracking-wider text-gold/80">
+                  {Icon && <Icon className="w-4 h-4 text-gold" />}
+                  {item.label}
                 </span>
-              </motion.div>
-            ))}
+              );
+              return (
+                <motion.div
+                  key={item.label}
+                  className="py-5 px-4 text-center"
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 1.6 + i * 0.1 }}
+                >
+                  {item.href ? (
+                    <a
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-gold transition-colors"
+                    >
+                      {content}
+                    </a>
+                  ) : (
+                    content
+                  )}
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </motion.div>
