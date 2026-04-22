@@ -140,7 +140,7 @@ const Index = () => {
       <BlogPreview />
       <FAQPreview />
       <CTASection />
-    </>
+    </div>
   );
 };
 
