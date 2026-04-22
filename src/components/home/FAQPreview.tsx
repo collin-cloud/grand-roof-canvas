@@ -1,34 +1,11 @@
 import AnimatedSection from "@/components/AnimatedSection";
 import { useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { Link } from "react-router-dom";
+import { ChevronDown, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { faqs as allFaqs } from "@/data/faqData";
 
-const faqs = [
-  {
-    q: "How long does a typical roof replacement take?",
-    a: "Most residential roof replacements are completed in 1–3 days depending on the size and complexity of the project. We'll provide a clear timeline in your proposal.",
-  },
-  {
-    q: "Do you help with insurance claims?",
-    a: "Absolutely. We provide thorough documentation, meet with adjusters, and guide you through the entire insurance claim process from start to finish.",
-  },
-  {
-    q: "What areas do you serve?",
-    a: "We serve homeowners and property managers throughout Southern Nevada, including Las Vegas, Henderson, Summerlin, North Las Vegas, and surrounding communities.",
-  },
-  {
-    q: "Do you offer free inspections?",
-    a: "Yes. We provide complimentary roof inspections with detailed assessments and honest recommendations — no pressure, no obligations.",
-  },
-  {
-    q: "What types of roofing materials do you work with?",
-    a: "We work with shingle, tile, and flat roofing systems. We'll recommend the best materials for your specific needs, budget, and climate conditions.",
-  },
-  {
-    q: "Do you work with property managers?",
-    a: "Yes. We provide roofing services for multi-family properties and work with property managers on maintenance programs, inspections, and full replacement projects.",
-  },
-];
+const faqs = allFaqs.slice(0, 6);
 
 const FAQPreview = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -80,6 +57,12 @@ const FAQPreview = () => {
             </AnimatedSection>
           ))}
         </div>
+
+        <AnimatedSection className="text-center mt-12" delay={0.3}>
+          <Link to="/faq" className="btn-outline-gold">
+            View All FAQ <ArrowRight className="w-4 h-4" />
+          </Link>
+        </AnimatedSection>
       </div>
     </section>
   );
