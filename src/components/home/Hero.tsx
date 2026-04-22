@@ -21,7 +21,7 @@ const Hero = () => {
   const overlayOpacity = useTransform(scrollYProgress, [0, 0.5], [0.6, 0.9]);
 
   return (
-    <section ref={sectionRef} className="relative min-h-screen flex items-center overflow-hidden">
+    <section ref={sectionRef} id="hero-section" className="relative min-h-screen flex items-center overflow-hidden">
       {/* Parallax background */}
       <motion.div className="absolute inset-0" style={{ y: bgY }}>
         <img

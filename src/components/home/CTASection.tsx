@@ -8,7 +8,7 @@ const CTASection = () => {
   const isInView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section ref={ref} className="py-28 lg:py-36 bg-background relative overflow-hidden">
+    <section ref={ref} id="cta-section" className="py-28 lg:py-36 bg-background relative overflow-hidden">
       {/* Layered gradient glow */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,hsl(var(--gold)/0.08)_0%,transparent_60%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_100%,hsl(var(--gold)/0.04)_0%,transparent_40%)]" />

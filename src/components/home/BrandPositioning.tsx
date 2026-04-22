@@ -6,7 +6,7 @@ const BrandPositioning = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section ref={ref} className="py-28 lg:py-36 section-dark relative overflow-hidden">
+    <section ref={ref} id="brand-positioning-section" className="py-28 lg:py-36 section-dark relative overflow-hidden">
       {/* Background texture */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_20%_50%,hsl(var(--gold)/0.03)_0%,transparent_50%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_80%_80%,hsl(var(--gold)/0.02)_0%,transparent_40%)]" />
