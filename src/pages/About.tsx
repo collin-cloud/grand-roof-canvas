@@ -1,6 +1,8 @@
 import { Helmet } from "react-helmet-async";
 import AnimatedSection from "@/components/AnimatedSection";
 import CTASection from "@/components/home/CTASection";
+import { Link } from "react-router-dom";
+import { ArrowLeft } from "lucide-react";
 import aboutImage from "@/assets/about-roof.jpg";
 import founderImage from "@/assets/founder-collin.jpg";
 
@@ -16,6 +18,15 @@ const About = () => {
       </Helmet>
       <section className="pt-32 pb-24 lg:pt-40 lg:pb-32 bg-background">
         <div className="container mx-auto px-6 lg:px-8">
+          <AnimatedSection className="mb-8">
+            <Link
+              to="/"
+              className="inline-flex items-center gap-2 text-sm text-gold font-body font-medium hover:text-gold-light transition-colors"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              Back
+            </Link>
+          </AnimatedSection>
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <AnimatedSection>
               <div className="flex items-center gap-3 mb-4">
