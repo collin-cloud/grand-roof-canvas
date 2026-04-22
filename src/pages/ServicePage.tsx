@@ -17,9 +17,30 @@ const galleryBySlug: Record<
 > = {
   "roof-replacement": {
     eyebrow: "Recent Projects",
-    heading: "Our Work",
+    heading: "Complete Roof Replacements",
     columns: 4,
-    photos: [{}, {}, {}, {}],
+    photos: [
+      {
+        src: "/projects/DJI_0543.jpg",
+        alt: "Full shingle roof replacement completed by Zenith Roofing Solutions in Las Vegas, NV",
+        caption: "Full Shingle Replacement — Las Vegas",
+      },
+      {
+        src: "/projects/DJI_0552.jpg",
+        alt: "Full shingle roof replacement completed by Zenith Roofing Solutions in Las Vegas, NV",
+        caption: "Architectural Shingle Detail",
+      },
+      {
+        src: "/projects/DJI_0572.jpg",
+        alt: "Full shingle roof replacement completed by Zenith Roofing Solutions in Las Vegas, NV",
+        caption: "Full Shingle Replacement — Las Vegas",
+      },
+      {
+        src: "/projects/DJI_0558.jpg",
+        alt: "Full shingle roof replacement completed by Zenith Roofing Solutions in Las Vegas, NV",
+        caption: "Premium Architectural Shingles",
+      },
+    ],
   },
   "roof-repairs": {
     eyebrow: "Recent Projects",
