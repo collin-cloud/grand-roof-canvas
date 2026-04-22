@@ -252,13 +252,14 @@ const ServicePage = () => {
       <section className="pt-32 pb-24 lg:pt-40 lg:pb-32 bg-background">
         <div className="container mx-auto px-6 lg:px-8 max-w-4xl">
           <AnimatedSection>
-            <Link
-              to="/services"
+            <button
+              type="button"
+              onClick={handleBack}
               className="inline-flex items-center gap-2 mb-6 text-sm font-body text-gold hover:text-gold-light transition-colors"
             >
               <span aria-hidden="true">←</span>
-              <span>Back to Services</span>
-            </Link>
+              <span>Back</span>
+            </button>
             <div className="flex items-center gap-3 mb-4">
               <div className="h-px w-8 bg-gold/50" />
               <Link to="/services" className="text-xs font-body font-semibold uppercase tracking-[0.3em] text-gold hover:text-gold-light transition-colors">
