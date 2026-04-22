@@ -1,31 +1,38 @@
 import AnimatedSection from "@/components/AnimatedSection";
 import { MapPin } from "lucide-react";
 
-const projects = [
+interface Project {
+  title: string;
+  location: string;
+  type: string;
+  image?: string;
+  description?: string;
+  alt?: string;
+}
+
+const projects: Project[] = [
   {
-    title: "Tile Lift & Relay",
-    location: "Henderson, NV",
-    type: "Residential",
-  },
-  {
-    title: "Roof Replacement",
-    location: "Summerlin, NV",
-    type: "Residential",
-  },
-  {
-    title: "Roof Repair",
+    title: "Full Shingle Roof Replacement — Las Vegas",
     location: "Las Vegas, NV",
     type: "Residential",
+    image: "/projects/DJI_0543.jpg",
+    description:
+      "Complete tear-off and replacement with architectural shingles. Insurance claim project.",
+    alt: "Full shingle roof replacement completed by Zenith Roofing Solutions in Las Vegas, NV",
+  },
+  {
+    title: "Full Shingle Roof Replacement — Las Vegas",
+    location: "Las Vegas, NV",
+    type: "Residential",
+    image: "/projects/DJI_0572.jpg",
+    description:
+      "Insurance-covered full roof replacement with premium architectural shingles.",
+    alt: "Full shingle roof replacement completed by Zenith Roofing Solutions in Las Vegas, NV",
   },
   {
     title: "Tile Underlayment Replacement",
     location: "Green Valley, NV",
     type: "Property Management",
-  },
-  {
-    title: "Storm Damage Repair",
-    location: "North Las Vegas, NV",
-    type: "Residential",
   },
 ];
 
@@ -53,17 +60,38 @@ const ProjectsSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, i) => (
-            <AnimatedSection key={project.title + project.location} delay={i * 0.08}>
-              <div className="card-luxury p-8 h-full flex flex-col group hover:border-gold/30 transition-all duration-500">
-                <span className="text-xs font-body font-semibold uppercase tracking-wider text-gold/60 mb-3">
-                  {project.type}
-                </span>
-                <h3 className="font-display text-xl font-semibold mb-4 group-hover:text-gold transition-colors duration-300">
-                  {project.title}
-                </h3>
-                <div className="flex items-center gap-2 mt-auto text-sm text-muted-foreground font-body">
-                  <MapPin className="w-4 h-4 text-gold/70" />
-                  {project.location}
+            <AnimatedSection key={project.title + project.location + i} delay={i * 0.08}>
+              <div className="card-luxury h-full flex flex-col group hover:border-gold/30 transition-all duration-500 overflow-hidden">
+                {project.image && (
+                  <div className="relative aspect-[4/3] overflow-hidden bg-charcoal-deep/40">
+                    <img
+                      src={project.image}
+                      alt={project.alt ?? project.title}
+                      loading="lazy"
+                      decoding="async"
+                      width={800}
+                      height={600}
+                      className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 ring-1 ring-inset ring-gold/0 group-hover:ring-gold/30 transition-all duration-500 pointer-events-none" />
+                  </div>
+                )}
+                <div className="p-8 flex flex-col flex-1">
+                  <span className="text-xs font-body font-semibold uppercase tracking-wider text-gold/60 mb-3">
+                    {project.type}
+                  </span>
+                  <h3 className="font-display text-xl font-semibold mb-3 group-hover:text-gold transition-colors duration-300">
+                    {project.title}
+                  </h3>
+                  {project.description && (
+                    <p className="text-sm text-muted-foreground font-body leading-relaxed mb-4">
+                      {project.description}
+                    </p>
+                  )}
+                  <div className="flex items-center gap-2 mt-auto text-sm text-muted-foreground font-body">
+                    <MapPin className="w-4 h-4 text-gold/70" />
+                    {project.location}
+                  </div>
                 </div>
               </div>
             </AnimatedSection>
