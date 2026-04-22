@@ -54,20 +54,6 @@ const galleryBySlug: Record<
     columns: 4,
     photos: [{}, {}, {}, {}],
   },
-  "inspections-and-certifications": {
-    eyebrow: "Recent Projects",
-    heading: "Our Work",
-    columns: 3,
-    photos: [
-      {
-        src: "/projects/DJI_0565.jpg",
-        alt: "Zenith Roofing Solutions team member conducting a thorough roof inspection in Las Vegas, NV",
-        caption: "Roof Inspection — Las Vegas",
-      },
-      {},
-      {},
-    ],
-  },
 };
 
 const serviceData: Record<string, {
@@ -305,8 +291,21 @@ const ServicePage = () => {
           <AnimatedSection>
             <div className="space-y-6 text-muted-foreground font-body leading-relaxed mb-12">
               {service.details.map((para, i) => (
-                <p key={i}>{para}</p>
+                <div key={i}>
+                  {slug === "inspections-and-certifications" && i === 1 && (
+                    <figure className="float-none md:float-right md:ml-8 md:mb-4 md:w-[55%] w-full mb-6">
+                      <img
+                        src="/projects/DJI_0565.jpg"
+                        alt="Zenith Roofing Solutions team member conducting a thorough roof inspection in Las Vegas, NV"
+                        loading="lazy"
+                        className="w-full h-auto rounded-lg shadow-2xl border border-gold/10"
+                      />
+                    </figure>
+                  )}
+                  <p>{para}</p>
+                </div>
               ))}
+              <div className="clear-both" />
             </div>
           </AnimatedSection>
 
