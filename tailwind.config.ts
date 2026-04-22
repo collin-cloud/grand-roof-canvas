@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['"DM Serif Display"', 'Georgia', 'serif'],
+        display: ['"Playfair Display"', 'Georgia', 'serif'],
         body: ['"Inter"', 'system-ui', 'sans-serif'],
       },
       colors: {
