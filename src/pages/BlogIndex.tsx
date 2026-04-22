@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 import AnimatedSection from "@/components/AnimatedSection";
 import CTASection from "@/components/home/CTASection";
 import { blogPosts } from "@/data/blogPosts";
-import { Calendar, ArrowRight } from "lucide-react";
+import { Calendar, ArrowRight, ArrowLeft } from "lucide-react";
 
 const BlogIndex = () => {
   const sortedPosts = [...blogPosts].sort(
@@ -22,6 +22,15 @@ const BlogIndex = () => {
 
       <section className="pt-32 pb-24 lg:pt-40 lg:pb-32 bg-background">
         <div className="container mx-auto px-6 lg:px-8">
+          <AnimatedSection className="mb-8">
+            <Link
+              to="/"
+              className="inline-flex items-center gap-2 text-sm text-gold font-body font-medium hover:text-gold-light transition-colors"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              Back
+            </Link>
+          </AnimatedSection>
           <AnimatedSection className="max-w-3xl mb-20">
             <div className="flex items-center gap-3 mb-4">
               <div className="h-px w-8 bg-gold/50" />
