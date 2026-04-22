@@ -1,5 +1,5 @@
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Phone, ArrowRight } from "lucide-react";
+import { Phone, ArrowRight, CreditCard } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useRef } from "react";
 import heroImage from "@/assets/hero-roof.jpg";
@@ -177,6 +177,16 @@ const Hero = () => {
             <a href="tel:7028846320" className="btn-outline-gold">
               <Phone className="w-4 h-4" />
               Call 702-884-6320
+            </a>
+            <a
+              href="https://app.gethearth.com/partners/zenith-roofing-solutions-llc-llc/collin/apply"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-outline-gold group"
+            >
+              <CreditCard className="w-4 h-4" />
+              Financing Available
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
           </motion.div>
         </div>
