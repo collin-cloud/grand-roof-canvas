@@ -149,6 +149,15 @@ const Contact = () => {
       </Helmet>
       <section className="pt-32 pb-24 lg:pt-40 lg:pb-32 bg-background">
       <div className="container mx-auto px-6 lg:px-8">
+        <AnimatedSection className="mb-8">
+          <Link
+            to="/"
+            className="inline-flex items-center gap-2 text-sm text-gold font-body font-medium hover:text-gold-light transition-colors"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Back
+          </Link>
+        </AnimatedSection>
         <div className="grid lg:grid-cols-2 gap-16">
           <AnimatedSection>
             <div className="flex items-center gap-3 mb-4">
