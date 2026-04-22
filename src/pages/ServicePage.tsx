@@ -211,6 +211,14 @@ const allServices = Object.entries(serviceData).map(([slug, data]) => ({
 
 const ServicePage = () => {
   const { slug } = useParams<{ slug: string }>();
+  const navigate = useNavigate();
+  const handleBack = () => {
+    if (typeof window !== "undefined" && window.history.length > 1) {
+      navigate(-1);
+    } else {
+      navigate("/");
+    }
+  };
   const service = slug ? serviceData[slug] : null;
 
   if (!service) {
