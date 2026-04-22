@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import AnimatedSection from "@/components/AnimatedSection";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ArrowRight, Layers, Grid3X3, Wrench, Search, Shield, RotateCw, Hammer, CloudLightning, Wind, Sun } from "lucide-react";
 import CTASection from "@/components/home/CTASection";
 
