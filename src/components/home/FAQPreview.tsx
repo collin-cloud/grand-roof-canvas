@@ -34,7 +34,7 @@ const FAQPreview = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="py-24 lg:py-32 section-dark">
+    <section id="faq-section" className="py-24 lg:py-32 section-dark">
       <div className="container mx-auto px-6 lg:px-8 max-w-3xl">
         <AnimatedSection className="text-center mb-16">
           <div className="flex items-center justify-center gap-3 mb-4">

@@ -35,7 +35,7 @@ const ReviewsSection = () => {
   const isInView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section ref={ref} className="py-28 lg:py-36 section-dark relative overflow-hidden">
+    <section ref={ref} id="reviews-section" className="py-28 lg:py-36 section-dark relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_70%_50%,hsl(var(--gold)/0.03)_0%,transparent_50%)]" />
 
       <div className="relative container mx-auto px-6 lg:px-8">

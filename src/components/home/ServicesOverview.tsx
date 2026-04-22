@@ -61,7 +61,7 @@ const services = [
 
 const ServicesOverview = () => {
   return (
-    <section className="py-28 lg:py-36 bg-background relative" id="services">
+    <section className="py-28 lg:py-36 bg-background relative" id="services-section">
       <div className="absolute top-0 inset-x-0 h-32 bg-gradient-to-b from-charcoal-deep/50 to-transparent" />
 
       <div className="relative container mx-auto px-6 lg:px-8">

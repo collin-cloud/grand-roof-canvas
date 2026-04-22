@@ -21,7 +21,7 @@ const ServiceAreas = () => {
   const isInView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section ref={ref} className="py-28 lg:py-36 bg-background relative overflow-hidden">
+    <section ref={ref} id="service-areas-section" className="py-28 lg:py-36 bg-background relative overflow-hidden">
       {/* Subtle map-like background pattern */}
       <div className="absolute inset-0 opacity-[0.02]"
         style={{

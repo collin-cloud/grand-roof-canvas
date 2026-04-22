@@ -7,7 +7,7 @@ const BlogPreview = () => {
   const latestPosts = blogPosts.slice(0, 3);
 
   return (
-    <section className="py-28 lg:py-36 bg-background relative">
+    <section id="resources-section" className="py-28 lg:py-36 bg-background relative">
       <div className="absolute top-0 inset-x-0 h-32 bg-gradient-to-b from-charcoal-deep/50 to-transparent" />
 
       <div className="relative container mx-auto px-6 lg:px-8">
