@@ -1,7 +1,8 @@
 import AnimatedSection from "@/components/AnimatedSection";
-import { Star } from "lucide-react";
+import { Star, ArrowRight } from "lucide-react";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 
 const reviews = [
   {
@@ -102,6 +103,12 @@ const ReviewsSection = () => {
             </motion.div>
           ))}
         </div>
+
+        <AnimatedSection className="text-center mt-12" delay={0.3}>
+          <Link to="/reviews" className="btn-outline-gold">
+            View All Reviews <ArrowRight className="w-4 h-4" />
+          </Link>
+        </AnimatedSection>
       </div>
     </section>
   );
