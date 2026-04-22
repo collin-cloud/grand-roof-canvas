@@ -1,7 +1,8 @@
 import AnimatedSection from "@/components/AnimatedSection";
-import { Star } from "lucide-react";
+import { Star, ArrowRight } from "lucide-react";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 
 const reviews = [
   {

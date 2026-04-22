@@ -104,12 +104,8 @@ const ServicesOverview = () => {
         </div>
 
         <AnimatedSection className="text-center mt-14">
-          <Link
-            to="/services"
-            className="inline-flex items-center gap-2 text-sm font-body font-semibold text-gold uppercase tracking-wider hover:text-gold-light transition-colors group"
-          >
-            View All Services
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          <Link to="/services" className="btn-outline-gold">
+            View All Services <ArrowRight className="w-4 h-4" />
           </Link>
         </AnimatedSection>
       </div>
