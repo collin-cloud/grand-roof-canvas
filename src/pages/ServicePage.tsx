@@ -54,20 +54,6 @@ const galleryBySlug: Record<
     columns: 4,
     photos: [{}, {}, {}, {}],
   },
-  "inspections-and-certifications": {
-    eyebrow: "Recent Projects",
-    heading: "Our Work",
-    columns: 3,
-    photos: [
-      {
-        src: "/projects/DJI_0565.jpg",
-        alt: "Zenith Roofing Solutions team member conducting a thorough roof inspection in Las Vegas, NV",
-        caption: "Roof Inspection — Las Vegas",
-      },
-      {},
-      {},
-    ],
-  },
 };
 
 const serviceData: Record<string, {
