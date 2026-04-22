@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import AnimatedSection from "@/components/AnimatedSection";
-import { Link, useNavigate } from "react-router-dom";
-import { ArrowRight, Layers, Grid3X3, Wrench, Search, Shield, RotateCw, Hammer, CloudLightning, Wind, Sun } from "lucide-react";
+import { Link } from "react-router-dom";
+import { ArrowLeft, ArrowRight, Layers, Grid3X3, Wrench, Search, Shield, RotateCw, Hammer, CloudLightning, Wind, Sun } from "lucide-react";
 import CTASection from "@/components/home/CTASection";
 
 const services = [
@@ -71,14 +71,6 @@ const services = [
 ];
 
 const Services = () => {
-  const navigate = useNavigate();
-  const handleBack = () => {
-    if (typeof window !== "undefined" && window.history.length > 1) {
-      navigate(-1);
-    } else {
-      navigate("/");
-    }
-  };
   return (
     <>
       <Helmet>
@@ -91,14 +83,13 @@ const Services = () => {
       <section className="pt-32 pb-24 lg:pt-40 lg:pb-32 bg-background">
         <div className="container mx-auto px-6 lg:px-8">
           <AnimatedSection className="max-w-3xl mb-20">
-            <button
-              type="button"
-              onClick={handleBack}
-              className="inline-flex items-center gap-2 mb-6 text-sm font-body text-gold hover:text-gold-light transition-colors"
+            <Link
+              to="/"
+              className="inline-flex items-center gap-2 text-sm text-gold font-body font-medium mb-8 hover:text-gold-light transition-colors"
             >
-              <span aria-hidden="true">←</span>
-              <span>Back</span>
-            </button>
+              <ArrowLeft className="w-4 h-4" />
+              Back
+            </Link>
             <div className="flex items-center gap-3 mb-4">
               <div className="h-px w-8 bg-gold/50" />
               <span className="text-xs font-body font-semibold uppercase tracking-[0.3em] text-gold">Our Services</span>
