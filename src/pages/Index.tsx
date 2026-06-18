@@ -105,8 +105,8 @@ const Index = () => {
             ],
             aggregateRating: {
               "@type": "AggregateRating",
-              ratingValue: "4.7",
-              reviewCount: "19",
+              ratingValue: "4.8",
+              reviewCount: "21",
             },
             priceRange: "$$",
             openingHoursSpecification: {
@@ -125,7 +125,7 @@ const Index = () => {
               jobTitle: "Founder",
             },
             description:
-              "Las Vegas roofing contractor specializing in roof replacement, repairs, tile work, inspections, and insurance claim assistance. 4.7 stars on Google.",
+            "Las Vegas roofing contractor specializing in roof replacement, repairs, tile work, inspections, and insurance claim assistance. 4.8 stars on Google.",
             additionalProperty: {
               "@type": "PropertyValue",
               name: "BBB Rating",

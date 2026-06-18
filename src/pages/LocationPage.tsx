@@ -21,7 +21,7 @@ const services = [
 const seoBySlug: Record<string, { title: string; description: string }> = {
   "las-vegas": {
     title: "Roofing Contractor Las Vegas NV | Zenith Roofing Solutions",
-    description: "Trusted roofing contractor serving Las Vegas, NV. Roof replacement, repairs, inspections, and insurance claims. 4.7 stars on Google. Call 702-884-6320.",
+    description: "Trusted roofing contractor serving Las Vegas, NV. Roof replacement, repairs, inspections, and insurance claims. 4.8 stars on Google. Call 702-884-6320.",
   },
   "henderson": {
     title: "Roofing Contractor Henderson NV | Zenith Roofing Solutions",
