@@ -67,8 +67,8 @@ const ReviewsSection = () => {
             </div>
             <div className="h-6 w-px bg-border/50" />
             <div className="text-left">
-              <p className="font-display text-lg font-bold leading-tight">4.7</p>
-              <p className="text-xs text-muted-foreground font-body">Based on 19 Google Reviews</p>
+              <p className="font-display text-lg font-bold leading-tight">4.8</p>
+              <p className="text-xs text-muted-foreground font-body">Based on 21 Google Reviews</p>
             </div>
           </div>
         </motion.div>

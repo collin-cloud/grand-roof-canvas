@@ -20,9 +20,9 @@ const Reviews = () => {
     <>
       <Helmet>
         <title>Customer Reviews | Zenith Roofing Solutions Las Vegas</title>
-        <meta name="description" content="Read what Las Vegas homeowners say about Zenith Roofing Solutions. 4.7 stars on Google. Real results, real testimonials from Southern Nevada homeowners." />
+        <meta name="description" content="Read what Las Vegas homeowners say about Zenith Roofing Solutions. 4.8 stars on Google. Real results, real testimonials from Southern Nevada homeowners." />
         <meta property="og:title" content="Customer Reviews | Zenith Roofing Solutions Las Vegas" />
-        <meta property="og:description" content="Read what Las Vegas homeowners say about Zenith Roofing Solutions. 4.7 stars on Google. Real results, real testimonials from Southern Nevada homeowners." />
+        <meta property="og:description" content="Read what Las Vegas homeowners say about Zenith Roofing Solutions. 4.8 stars on Google. Real results, real testimonials from Southern Nevada homeowners." />
         <link rel="canonical" href="https://zenithroofingsolutions.com/reviews" />
       </Helmet>
       <section className="pt-32 pb-24 lg:pt-40 lg:pb-32 bg-background">
