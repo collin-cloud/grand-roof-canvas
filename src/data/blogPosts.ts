@@ -22,6 +22,216 @@ export const blogAuthor = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "how-to-choose-roofing-contractor-las-vegas",
+    title: "How to Choose a Roofing Contractor in Las Vegas",
+    excerpt: "Choosing the right roofing contractor in Las Vegas protects your home and your investment. Learn what to look for, what to avoid, and how to compare bids with confidence.",
+    category: "Roofing Tips",
+    date: "2026-06-22",
+    image: "/placeholder.svg",
+    content: `
+# How to Choose a Roofing Contractor in Las Vegas
+
+Your roof is one of the most important investments you'll ever make in your home — and the contractor you hire matters just as much as the materials they install. In Las Vegas, where 150°F roof temperatures, monsoon storms, and relentless UV exposure punish every shingle and tile, hiring the wrong contractor can cost you tens of thousands of dollars in premature failures, denied insurance claims, and shoddy repairs.
+
+At [Zenith Roofing Solutions](/about), we've spent decades watching homeowners across Las Vegas, Henderson, Summerlin, North Las Vegas, Spring Valley, Enterprise, Green Valley, Paradise, Anthem, and Mountains Edge get burned by out-of-state storm chasers and underqualified crews. This guide walks you through exactly how to vet a roofing contractor — and what red flags to walk away from immediately.
+
+## Verify Licensing and Insurance
+
+In Nevada, any roofing project over $1,000 legally requires a licensed contractor. Specifically, you want a **C-15 Roofing and Siding Contractor license** issued by the **Nevada State Contractors Board (NSCB)**. You can verify any license for free at nscb.nv.gov.
+
+Beyond licensing, your contractor must carry:
+
+- **General liability insurance** — protects your property if something is damaged during the project
+- **Workers' compensation insurance** — protects you from liability if a crew member is injured on your roof
+
+Ask for current certificates of insurance — not just a verbal assurance. A reputable contractor will provide them without hesitation. If a contractor balks at this request, end the conversation.
+
+## Look for Local Experience
+
+Las Vegas roofing is not the same as roofing in Phoenix, Denver, or Dallas. Our roof surfaces routinely exceed 150°F in summer, monsoon storms drop an inch of rain in twenty minutes, and UV radiation is among the most intense in the country. These conditions demand local expertise — specific underlayments, ventilation strategies, fastener selection, and tile-handling techniques that out-of-area contractors simply do not know.
+
+A contractor who has worked in Southern Nevada for years understands:
+
+- Which shingles actually survive desert thermal cycling
+- How to flash a tile roof so monsoon-driven rain cannot penetrate
+- Why standard felt underlayment fails here in 12–15 years
+- How HOA architectural requirements work in Summerlin, Anthem, and Green Valley
+
+Ask how long the contractor has been working in the Las Vegas Valley specifically. Anything less than five years of local experience should give you pause.
+
+## Get Multiple Detailed Estimates
+
+Always get at least three written estimates — and make sure each one is **itemized**. A real proposal should specify:
+
+- Tear-off and disposal costs
+- Underlayment type, brand, and thickness
+- Shingle or tile manufacturer, line, and color
+- Flashing, vents, and accessories being replaced
+- Warranty terms in writing
+- Permit fees and inspection costs
+
+Beware of lowball bids. If one estimate is dramatically cheaper than the others, the contractor is almost certainly cutting corners — using thinner underlayment, skipping flashing replacement, or planning to upsell mid-project. For a detailed breakdown of what a fair Las Vegas estimate actually looks like, read our guide on [how much roof replacement costs in Las Vegas](/roofing-resources/how-much-does-roof-replacement-cost-las-vegas).
+
+## Check Reviews and References
+
+Online reviews tell you a lot — but you have to read them carefully.
+
+- **Google reviews** — look for patterns, not isolated complaints. A contractor with 100+ reviews and a 4.7+ rating has earned it.
+- **Yelp** — useful for spotting consistent service complaints.
+- **Better Business Bureau (BBB)** — check accreditation status, rating, and how the contractor responded to any complaints.
+
+Then go further: **ask for three local references** and actually call them. Ask whether the project finished on time, whether the final price matched the estimate, and whether they'd hire the contractor again.
+
+## Understand the Warranty
+
+There are two warranties on every roof, and they are not the same thing:
+
+- **Manufacturer warranty** — covers defects in the shingles, tiles, or underlayment themselves. Typically 25–50 years depending on product line.
+- **Workmanship warranty** — covers installation errors made by the contractor. This is provided by the contractor, not the manufacturer.
+
+In Las Vegas, a workmanship warranty of less than 5 years is a warning sign. Reputable local contractors offer 10 years or more. Get both warranties in writing before you sign anything.
+
+## Watch for Red Flags
+
+After every major wind event in Southern Nevada, out-of-state "storm chasers" flood the Valley. They knock on doors, pressure homeowners, and disappear the moment a problem surfaces. Walk away immediately if you see any of the following:
+
+- **Door-to-door solicitation** after a storm
+- **High-pressure tactics** ("This price is only good today")
+- **No physical local address** — only a P.O. box or out-of-state number
+- **Full payment demanded upfront** — a deposit is normal, full payment is not
+- **No written contract**, or a contract with blank line items
+- **Pressure to sign an "assignment of benefits"** giving them control of your insurance claim
+
+If your roof was hit by a recent storm, learn how to evaluate damage yourself first by reading our guide on [how to spot roof damage after a wind storm](/roofing-resources/how-to-spot-roof-damage-after-wind-storm).
+
+## Ask About Their Process
+
+A professional contractor follows a clear, predictable process — from initial inspection to final cleanup. They should walk you through every step: inspection, proposal, material selection, permitting, installation, inspection, and warranty registration. If the answer is vague, they don't have a process. See [our full process](/process) for what a structured roofing project should look like.
+
+## Insurance Claim Experience Matters
+
+If your project involves an insurance claim, your contractor's experience with insurers is critical. A contractor who regularly works with Nevada carriers knows how to document damage properly, write supplements, and meet adjusters on the roof. The wrong contractor can get your claim underpaid or denied entirely. Learn more in our breakdown of [whether homeowners insurance covers roof replacement in Nevada](/roofing-resources/does-homeowners-insurance-cover-roof-replacement-nevada).
+
+## Don't Rush the Decision
+
+Roofs are not impulse purchases. Unless your home is actively leaking, you have time to do this right. A trustworthy contractor will give you space to compare estimates, check references, and read your contract carefully. Anyone pressuring you to "sign today" is protecting their commission, not your home.
+
+**Driven by Integrity. Defined by Service.**
+
+## Request Your Free Estimate
+
+If you're ready to work with a licensed, local, insurance-experienced roofing team that has earned its reputation in the Las Vegas Valley, [contact us today](/contact) for a free, no-pressure estimate.
+
+[Request Your Free Estimate →](/contact)
+    `,
+    faqs: [
+      { question: "What license do roofing contractors need in Las Vegas?", answer: "Roofing contractors in Nevada must hold a C-15 Roofing and Siding Contractor license issued by the Nevada State Contractors Board (NSCB) for any project over $1,000." },
+      { question: "How many estimates should I get for a new roof?", answer: "Get at least three itemized written estimates. This lets you compare materials, scope, and warranty terms — and helps you spot lowball bids that cut corners." },
+      { question: "What's the difference between manufacturer and workmanship warranties?", answer: "Manufacturer warranties cover defects in the roofing materials themselves. Workmanship warranties are provided by your contractor and cover installation errors. You need both." },
+      { question: "How do I spot a roofing scam after a storm in Las Vegas?", answer: "Watch for door-to-door solicitation, high-pressure tactics, no local address, demands for full payment upfront, and pressure to sign an assignment of benefits for your insurance claim." },
+      { question: "How long has Zenith Roofing Solutions served Las Vegas?", answer: "Zenith Roofing Solutions brings over 35 years of combined team experience serving homeowners across Las Vegas, Henderson, Summerlin, North Las Vegas, Spring Valley, Enterprise, Green Valley, Paradise, Anthem, and Mountains Edge." },
+    ],
+  },
+  {
+    slug: "how-long-do-shingle-roofs-last-las-vegas",
+    title: "How Long Do Shingle Roofs Last in Las Vegas?",
+    excerpt: "How long do shingle roofs last in the Las Vegas climate? Learn what affects shingle lifespan, signs it's time to replace, and how to maximize your roof's life.",
+    category: "Roof Replacement",
+    date: "2026-06-22",
+    image: "/placeholder.svg",
+    content: `
+# How Long Do Shingle Roofs Last in Las Vegas?
+
+Asphalt shingles are by far the most common roofing material on homes across Las Vegas, Henderson, Summerlin, North Las Vegas, Spring Valley, Enterprise, Green Valley, Paradise, Anthem, and Mountains Edge. They're affordable, attractive, and proven — but in the Las Vegas climate, they don't last as long as the manufacturer's box suggests.
+
+At [Zenith Roofing Solutions](/about), we inspect hundreds of shingle roofs every year across Southern Nevada. Here's what homeowners need to know about realistic shingle lifespans in our desert climate — and how to get every possible year out of your roof.
+
+## Shingle Lifespan vs National Averages
+
+Shingle manufacturers publish lifespan estimates based on average national conditions — temperate climates, moderate sun, and seasonal humidity. Las Vegas is none of those things. Here's how the three main shingle classes actually perform locally:
+
+- **3-Tab Shingles** — 12 to 18 years in Las Vegas vs 20 to 25 years nationally
+- **Architectural (Dimensional) Shingles** — 18 to 25 years in Las Vegas vs 25 to 30 years nationally
+- **Premium / Designer Shingles** — 22 to 30 years in Las Vegas vs 30 to 50 years nationally
+
+In every category, expect to lose roughly 25–40% of the published lifespan to the Southern Nevada environment. This isn't pessimism — it's what we see in the field, year after year.
+
+## Why Las Vegas Shortens Shingle Life
+
+### Extreme Heat (150°F+ Surface Temperatures)
+
+On a 110°F summer afternoon, the surface of a dark shingle roof in Las Vegas regularly exceeds 150°F. At those temperatures, the asphalt binder in shingles softens, the volatile oils begin to cook off, and the shingle becomes brittle as it cools each night. This thermal stress is the single biggest reason shingles fail early in our climate.
+
+### UV Radiation
+
+Las Vegas sits at high elevation in the Mojave Desert with more than 290 sunny days per year. UV radiation breaks down the asphalt binder, fades color, and accelerates granule loss. Granules are the protective layer that shields the asphalt below — once they're gone, the shingle fails quickly.
+
+### Thermal Cycling (30–40°F Daily Swings)
+
+Las Vegas isn't just hot — it's dramatic. A summer day can hit 110°F and drop to 75°F overnight. That 30–40°F daily swing forces shingles to expand and contract every 24 hours, year after year. Over time, this cycling cracks the asphalt, loosens fasteners, and lifts edges.
+
+### Monsoon Storms
+
+July through September brings monsoon season — sudden, violent storms with 60+ mph wind gusts, horizontal rain, and occasional hail. Aging shingles that have lost flexibility are particularly vulnerable to wind uplift during these events. Learn more in our guide on [what causes wind damage to roof shingles in Las Vegas](/roofing-resources/what-causes-wind-damage-roof-shingles-las-vegas).
+
+## Signs Your Shingle Roof Is Nearing End of Life
+
+- **Granule loss** — bald patches on shingles or piles of granules in your gutters
+- **Curling or cupping** — edges lifting up, or the center of the shingle dishing inward
+- **Cracking** — visible cracks running across the shingle face
+- **Missing shingles** — especially along ridges and eaves after windstorms
+- **Algae or dark streaking** — common on north-facing slopes
+- **Interior signs** — water stains on ceilings, daylight visible in the attic, or sagging decking
+
+If you're seeing interior signs, time is not on your side. Read our guide on [what causes roof leaks in Las Vegas](/roofing-resources/what-causes-roof-leaks-las-vegas) to understand what's happening above the ceiling.
+
+## How to Maximize Shingle Roof Lifespan
+
+### Choose the Right Shingle
+
+In Las Vegas, the cheapest shingle is almost never the best value. Architectural shingles with high wind ratings (130 mph+) and reflective "cool roof" granules dramatically outlast 3-tab shingles in this climate. The upcharge typically adds 7–10 years of life — easily a 3x return on investment.
+
+### Proper Ventilation
+
+A poorly ventilated attic can trap 160°F+ air directly beneath the roof deck, cooking your shingles from below. Proper intake (soffit) and exhaust (ridge) ventilation can reduce attic temperatures by 30–50°F and add years to your roof.
+
+### Regular Inspections
+
+Annual professional inspections catch small issues — a lifted shingle, cracked flashing, exposed nail head — long before they become leaks or premature failures. Read our guide on [how often to schedule a roof inspection in Las Vegas](/roofing-resources/how-often-schedule-roof-inspection-las-vegas).
+
+### Prompt Repairs
+
+A single missing shingle doesn't seem urgent — until a monsoon storm drives rain under the surrounding shingles and rots the decking below. Address small problems immediately.
+
+## Shingle Roof Replacement Cost
+
+When the time does come to replace, knowing the realistic cost helps you plan. See our complete breakdown of [how much roof replacement costs in Las Vegas](/roofing-resources/how-much-does-roof-replacement-cost-las-vegas). If your roof failed prematurely due to a storm, you may also have an insurance claim — read [does homeowners insurance cover roof replacement in Nevada](/roofing-resources/does-homeowners-insurance-cover-roof-replacement-nevada) to understand your options.
+
+## Shingle vs Tile in Las Vegas
+
+Many homeowners ask whether they should switch from shingle to tile when it's time to replace. Tile lasts 50+ years in our climate but the underlayment beneath it typically needs replacement at 20–25 years. For a side-by-side look, read [tile lift and relay vs full roof replacement](/roofing-resources/tile-lift-relay-vs-full-roof-replacement).
+
+## Choosing the Right Contractor
+
+The single biggest variable in how long your shingle roof lasts — beyond the material itself — is the quality of installation. A premium shingle installed poorly will fail in 10 years; a mid-range shingle installed correctly can outlast it by a decade. Make sure you're hiring the right team by reading [how to choose a roofing contractor in Las Vegas](/roofing-resources/how-to-choose-roofing-contractor-las-vegas).
+
+**Driven by Integrity. Defined by Service.**
+
+## Request Your Free Inspection
+
+Not sure how much life your shingle roof has left? [Contact us today](/contact) for a complimentary inspection. Our team will give you an honest assessment and a clear plan — no pressure, no scare tactics.
+
+[Request Your Free Inspection →](/contact)
+    `,
+    faqs: [
+      { question: "How long do asphalt shingles last in Las Vegas?", answer: "In Las Vegas, 3-tab shingles last 12-18 years, architectural shingles last 18-25 years, and premium designer shingles last 22-30 years. Expect roughly 25-40% less than the manufacturer's national lifespan estimates." },
+      { question: "Why do shingles fail faster in Las Vegas than other cities?", answer: "150°F+ roof surface temperatures, intense UV radiation, 30-40°F daily thermal cycling, and monsoon storms accelerate asphalt binder breakdown, granule loss, and shingle cracking far beyond national averages." },
+      { question: "What are the signs my shingle roof needs replacement?", answer: "Watch for granule loss in gutters, curling or cupping shingles, visible cracking, missing shingles after storms, dark algae streaking, and interior water stains on ceilings." },
+      { question: "How can I extend the life of my shingle roof in Las Vegas?", answer: "Choose architectural shingles with high wind ratings and cool-roof granules, ensure proper attic ventilation, schedule annual inspections, and address small repairs immediately before they become major problems." },
+      { question: "Should I replace my shingle roof with tile?", answer: "Tile lasts 50+ years but the underlayment requires replacement at 20-25 years. Tile costs more upfront but can be more economical long term. A roofing professional can help you compare options for your specific home." },
+    ],
+  },
+  {
     slug: "signs-tile-roof-needs-underlayment-replacement-las-vegas",
     title: "Signs Your Tile Roof Needs Underlayment Replacement in Las Vegas",
     excerpt: "Learn how to identify when the underlayment beneath your tile roof has deteriorated and needs professional replacement in the Las Vegas climate.",
