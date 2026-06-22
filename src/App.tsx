@@ -53,6 +53,7 @@ const ssrPages: Record<string, { default: AnyComp } | undefined> = (() => {
     BlogIndex: require("./pages/BlogIndex"),
     BlogPost: require("./pages/BlogPost"),
     ServiceLocationPage: require("./pages/ServiceLocationPage"),
+    ServiceAreas: require("./pages/ServiceAreas"),
     NotFound: require("./pages/NotFound"),
   };
 })();
@@ -74,6 +75,7 @@ const ServiceLocationPage = makePage(
   () => import("./pages/ServiceLocationPage"),
   ssrPages.ServiceLocationPage,
 );
+const ServiceAreas = makePage(() => import("./pages/ServiceAreas"), ssrPages.ServiceAreas);
 const NotFound = makePage(() => import("./pages/NotFound"), ssrPages.NotFound);
 
 const queryClient = new QueryClient();
@@ -154,6 +156,7 @@ const App = () => (
             <Route path="/reviews" element={<Reviews />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/service-areas" element={<ServiceAreas />} />
             <Route path="/roofing-resources" element={<BlogIndex />} />
             <Route path="/roofing-resources/:slug" element={<BlogPost />} />
 

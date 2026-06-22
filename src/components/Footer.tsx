@@ -83,6 +83,11 @@ const Footer = () => {
                   <Link to={`/roofing-contractor-${area.slug}`} className="text-sm text-muted-foreground hover:text-foreground transition-colors">{area.name}, NV</Link>
                 </li>
               ))}
+              <li className="pt-2">
+                <Link to="/service-areas" className="text-sm text-gold hover:text-gold-light transition-colors font-medium">
+                  View Service Areas Map →
+                </Link>
+              </li>
             </ul>
           </div>
 
