@@ -28,6 +28,7 @@ const staticRoutes = [
   "/faq",
   "/contact",
   "/roofing-resources",
+  "/service-areas",
   // Location pages
   "/roofing-contractor-las-vegas",
   "/roofing-contractor-henderson",

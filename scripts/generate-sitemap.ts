@@ -24,6 +24,7 @@ const staticPages: SitemapEntry[] = [
   { loc: "/faq", changefreq: "monthly", priority: "0.8", lastmod: today },
   { loc: "/contact", changefreq: "monthly", priority: "0.8", lastmod: today },
   { loc: "/roofing-resources", changefreq: "weekly", priority: "0.8", lastmod: today },
+  { loc: "/service-areas", changefreq: "monthly", priority: "0.8", lastmod: today },
 ];
 
 const servicePages = [
