@@ -89,12 +89,13 @@ const ServiceAreas = () => {
 
       <section className="pt-32 pb-16 lg:pt-40 bg-background">
         <div className="container mx-auto px-6 lg:px-8">
-          <AnimatedSection className="max-w-3xl mb-12">
-            <div className="flex items-center gap-3 mb-4">
+          <AnimatedSection className="max-w-3xl mx-auto text-center mb-12">
+            <div className="flex items-center justify-center gap-3 mb-4">
               <div className="h-px w-8 bg-gold/50" />
               <span className="text-xs font-body font-semibold uppercase tracking-[0.3em] text-gold">
                 Service Areas
               </span>
+              <div className="h-px w-8 bg-gold/50" />
             </div>
             <h1 className="font-display text-4xl lg:text-6xl font-bold mb-6 leading-tight">
               Our Roofing Service Areas Across the{" "}
@@ -198,7 +199,7 @@ const ServiceAreas = () => {
       {/* Where we work */}
       <section className="py-20 lg:py-28 bg-card/30">
         <div className="container mx-auto px-6 lg:px-8">
-          <AnimatedSection className="max-w-3xl mb-10">
+          <AnimatedSection className="max-w-3xl mx-auto text-center mb-10">
             <h2 className="font-display text-3xl lg:text-4xl font-bold mb-4">
               Where We <span className="gold-gradient-text">Work</span>
             </h2>
