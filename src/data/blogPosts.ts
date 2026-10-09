@@ -22,6 +22,590 @@ export const blogAuthor = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "what-to-do-after-roof-wind-damage-las-vegas",
+    title: "After the Wind: What Las Vegas Homeowners Should Do About Roof Damage",
+    excerpt: "High winds hit Las Vegas roofs hard — missing shingles, slipped tiles, torn underlayment. Here's what to do in the first 48 hours, and how insurance claims really work.",
+    category: "Storm Damage",
+    date: "2026-10-09",
+    image: "/placeholder.svg",
+    content: `
+# After the Wind: What Las Vegas Homeowners Should Do About Roof Damage
+
+Las Vegas doesn't get hurricanes, but ask any roofer in the valley what fills the phone lines and it isn't rain — it's wind. Our storm systems routinely push gusts past 50 and 60 miles per hour across open desert, and those winds arrive hardest in exactly the seasons when rain is coming right behind them. A roof that loses shingles or tiles in Tuesday's windstorm often meets Thursday's rain with its underlayment exposed.
+
+We've written before about what causes wind damage to shingles and how to spot damage after a windstorm — this guide covers what comes next: what to do in the first 48 hours after a blow, and an honest guide to the insurance side.
+
+## What Wind Does to a Roof Here
+
+On shingle roofs, wind failure is progressive. Gusts get under shingle edges — starting at eaves, rakes, and anywhere a tab was already loose — break the sealant bond, and begin lifting. A lifted shingle flags in the next gust, then tears, then it's in your neighbor's yard. Every missing shingle exposes the underlayment (or worse, bare deck and nail heads) to direct weather. Shingled sheds, patio covers, and low-slope transition areas are usually the first casualties — lighter construction, more edge exposure.
+
+On tile roofs, wind works differently. Tiles rarely blow off wholesale, but wind lifts and shifts them — slipped tiles that slide out of their course, rattled tiles that crack against each other, and displaced hip and ridge caps where mortar or mastic had already aged. A slipped tile isn't cosmetic: it breaks the water-shedding overlap pattern and leaves the underlayment beneath taking direct sun and rain.
+
+On flat sections, wind peels at edges and flashings, and drives debris onto the roof that blocks scuppers and drains before the rain arrives.
+
+And one more desert-specific pattern: wind-driven rain. Our storms often blow rain sideways, which defeats roofs that would shed vertical rain fine — attacking wall flashings, vents, and the underside of lifted edges. "It only leaks when the rain comes with wind" is a sentence we hear constantly, and it's a real diagnosis, not an excuse.
+
+## The First 48 Hours
+
+1. Document before anything else. From the ground, photograph every slope, closeups of visible damage, shingles or tile pieces in the yard, and the date. If a claim happens, contemporaneous photos are your best friend. Note the storm date — insurers will want it.
+
+2. Check the interior. Ceilings, closet ceilings, around skylights and vents. Catch water fast and you're repairing a roof; catch it slow and you're repairing a house.
+
+3. Get damage tarped or dried-in quickly if underlayment or deck is exposed. With exposed areas, the race is against the next rain cell, not the forecast's best case. Emergency dry-in is cheap relative to interior damage.
+
+4. Stay off the roof. Wind-damaged roofs are unstable footing — loose tiles, unsealed shingles — and insurance adjusters and roofers need to see the damage as the storm left it, not after a well-meaning cleanup.
+
+5. Get a documented professional assessment. Not a drive-by quote — a photo-documented inspection that distinguishes storm damage (sudden, event-driven) from wear (gradual, age-driven). That distinction is the entire insurance conversation, which brings us to the honest part.
+
+## The Insurance Question, Honestly
+
+Homeowner's insurance covers sudden storm damage. It does not cover age and wear. Wind claims in Las Vegas live exactly on that line, and you deserve a straight explanation of how it works.
+
+If wind tore shingles off your five-year-old roof, that's a clean claim. If wind displaced tiles and the resulting inspection reveals twenty-year-old underlayment at the end of its life, the insurer owes for the storm's damage — the displaced tiles, the torn underlayment in the affected area — not a new roof system whose underlayment was already done. Contractors who promise "the storm gets you a whole new roof" on an aged roof are writing checks the adjuster won't cash, and sometimes flirting with fraud.
+
+What we do — and what you should expect from any roofer in a claim — is document precisely what the wind did: date-tied, photo-supported, slope by slope. Real storm damage, clearly documented, gets paid. Where the roof also has age-related issues, we tell you that separately and price it separately, so you're never confused about which problem is whose.
+
+Two practical notes: your policy likely has a deductible that makes small claims not worth filing — a few slipped tiles and a handful of shingles may cost less to fix than your deductible, and claims history follows you. And if the damage is borderline, an honest roofer's assessment before you call the insurer is free information about whether a claim makes sense.
+
+## Repairs That Hold Up to the Next Wind
+
+## Wind repairs done right address why the roof lost material, not just the gap:
+
+- Shingle areas: replace the missing and the compromised — wind-lifted shingles that resealed crooked, cracked tabs, exposed nails — not just the obvious holes. New shingles are color-matched as closely as possible, though an exact match to a weathered roof isn't guaranteed (and on older roofs with discontinued 3-tab profiles, we'll talk honestly about matching options before work starts).
+- Tile areas: reset slipped tiles, replace cracked ones, and re-secure hip and ridge caps properly — new mastic or mechanical attachment, not a smear over failed material.
+- The underlayment check. Wherever wind moved the covering, we look at what's underneath while it's accessible. If the underlayment is healthy, you'll see the photos and sleep fine. If it's at end of life, the wind just gave you early notice — better from an inspection than from the ceiling.
+- Frequently Asked Questions
+
+How windy does it have to be to damage a roof? Less than most people assume. Healthy roofing resists design-level winds, but aged sealant bonds, brittle tiles, and already-lifted edges fail at gusts our valley sees multiple times a year. That's why the same storm strips one roof and leaves the neighbor's untouched — the wind finds the roof that was already vulnerable.
+
+Should I file an insurance claim for a few missing shingles? Run the math first. If the repair costs less than your deductible — common for small wind repairs — filing gains you nothing and adds a claim to your history. Get a repair price before you call the carrier; an honest assessment is free information.
+
+How fast do exposed areas need to be covered? Before the next rain, which in a Las Vegas winter can mean days, not weeks. Exposed underlayment also degrades in direct sun far faster than it does under covering, so even with no rain in the forecast, exposed areas shouldn't wait long.
+
+Does Zenith work directly with insurance scopes? Yes — we perform repairs to insurance-approved scopes of loss and document completed work for claim payment, and our storm assessments distinguish clearly between event damage and age-related wear so your claim stands on solid ground.
+
+## The Bottom Line
+
+Wind damage in Las Vegas is a when, not an if — and the cost of a windstorm is decided mostly by what happens in the 48 hours after it. Document fast, dry-in fast, get an honest photo-documented assessment, and treat the insurance question with the precision it actually requires. The storm is random; the outcome doesn't have to be.
+
+Zenith Roofing Solutions (NV Lic #0092744) provides storm damage assessments, emergency dry-in, and photo-documented repair scopes — including work performed to insurance-approved scopes of loss — across the Las Vegas valley. Call (702) 884-6320.
+
+`,
+    faqs: [],
+  },
+  {
+    slug: "prepare-roof-winter-rain-las-vegas",
+    title: "Is Your Las Vegas Roof Ready for Winter Rain? The Fall Checklist",
+    excerpt: "Las Vegas gets most of its rain between now and spring. Here's the fall roof checklist that catches problems while they're still cheap — before the storms test your roof.",
+    category: "Roof Maintenance",
+    date: "2026-10-08",
+    image: "/placeholder.svg",
+    content: `
+# Is Your Las Vegas Roof Ready for Winter Rain? The Fall Checklist
+
+Las Vegas roofs have a strange job. They spend eight months being slowly destroyed by sun and heat, and then — right about now — the test arrives. The majority of our annual rain falls between late fall and early spring, often in concentrated storms with real wind behind them. Every October through March, our phones tell the same story: the leaks that show up in the first big storm were all findable in the fall, when fixing them was cheap.
+
+Here's the checklist we'd run on our own homes this month — part of it you can do from the ground, and part of it is why a fall inspection exists.
+
+## Why Fall Is the Moment
+
+Summer is what damages a Las Vegas roof; winter is what exposes the damage. The brutal heat of June through September bakes underlayment, dries out mastic and sealants, cracks tiles through thermal stress, and cooks pipe-jack seals. None of that announces itself in the dry months — the roof fails silently, in place, with nothing to carry the evidence inside.
+
+Then the first winter storm arrives with hours of sustained rain, often wind-driven, and finds every one of those weaknesses the same week. Roofers call it leak season. It's really just inspection season arriving late.
+
+## What You Can Check from the Ground
+
+## No ladder needed for any of this — binoculars or a phone camera zoom work fine.
+
+Look for broken, cracked, or slipped tiles. Scan each slope methodically. A slipped tile reads as a dark gap or a tile sitting out of line with its course. Every one of these is an opening where aged underlayment is taking direct water and sun.
+
+Check the hips and ridges. The mortar or mastic at hip and ridge joints deteriorates visibly — if you can see cracked, lifting, or missing material at the caps, water can see it too.
+
+Look at your flat sections after the next rain. Patio roofs and additions: if water is still standing 48 hours later, or you can see dirt rings where it usually stands, note those spots. Ponding is where coatings and membranes fail first.
+
+Find the debris. Pine needles and leaves piled in valleys, behind chimneys, and under solar panels hold moisture against the roof and dam water sideways under tiles during heavy rain. Valleys need to be clear before the storms, not after.
+
+Walk your interior ceilings, especially closets. Old stains you've stopped noticing, new shadows at ceiling corners, stains around skylights — interior evidence in fall means the roof already failed a previous test.
+
+Check your gutters and scuppers. Granules, felt fragments, and debris in gutters tell you what the roof is shedding. Blocked scuppers on flat sections turn a parapet roof into a bathtub.
+
+## What the Fall Inspection Adds
+
+The ground check finds symptoms. The things that actually cause winter leaks mostly hide from the ground:
+
+- Underlayment condition — the real question on any tile roof past its mid-teens. We lift tiles in multiple areas and photograph what's underneath, because cracked, brittle underlayment is the thing winter rain exploits most.
+- Pipe jacks and penetration seals — the rubber and mastic around every vent and pipe is usually the first casualty of our UV. A $200 reseal in October routinely prevents the stained ceiling in January.
+- Flashing condition at walls, chimneys, and transitions — wind-driven winter rain attacks roofs sideways, and flashings are the sideways defense.
+- Valley condition under the debris — valleys carry concentrated water; aged valley metal and the underlayment beneath it matter more than any other square footage on the roof.
+- Solar array check if you have panels — mount seals, debris and nesting underneath, and the tile around the array (see our post on leaks under solar panels for why this area earns special attention).
+- The Economics of October vs. January
+
+The same problem costs differently depending on when you find it. A cracked pipe-jack seal found in fall is a service call. The same seal found in January is a service call plus drywall repair, paint, possibly flooring — and you'll be scheduling it during the busiest weeks of the roofing year, because every leak in the valley showed up in the same storm you're calling about.
+
+There's also a planning benefit nobody thinks about: if a fall inspection finds a bigger issue — underlayment at end of life, a flat section that needs recoating — you have months to plan, compare bids, and schedule on your terms. The homeowner who discovers the same problem via an active leak makes that decision wet, rushed, and at seasonal peak demand.
+
+## What We Don't Recommend
+
+A word of caution for the DIY-inclined: we'd rather you not walk your own tile roof. Beyond the fall risk, foot traffic on tile is a leading cause of the very cracked tiles you'd be up there looking for — there's a technique to walking tile without breaking it. The ground survey plus a professional inspection covers everything without adding damage.
+
+And skip the "preventive" tube of sealant on anything you can reach. Sealant smeared over aged flashings and seals traps water as often as it excludes it, and it makes the eventual proper repair harder.
+
+## The Bottom Line
+
+Your roof already took its damage this summer; the only question is whether you find it in the next few weeks or the first big storm does. Run the ground checklist this weekend. If your roof is past its mid-teens, has flat sections, carries solar, or showed anything on the ground check — get a professional set of eyes on it before the weather arrives.
+
+Zenith Roofing Solutions (NV Lic #0092744) performs photo-documented fall roof inspections across Las Vegas, Henderson, and the valley — you'll see exactly what we see, including the underlayment under your tiles. Call (702) 884-6320 and get ahead of the season.
+
+`,
+    faqs: [
+      {
+            "question": "How often should a Las Vegas roof be professionally inspected?",
+            "answer": "Annually is ideal, and fall is the smart timing — after summer has done its damage, before winter tests it. At minimum: after any major wind event, before buying or selling, and any year the roof enters its mid-teens without an underlayment check."
+      },
+      {
+            "question": "Is roof maintenance worth it on a newer roof?",
+            "answer": "Even young roofs benefit from debris clearing and a seal check — pipe-jack rubbers and sealants age on UV exposure, not roof age thresholds, and a ten-year-old roof has ten Vegas summers on its seals. The inspection also builds a photo baseline that makes any future insurance claim dramatically easier to document."
+      },
+      {
+            "question": "What does a maintenance visit actually include?",
+            "answer": "Clearing valleys and debris accumulation (without removing tiles), resealing pipe jacks and penetrations as needed, resetting slipped tiles, documenting any broken tiles for replacement, and photographing conditions — including underlayment checks where age warrants lifting tiles."
+      },
+      {
+            "question": "Can one small leak really wait until spring?",
+            "answer": "The stain you see understates what's happening in the assembly — insulation, drywall, and framing absorb water you don't see, and winter gives it no chance to dry. Small leaks addressed between storms are service calls; small leaks ignored through a wet winter become remediation projects."
+      }
+],
+  },
+  {
+    slug: "roof-inspection-when-buying-home-las-vegas",
+    title: "Buying a Home in Las Vegas? What a Roof Inspection Report Should Actually Tell You",
+    excerpt: "A general home inspection rarely tells you what a Las Vegas tile roof is really worth. Here's what a proper roof inspection covers — and the questions to ask in escrow.",
+    category: "Inspections",
+    date: "2026-10-02",
+    image: "/placeholder.svg",
+    content: `
+# Buying a Home in Las Vegas? What a Roof Inspection Report Should Actually Tell You
+
+You're in escrow. The home inspection report lands, and under "Roof Coverings" it says something like: "Inspected. Recommend replacing broken roof tiles (approximately 15). Recommend adding mastic to hips for water tightness."
+
+Here's what that report just told you: almost nothing about the single most expensive maintenance item on the house.
+
+We inspect roofs for buyers, sellers, and agents across the Las Vegas valley, and the gap between what a general home inspection says about a roof and what the roof actually needs is where five-figure surprises live. Here's how to close that gap before you close on the house.
+
+## Why General Inspections Undersell Tile Roofs
+
+No knock on home inspectors — they assess an entire house in a few hours, and most walk the roof or view it from the edge and photograph what's visible: broken tiles, deteriorated mastic, debris, lifted flashing.
+
+But on a tile roof, what's visible isn't what matters most. The tiles are the armor; the waterproofing is the underlayment beneath them, and in our climate that underlayment lasts roughly 15 to 25 years. A 2004 house can present a clean-looking tile field over underlayment that's cracked, brittle, and functionally finished. The only way to know is to lift tiles in multiple areas and look — which is exactly what a general inspection doesn't do.
+
+So "replace 15 broken tiles" might be the whole story on a 2018 build, and might be the least of it on a 2003 one.
+
+## What a Roofer's Inspection Should Include
+
+## When you hire a roofing contractor for a buyer's inspection, insist on these elements:
+
+1. Lifted-tile underlayment checks, with photos. Multiple locations, including high-exposure areas. The photos should show you the underlayment's actual condition — supple and intact, or cracked and curling. This is the heart of the inspection; without it you're paying for a walk-around.
+
+2. The visible-defect inventory. Broken, cracked, and slipped tiles (with an honest count), mastic condition at hips and ridges, flashing and penetration seals, valley condition, debris accumulation.
+
+3. Flat-section assessment, if the home has patio or addition sections — material type, ponding evidence, coating condition. Low-slope areas fail differently than tile and get missed constantly.
+
+4. The accessories. Vents, pipe jacks and their seals, solar mounts if panels are present (and if they are, see our post on leaks under solar arrays — you're also inheriting that installation's quality).
+
+5. A remaining-life opinion and a priced path forward. Not "recommend further evaluation" — an actual answer: this roof needs X now, Y within five years, and here's what those cost.
+
+## The Report You Should Hand Your Agent
+
+In a transaction, the roof report does a job: it gives the parties facts they can negotiate with. The reports we prepare for escrow are deliberately factual and neutral — findings, photos, recommendations, numbers. No alarm, no sales language, because a report that reads like a pitch gets discounted by the other side's agent.
+
+With a proper report, a buyer can do real math. Say the roof needs a full lift and relay — new underlayment with the existing tile reused. Depending on roof size, that's commonly a mid-five-figure project on valley homes. That's not automatically a reason to walk away from the house. It's a reason to negotiate: a price reduction, a seller credit, or the work completed before close. What you can't negotiate is a problem you didn't know about until the first winter storm after move-in.
+
+- Questions to Ask About Any Roof in Escrow
+- What year was the home built, and has the underlayment ever been replaced? If the roof is original and 15+ years old, assume the underlayment conversation is coming — the only question is whether it's on your side of the closing table or theirs.
+- Was the underlayment actually inspected under lifted tiles, or just the tiles viewed?
+- Are there flat or low-slope sections, and what's their condition?
+- Are solar panels installed, and who installed them, when, and over what-condition underlayment? (A transferred lease also means inheriting the relationship with that installer.)
+- What repairs has the seller had done, by whom, and is any of it warranted? Workmanship warranties don't always transfer; ask.
+- For Sellers: The Same Inspection, in Reverse
+
+A pre-listing roof inspection is cheap insurance against a blown-up escrow. If your roof has issues, you want to know before the buyer's inspector finds them in week three — with the leverage already gone. Sellers who repair documented items ahead of listing, or price the roof's condition in from the start, keep control of the negotiation. And if your roof is in good shape, a photo-documented report saying so is a selling point your agent will happily use.
+
+## A Note on Neutrality
+
+One thing we've learned doing escrow inspections where the agents on both sides know each other (it's Vegas — they often do): the inspection is only valuable if it's completely neutral. We report what we find, with photos, whether it helps the buyer's negotiation or the seller's listing. Anything else poisons the well. If a roofer's escrow report reads like it was written to generate a job, keep shopping.
+
+## The Bottom Line
+
+In Las Vegas, the real question about any tile roof in escrow isn't "how do the tiles look?" — it's "how old is the underlayment and what condition is it in?" A general home inspection can't answer that. A proper roof inspection with lifted-tile photos can, usually for a few hundred dollars, on the largest single maintenance item you're about to buy. Get one before you remove contingencies — whichever side of the table you're on.
+
+Zenith Roofing Solutions (NV Lic #0092744) provides photo-documented, transaction-neutral roof inspections for buyers, sellers, and agents across the Las Vegas valley, with clear findings and real numbers. Call (702) 884-6320 to schedule.
+
+`,
+    faqs: [
+      {
+            "question": "How much does a buyer's roof inspection cost, and how fast can it happen?",
+            "answer": "Typically a few hundred dollars, scheduled inside your due-diligence window — most escrows have more than enough time if you book it the same week as the general inspection rather than after the report raises questions."
+      },
+      {
+            "question": "The seller already has a roof certification. Is that enough?",
+            "answer": "Read what it actually certifies. Many 'roof certs' are visual-only and short-duration — they say the roof isn't leaking today, not that the underlayment has serviceable life. A certification without lifted-tile photos answers a different question than the one a buyer is really asking."
+      },
+      {
+            "question": "The inspection found the roof needs major work. Should I walk away?",
+            "answer": "Usually it's a negotiation, not an exit. Roof work is quantifiable — that's its advantage over mystery problems. A documented scope with real numbers converts cleanly into a credit, a price reduction, or seller-completed work with warranty. Walking away makes sense when the seller won't engage with documented findings at all."
+      },
+      {
+            "question": "Do workmanship warranties transfer to a new owner?",
+            "answer": "It varies by contractor — some transfer automatically, some require registration, some don't transfer. Ask for the warranty terms in writing on any recent roof work the seller discloses, and factor a non-transferable warranty accordingly."
+      }
+],
+  },
+  {
+    slug: "roof-leak-under-solar-panels-las-vegas",
+    title: "Roof Leaking Under Your Solar Panels? Here's What's Really Happening",
+    excerpt: "Leaks under solar panels usually trace back to the installation — penetrations, flashing, or underlayment damage. Here's how to diagnose it and who should fix what.",
+    category: "Roof Repairs",
+    date: "2026-09-25",
+    image: "/placeholder.svg",
+    content: `
+# Roof Leaking Under Your Solar Panels? Here's What's Really Happening
+
+Las Vegas has one of the highest rates of residential solar in the country, and that's created a problem almost nobody warned homeowners about: roof leaks that show up months or years after the panels went on.
+
+If you've got a water stain on the ceiling below your solar array, you're living a very common story. Here's what's usually going on, how to get it diagnosed properly, and — just as important — who should be paying to fix it.
+
+## Why Solar Installations Cause Leaks
+
+## Solar panels themselves don't leak. The problem is what it takes to attach them to your roof.
+
+Every solar array is anchored by mounts that penetrate your roofing system — dozens of them for a typical residential installation. Each penetration goes through the tile or shingle, through the underlayment, and into the structure. Every single one is a potential water entry point, and every single one depends on being flashed and sealed correctly.
+
+On a tile roof, the installation is even more invasive. Installers remove tiles to set their mounts, cut or notch tiles to fit back around the hardware, and walk the roof extensively during the work. Here's where it goes wrong:
+
+- Penetrations sealed with mastic or sealant alone, instead of properly integrated flashing. Sealant in the desert has a service life measured in years; flashing done right lasts decades.
+- Damaged underlayment that never got repaired. Foot traffic and mount installation tear aged underlayment, and the installer covers it back up with tile. Nobody sees the damage until the water finds it.
+- Cracked and slipped tiles from foot traffic, left behind after the install.
+- Mounts installed into aged underlayment. This is the big one in our valley, and it deserves its own section.
+- The Underlayment Problem Nobody Talks About
+
+Here's the uncomfortable truth about solar in Las Vegas: thousands of arrays have been bolted onto roofs whose underlayment was already 15 or 20 years old — at or near the end of its serviceable life.
+
+The underlayment is your roof's actual waterproofing. When it's already brittle and cracking, dozens of new penetrations plus heavy foot traffic accelerate its failure dramatically. The homeowner, meanwhile, has been told their roof is fine because the panels are new and the tiles look good.
+
+Then the leak shows up — directly below the array, where the roof took the most abuse and gained the most holes.
+
+And now there's a second problem: fixing the underlayment under an array means removing the panels. That's a detach-and-reset performed by a licensed solar contractor, at real cost, before any roofer can properly repair what's underneath. This is why we tell every client considering solar on an older tile roof: replace the underlayment first, then install the panels. Doing it in the other order means paying for the panel removal twice.
+
+## How to Get a Leak Under Panels Diagnosed
+
+## A proper diagnosis needs a roofer, not a guess. Here's what it should include:
+
+- Interior mapping — locating the stain relative to the array above it
+- Roof-level inspection around and, where accessible, under the array edges — checking mount flashings, sealant condition, cracked tiles, and debris accumulation under panels (birds love nesting under arrays, and nesting debris traps moisture)
+- Underlayment assessment by lifting tiles adjacent to the array, with photos, to establish whether the underlayment itself is at end of life
+- An honest verdict about whether this is a point repair (a bad mount flashing), a section problem (failed underlayment under the array), or a whole-roof problem (the array just found the weakest spot first)
+
+## The distinction matters enormously for cost, and for the next question.
+
+## Who Pays? Document Everything.
+
+If your roof was sound before solar went on and the leak traces to the installation — bad flashing, unsealed penetrations, broken tiles from foot traffic — the solar installer bears responsibility, and most are bonded and insured precisely for these claims.
+
+## Our advice, from handling these situations for clients:
+
+- Get the roofer's findings in writing with photos. A factual, documented report of what was found is the foundation of any claim.
+- Contact the solar company with the homeowner driving the conversation. Many solar companies will not discuss an installation with anyone but the account holder — so expect to be on the call. A good roofer will join to speak to the technical findings.
+- Ask about panel removal costs. If their installation caused the problem, the detach-and-reset required for repairs is a fair part of that conversation.
+- Move promptly. Water damage compounds, and warranty/claim windows matter.
+
+What you shouldn't accept: a tube-of-sealant "fix" on top of the problem. Sealant over a failed penetration in our heat is a delay, not a repair.
+
+## Thinking About Solar? Read This First.
+
+If your roof is tile and more than 12–15 years old, get the underlayment inspected before you sign a solar contract. If it's near end of life, do the lift and relay first. The math is simple: a detach-and-reset of a full array costs thousands, and underlayment replacement is coming during the 25+ year life of your panels. Sequence it right and you pay for panel handling zero extra times; sequence it wrong and you pay for it in full, on top of the roof work, mid-ownership.
+
+Solar and tile roofs can absolutely coexist well — we see clean, properly flashed installations too. The difference is almost always whether the installer treated the roof as a roofing system or as a mounting surface.
+
+## The Bottom Line
+
+A leak under solar panels is almost never a coincidence. It's penetrations, foot-traffic damage, or aged underlayment that the installation pushed over the edge — and sometimes all three. Get it diagnosed with photos, establish responsibility with documentation, and fix the actual waterproofing rather than caulking over the symptom.
+
+Zenith Roofing Solutions (NV Lic #0092744) diagnoses solar-related roof leaks across the Las Vegas valley, provides photo-documented findings you can take to your solar company, and coordinates with licensed solar contractors on detach-and-reset when repairs require it. Call (702) 884-6320.
+
+`,
+    faqs: [
+      {
+            "question": "My solar company says the leak isn't their problem. What now?",
+            "answer": "Documentation decides these conversations. A photo-documented roofing inspection that ties the leak path to installation penetrations, foot-traffic damage, or disturbed tile is very different from an opinion on the phone. Get the findings in writing, then have the conversation with the homeowner on the call — most installers take a documented claim seriously, because their bond and license are behind the work."
+      },
+      {
+            "question": "Do my panels have to come off for the roof repair?",
+            "answer": "If the failed area is under the array, yes — roofing can't be properly repaired through the panels. Removal and reinstallation must be done by a licensed solar contractor, not the roofer, and typically runs a meaningful cost for a full array. For localized repairs at the array edge, sometimes only a portion of the panels needs to move."
+      },
+      {
+            "question": "Will a roof leak damage my solar system?",
+            "answer": "The panels themselves are weatherproof, but prolonged leaks can corrode mounting hardware and, in bad cases, affect rooftop wiring and conduit penetrations. It's one more reason not to let a \"small\" stain wait a season."
+      },
+      {
+            "question": "How do I protect myself when getting solar installed?",
+            "answer": "Three things: have the underlayment inspected first if the roof is past its early teens; get the installer's penetration flashing details in writing (flashing, not just sealant); and photograph the roof's condition before install day so there's a baseline if tiles come back cracked."
+      }
+],
+  },
+  {
+    slug: "silicone-vs-acrylic-roof-coating-las-vegas",
+    title: "Silicone vs. Acrylic Roof Coatings: Why Ponding Water Changes Everything",
+    excerpt: "Acrylic coatings are water-based and fail under ponding water. Silicone doesn't. Here's how to choose the right flat roof coating in Las Vegas — honestly.",
+    category: "Roof Repairs",
+    date: "2026-09-11",
+    image: "/placeholder.svg",
+    content: `
+# Silicone vs. Acrylic Roof Coatings: Why Ponding Water Changes Everything
+
+Flat and low-slope roofs are everywhere in Las Vegas — on mid-century homes, additions, patio sections, and commercial buildings. And at some point, nearly every owner of one hears the pitch for a roof coating: a fluid-applied membrane that restores the surface, reflects the sun, and buys years of life without a tear-off.
+
+Coatings are a legitimate, cost-effective restoration tool — we install them. But there's one question that should decide which coating goes on your roof before any other factor, and it's the question cheap bids conveniently skip: does your roof pond water?
+
+## What Ponding Water Is
+
+Ponding is standing water that remains on a roof more than about 48 hours after rain. Flat roofs are never actually flat — they're built with slight slope to drains and scuppers — but age, settling, and sagging create low spots where water sits. In Las Vegas we don't get much rain, but when we do, those birdbaths can hold water for days, especially in winter when evaporation slows.
+
+Walk your roof (or let us) a day or two after a storm. The dirt rings and staining tell the story even when the roof is dry: everywhere you see a ghost ring, water stands.
+
+## Acrylic: Good Material, Wrong Place for Ponding
+
+Acrylic coatings are the budget-friendly workhorse of the coating world — reflective, easy to apply, and genuinely effective on roofs that drain well.
+
+But acrylic is water-based. It cures by water evaporating out of it, and that chemistry never fully goes away: sit water on cured acrylic for days at a time, and the coating re-softens, swells, loses adhesion, and eventually breaks down. Manufacturers say it plainly in their own literature — acrylic coatings are not warranted over ponding water.
+
+In a ponding area, an acrylic coating fails in exactly the spot your roof needs protection most. We've torn off acrylic that peeled like sunburned skin inside the dirt rings while the sloped field around it still looked fine. The product wasn't bad; it was the wrong chemistry for standing water.
+
+## Silicone: Built for the Birdbath
+
+Silicone coatings are moisture-cure — they're unaffected by standing water once cured. Water can sit in a low spot on silicone through our occasional dissipating ponds without softening it, which is why silicone carries manufacturer acceptance for ponding conditions that acrylic can't touch.
+
+Silicone also shrugs off UV — a serious consideration under our sun — and maintains flexibility through the desert's temperature swings.
+
+Trade-offs, because honesty matters: silicone costs more per gallon, it holds dirt more visibly than acrylic (reflectivity declines until it rains or it's washed), and once a roof is siliconed, future recoats essentially must be silicone — almost nothing else adheres to it. None of these outweigh the ponding issue, but you should know them.
+
+## How We Actually Decide
+
+## Our rule is simple and we apply it the same way on every flat roof we look at:
+
+- Roof drains fully, no ponding: acrylic is a legitimate money-saver, and we'll tell you so.
+- Roof has ponding areas — even a few — where water dissipates within about 48 hours: silicone. The chemistry decision is made for you.
+- Water standing well beyond 48 hours in significant areas: that's not a coating conversation yet — it's a drainage and slope conversation. Coating over chronic deep ponding is burying a problem, and we'd rather fix the low spot or add drainage first.
+
+If a bid for your flat roof doesn't mention ponding at all, that's the tell. The contractor either didn't look or doesn't want the answer to complicate a cheap acrylic number.
+
+## What a Proper Silicone Restoration Includes
+
+A coating is only as good as the prep underneath it. A real silicone restoration on a Las Vegas flat roof looks like this:
+
+- Pressure wash the entire surface (3,000 PSI) to remove dirt, chalking, and contaminants — adhesion starts here.
+- Repair the substrate: address blisters, open seams, and failures, and reinforce parapet transitions and problem seams with polyester fabric embedded in coating.
+- Prime with a silicone-compatible primer where the substrate requires it.
+- Apply the silicone at the specified coverage rate, and this matters: coatings waterproof by thickness. A coating applied at 1.5 gallons per 100 square feet and one applied at 2 gallons per square are different products in practice — different mil thickness, different lifespan, different warranty eligibility. Ask every bidder what coverage rate they're pricing. "A coat of silicone" is not a specification.
+
+That coverage-rate question, by the way, is how two "identical" silicone bids can be a thousand dollars apart. The cheaper one is often simply thinner.
+
+## Is Coating Ever the Wrong Move Entirely?
+
+Yes. If the existing roof is saturated underneath (moisture trapped in the system), badly deteriorated, or at the end of its structural life, a coating is cosmetics over a failure. A honest evaluation sometimes ends with "this roof needs replacement, not restoration" — and you want a contractor willing to say that even when the coating sale was easier.
+
+## The Bottom Line
+
+On a flat roof that drains, acrylic saves money honestly. On a roof that ponds — which, after 15 or 20 Las Vegas summers of settling, is most of them — silicone is the only coating whose chemistry matches the conditions. The 48-hour ponding question decides it, and any contractor who doesn't ask it isn't really bidding your roof.
+
+Zenith Roofing Solutions (NV Lic #0092744) evaluates, repairs, and restores flat and low-slope roofs across the Las Vegas valley, with coverage rates and prep spelled out in writing on every coating estimate. Call (702) 884-6320 for an honest assessment.
+
+`,
+    faqs: [
+      {
+            "question": "How long does a silicone coating last in Las Vegas?",
+            "answer": "Applied at proper thickness over sound substrate, silicone systems commonly deliver 10–20 years depending on coverage rate and conditions, and they're renewable — a maintenance recoat extends the system rather than starting over. Thickness at installation is the biggest variable, which is why the coverage rate belongs in writing on your estimate."
+      },
+      {
+            "question": "Can you coat over an existing coating?",
+            "answer": "Often, yes — acrylic can go over sound acrylic, and silicone over silicone. The one-way door is silicone over acrylic: fine when prepped correctly, but once silicone is down, almost nothing except more silicone will ever stick to that roof again. That's a commitment worth making knowingly."
+      },
+      {
+            "question": "Is a coating cheaper than replacing my flat roof?",
+            "answer": "Substantially, when the roof qualifies — restoration avoids tear-off, disposal, and new membrane. The honest caveat is the word \"qualifies\": a saturated or structurally failing roof coated anyway is money buried, and an evaluation should rule that out before anyone opens a bucket."
+      },
+      {
+            "question": "Why do the two estimates I got for 'silicone coating' differ so much?",
+            "answer": "Almost always thickness and prep. One bid prices 1.5 gallons per square with basic wash; another prices 2 gallons per square with fabric-reinforced repairs at every transition. Same product name, different roof system. Make bidders state coverage rate, prep scope, and warranty eligibility side by side."
+      }
+],
+  },
+  {
+    slug: "attic-ventilation-las-vegas",
+    title: "Attic Ventilation in Las Vegas: Why Your Roof (and Your Power Bill) Need It",
+    excerpt: "Poor attic ventilation cooks your roof from underneath and drives up cooling costs. Here's how balanced ventilation works in the desert — and what low-profile vents fix.",
+    category: "Roof Maintenance",
+    date: "2026-08-28",
+    image: "/placeholder.svg",
+    content: `
+# Attic Ventilation in Las Vegas: Why Your Roof (and Your Power Bill) Need It
+
+On a 110-degree Las Vegas afternoon, the attic of a poorly ventilated home can push past 150 degrees. That heat doesn't stay in the attic. It radiates down through your ceilings, forces your air conditioner into a fight it can't win, and — the part almost nobody tells homeowners — cooks your roof from the underside while the sun cooks it from above.
+
+Attic ventilation is the least glamorous upgrade in roofing and one of the highest-value ones in this climate. Here's how it actually works, how to tell if your home is under-ventilated, and what a proper upgrade looks like.
+
+## The Two-Sided Oven Problem
+
+Your roofing materials are engineered to take heat from above — that's the job. What shortens their life prematurely is heat from below. When an attic can't exhaust hot air, the roof deck and everything on it sits above a reservoir of trapped 140-plus-degree air for months at a time.
+
+For shingle roofs, sustained underside heat accelerates the aging of the asphalt — shingles dry out, curl, and shed granules years ahead of schedule, and manufacturers know it: several tie full warranty coverage to adequate ventilation, which means an unventilated attic can quietly cost you both roof life and warranty standing. For tile roofs, the tile shades the deck but the underlayment — the layer that actually waterproofs your home, and the one Las Vegas heat already attacks hardest — ages faster over a super-heated attic.
+
+## In other words: ventilation isn't just comfort. It's roof preservation.
+
+## How Balanced Ventilation Actually Works
+
+Effective attic ventilation isn't about adding "a vent." It's a system with two halves that have to work together:
+
+Intake, low. Vents at the eaves (in the soffits or at the roof's lower edge) let cooler outside air enter the attic at its lowest point.
+
+Exhaust, high. Vents near the ridge let the hottest air — which rises — escape at the attic's highest point.
+
+Together they create continuous passive airflow: cool air in low, hot air out high, no electricity required. The system fails when either half is missing or undersized. Exhaust without intake can't pull air through; intake without exhaust gives hot air nowhere to go. Plenty of valley homes have exactly one half of the equation — often ten eave vents and almost nothing up top — which is like cracking a car window a quarter inch in a parking lot in July.
+
+Building code sets minimum ventilation ratios based on attic square footage, but minimums are exactly that — and many homes built quickly during the valley's boom years meet code on paper while performing poorly in practice.
+
+- Signs Your Attic Is Under-Ventilated
+- Second-story rooms that won't cool down, or a noticeable ceiling-radiated heat in the late afternoon and evening — the attic is re-heating your living space after sunset
+- An AC that runs continuously on summer afternoons and still loses ground
+- Shingles aging unevenly or prematurely — curling, granule loss, brittleness ahead of the roof's age
+- A scorching attic any time you (or your HVAC tech) stick a head up there — if it's dramatically hotter than outside air, the air isn't moving
+- High summer bills relative to similar homes — trapped attic heat is one of the quiet drivers
+
+None of these alone proves a ventilation problem, but two or three together usually do. The definitive check takes a roofer about twenty minutes: count and measure the actual intake and exhaust, compare against the attic's square footage, and look at how the existing vents are distributed.
+
+## The Low-Profile Option: Why We Like O'Hagin Vents
+
+The classic objection to adding exhaust ventilation is appearance — nobody wants a row of boxy turbines or mushroom vents staring at the street.
+
+This is why we frequently install O'Hagin vents. They're low-profile vents designed to integrate into the roof surface itself — on tile roofs they sit beneath tile that's reinstalled over them, and on shingle roofs they tuck flat into the shingle courses. From the curb they're nearly invisible; functionally, each one adds real net-free ventilation area near the top of the roof, exactly where exhaust belongs. They're also fully passive — no motors, no electrical, nothing to fail.
+
+A typical upgrade on a valley home looks like this: we verify the intake side (the eave vents many homes already have), calculate how much exhaust the attic actually needs, then install the right number of low-profile vents high on the roof — cut in, flashed, and sealed as part of the roofing system, not caulked on top of it. On a shingle roof, new shingles are woven around each vent; on tile, the tiles go back over the vent for a seamless look.
+
+If your home already has healthy intake at the eaves, good news: you only need the exhaust half, which makes the project smaller than most homeowners expect. We scope what the attic needs — not a vent count pulled from thin air.
+
+## What About Powered Fans and Whirlybirds?
+
+Fair question, since both are common here. Turbine vents ("whirlybirds") work, but they're visible, they age, and a seized or wobbling turbine becomes both an eyesore and a leak risk. Powered attic fans move serious air but consume electricity to do it, add a failure-prone motor to your roof, and — when intake is undersized — can actually depressurize the attic enough to pull conditioned air out of the house through ceiling gaps, costing you cooling you paid for. A correctly balanced passive system avoids all of it: no power draw, no moving parts, nothing to break, working every hour of every day.
+
+## The Bottom Line
+
+In a climate that attacks roofs from above eight months a year, letting your attic attack it from below too is money left on the table — in roof life, in warranty standing, and on every summer power bill. If your home has intake vents but little or no high exhaust (or you've never checked), it's a twenty-minute inspection to find out and usually a one-day project to fix.
+
+Zenith Roofing Solutions (NV Lic #0092744) designs and installs balanced attic ventilation upgrades — including low-profile O'Hagin vent systems — across the Las Vegas valley. Call (702) 884-6320 for a ventilation assessment with real numbers.
+
+`,
+    faqs: [
+      {
+            "question": "Does attic ventilation really lower cooling bills?",
+            "answer": "It lowers the load. A ventilated attic running decades cooler than an unventilated one means less heat radiating through your ceiling insulation, which means your AC cycles instead of running flat-out. Exact savings depend on insulation, ductwork location, and the house itself — we'll give you the honest \"it helps, it's not magic\" version rather than a made-up percentage."
+      },
+      {
+            "question": "Can vents be added to an existing roof, or only during replacement?",
+            "answer": "Both. Adding low-profile vents to an existing roof is a clean one-day project for most homes. That said, if your roof is approaching an underlayment replacement or re-roof anyway, bundling ventilation into that project is the most economical path."
+      },
+      {
+            "question": "Do roof vents leak?",
+            "answer": "Properly installed — cut in, flashed, and integrated into the roofing system — no. Vents that leak are almost always vents that were surface-mounted and caulked rather than flashed. Every vent we install is sealed as part of the roof system and covered by our workmanship warranty."
+      },
+      {
+            "question": "How many vents does my home need?",
+            "answer": "It's math, not guesswork: attic square footage determines required net-free ventilation area, split between intake and exhaust. We calculate it during the inspection and show you the numbers."
+      }
+],
+  },
+  {
+    slug: "how-long-does-tile-roof-underlayment-last-las-vegas",
+    title: "How Long Does Tile Roof Underlayment Last in Las Vegas?",
+    excerpt: "Most tile roof underlayment in Las Vegas lasts 15–25 years — far less than the tile above it. Learn the warning signs and what replacement actually involves.",
+    category: "Tile Roofing",
+    date: "2026-08-14",
+    image: "/placeholder.svg",
+    content: `
+# How Long Does Tile Roof Underlayment Last in Las Vegas?
+
+In Las Vegas, tile roof underlayment typically lasts 15 to 25 years. The tile above it can last 50 years or more. That gap surprises almost every homeowner we talk to, and it's the single most important thing to understand about owning a tile roof in the desert.
+
+If your home was built in the late 1990s or 2000s — like thousands of homes across Las Vegas, Henderson, and Summerlin — your underlayment is either at the end of its serviceable life or already past it, even if your roof looks perfect from the street.
+
+## Your Tile Is Not Your Waterproofing
+
+Here's the thing most homeowners were never told: concrete and clay tiles are not what keep water out of your house. The tiles are armor. They take the sun, the wind, and the physical abuse, and they shed the bulk of the rain. But tile roofs are not sealed systems — water gets underneath tiles routinely, through laps, around penetrations, and at every transition.
+
+The actual waterproofing layer is the underlayment: the asphalt-saturated felt (or in some newer homes, synthetic sheet) that sits between the tiles and the wood deck. When rain gets past the tile — and it does — the underlayment is what carries that water safely down to the eaves.
+
+So when we say the underlayment has failed, we're saying your roof's real waterproofing is gone. The tile keeps looking fine. The protection underneath doesn't.
+
+## Why the Desert Eats Underlayment
+
+Las Vegas is one of the hardest climates in the country on roofing underlayment, for three reasons.
+
+Heat. On a 110-degree summer day, the air space under your tiles can run far hotter than the air outside. Asphalt-based felts are cooked day after day, season after season. The oils that keep the felt flexible slowly bake out, leaving the material dry, brittle, and prone to cracking.
+
+Thermal cycling. The desert's big daily temperature swings — hot days, cool nights — expand and contract the underlayment thousands of times over its life. Brittle material under constant movement develops cracks, and cracks are pathways for water.
+
+Dryness, then sudden rain. Our underlayment spends years drying out, then gets hit with monsoon downpours or winter storms that put real water on it all at once. A felt that's spent two decades baking doesn't handle that test the way it did when it was new.
+
+When we lift tiles on inspections across the valley, the pattern is remarkably consistent: homes in the 15-to-25-year range show underlayment that's cracked like dry lakebed mud, curling at the laps, or torn around penetrations. That's not a defect — it's simply the material reaching the end of its design life in a brutal climate.
+
+## The Warning Signs
+
+The frustrating part about underlayment failure is that you usually can't see it from the ground. By the time evidence shows up inside the house, water has already been getting through for a while. Watch for:
+
+- A ceiling stain or active leak, especially after wind-driven rain. This is the most common way homeowners find out, and it means the underlayment in at least that area is done.
+- Debris and granule-like material in your gutters or at the eaves — deteriorating felt sheds material that washes down.
+- Cracked, slipped, or broken tiles. These don't just look bad; every compromised tile exposes the aging underlayment below it to direct sun, which accelerates failure in that spot.
+- Age alone. If your roof is 18+ years old and the underlayment has never been replaced, it's worth an inspection even with no symptoms. The whole point is to catch it before the first leak, not after.
+
+The only way to actually know is to lift tiles and look. At Zenith, every inspection we do includes lifted-tile photos of the underlayment itself, so you see exactly what condition your waterproofing is in — not a guess from the street.
+
+## What Replacement Actually Involves (and Why It's Not a New Roof)
+
+Here's the good news that offsets the bad: because your tile lasts decades longer than your underlayment, you usually don't need a new roof. You need a lift and relay — the standard mid-life service for a tile roof in the Southwest.
+
+The process: we carefully remove your existing tiles and set them aside, tear off the failed underlayment, inspect the wood deck, install new underlayment with new flashings and components, and then reinstall your original tiles, replacing any broken ones with color-matched pieces. Your roof looks the same from the street — because it mostly is the same roof — but the waterproofing underneath is brand new.
+
+Because the tile is reused, a lift and relay costs a fraction of a full roof replacement, and it resets the clock on the layer that actually keeps your house dry. Done right, with quality underlayment, it's the last major roof work most homeowners will need for decades.
+
+## Does Upgraded Underlayment Matter in Our Heat? Yes.
+
+Not all underlayment handles the desert the same way. Standard felts meet code, but high-temperature materials exist specifically for climates like ours — some peel-and-stick underlayments are rated for service temperatures up to 240°F, self-seal around fasteners, and carry long manufacturer warranties. On a Las Vegas roof, where heat is the primary killer, that upgrade buys real years. We walk every client through the options and the honest trade-offs; the right answer depends on the roof, the budget, and how long you plan to own the home.
+
+## The Bottom Line
+
+In Las Vegas, your tile roof's lifespan is really two lifespans: the tile's and the underlayment's. The underlayment runs out first — usually between years 15 and 25 — and it runs out quietly. If your roof is in that window, find out where you stand before the next storm does it for you.
+
+Zenith Roofing Solutions is a licensed Las Vegas roofing contractor (NV Lic #0092744) specializing in tile roof diagnostics and lift and relay work. Every inspection includes photo documentation of your underlayment's actual condition. Call (702) 884-6320 to schedule yours.
+
+`,
+    faqs: [
+      {
+            "question": "Can you replace underlayment without replacing the tile?",
+            "answer": "Yes — that's exactly what a lift and relay is. Your existing tiles are removed, salvaged, and reinstalled over new underlayment."
+      },
+      {
+            "question": "My roof is 20 years old but has never leaked. Am I fine?",
+            "answer": "Not necessarily. Underlayment doesn't fail everywhere at once — it fails first at penetrations, valleys, and high-exposure areas. \"No leak yet\" often means \"no leak yet.\" An inspection with lifted-tile photos answers the question for real."
+      },
+      {
+            "question": "Will spot repairs fix it?",
+            "answer": "Spot repairs address symptoms — a broken tile here, a patched area there. If the underlayment across the roof is at end of life, repairs buy time but don't change the trajectory, which is why we're honest that repairs on an aged roof come without a warranty."
+      },
+      {
+            "question": "How long does a lift and relay take?",
+            "answer": "Most single-family homes take a few days to a week depending on size and complexity."
+      }
+],
+  },
+  {
     slug: "how-to-choose-roofing-contractor-las-vegas",
     title: "How to Choose a Roofing Contractor in Las Vegas",
     excerpt: "Choosing the right roofing contractor in Las Vegas protects your home and your investment. Learn what to look for, what to avoid, and how to compare bids with confidence.",
