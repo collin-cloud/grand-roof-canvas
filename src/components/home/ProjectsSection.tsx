@@ -113,11 +113,11 @@ const GalleryMedia = ({ photos }: { photos: { src: string; alt: string }[] }) =>
                 i === active ? "w-6 bg-gold" : "w-2 bg-ivory/60 hover:bg-ivory"
               }`}
             />
-         ))}
+          ))}
         </div>
-     )}
+      )}
     </div>
- );
+  );
 };
 
 const ProjectsSection = () => {
@@ -138,7 +138,7 @@ const ProjectsSection = () => {
             Recent Roofing Projects
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto font-body leading-relaxed">
-            A selection of recent projects across Southern Nevada: each one completed with precision, quality materials, and honest service.
+            A selection of recent projects across Southern Nevada, each one completed with precision, quality materials, and honest service.
           </p>
         </AnimatedSection>
 
@@ -153,9 +153,9 @@ const ProjectsSection = () => {
                     beforeAlt={project.beforeAfter.before.alt}
                     afterAlt={project.beforeAfter.after.alt}
                   />
-               ) : project.gallery ? (
+                ) : project.gallery ? (
                   <GalleryMedia photos={project.gallery} />
-               ) : project.image ? (
+                ) : project.image ? (
                   <div className="relative aspect-[4/3] overflow-hidden bg-charcoal-deep/40">
                     <img
                       src={project.image}
@@ -168,7 +168,7 @@ const ProjectsSection = () => {
                     />
                     <div className="absolute inset-0 ring-1 ring-inset ring-gold/0 group-hover:ring-gold/30 transition-all duration-500 pointer-events-none" />
                   </div>
-               ) : null}
+                ) : null}
                 <div className="p-8 flex flex-col flex-1">
                   <div className="flex items-center justify-between gap-3 mb-3">
                     <span className="text-xs font-body font-semibold uppercase tracking-wider text-gold/60">
@@ -179,7 +179,7 @@ const ProjectsSection = () => {
                         <ShieldCheck className="w-3 h-3" />
                         Insurance Claim
                       </span>
-                   )}
+                    )}
                   </div>
                   <h3 className="font-display text-xl font-semibold mb-3 group-hover:text-gold transition-colors duration-300">
                     {project.title}
@@ -188,7 +188,7 @@ const ProjectsSection = () => {
                     <p className="text-sm text-muted-foreground font-body leading-relaxed mb-4">
                       {project.description}
                     </p>
-                 )}
+                  )}
                   <div className="flex items-center gap-2 mt-auto text-sm text-muted-foreground font-body">
                     <MapPin className="w-4 h-4 text-gold/70" />
                     {project.location}
@@ -196,11 +196,11 @@ const ProjectsSection = () => {
                 </div>
               </div>
             </AnimatedSection>
-         ))}
+          ))}
         </div>
       </div>
     </section>
- );
+  );
 };
 
 export default ProjectsSection;

@@ -16,7 +16,7 @@ interface ProjectGalleryProps {
   eyebrow?: string;
   /** Optional subheading shown beneath the heading. */
   subheading?: string;
-  /** Photo slots: empty entries render as themed placeholders. */
+  /** Photo slots, empty entries render as themed placeholders. */
   photos: ProjectPhoto[];
   /** Number of columns on large screens (default: 4). Mobile is always 2. */
   columns?: 2 | 3 | 4;
@@ -59,7 +59,7 @@ const ProjectGallery = ({
             <p className="text-base text-muted-foreground font-body leading-relaxed mb-10 max-w-2xl">
               {subheading}
             </p>
-         )}
+          )}
         </AnimatedSection>
 
         <div className={`grid grid-cols-2 ${colsClass[columns]} gap-4 lg:gap-6 mt-8`}>
@@ -83,10 +83,10 @@ const ProjectGallery = ({
                           {photo.caption}
                         </span>
                       </div>
-                   )}
+                    )}
                     <div className="absolute inset-0 ring-1 ring-inset ring-gold/0 group-hover:ring-gold/30 transition-all duration-500 pointer-events-none" />
                   </>
-               ) : (
+                ) : (
                   <div className="w-full h-full flex flex-col items-center justify-center gap-3 text-center px-4">
                     <div className="w-10 h-10 rounded-full border border-gold/20 flex items-center justify-center transition-transform duration-500 group-hover:scale-110">
                       <Camera className="w-4 h-4 text-gold/60" />
@@ -97,14 +97,14 @@ const ProjectGallery = ({
                       coming soon
                     </span>
                   </div>
-               )}
+                )}
               </div>
             </AnimatedSection>
-         ))}
+          ))}
         </div>
       </div>
     </section>
- );
+  );
 };
 
 export default ProjectGallery;

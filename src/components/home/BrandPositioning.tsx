@@ -50,9 +50,9 @@ const BrandPositioning = () => {
             {/* Right, Copy */}
             <div className="space-y-6">
               {[
-                "Zenith Roofing Solutions was built on a simple belief: homeowners deserve honesty, transparency, and craftsmanship they can rely on.",
+                "Zenith Roofing Solutions was built on a simple belief, homeowners deserve honesty, transparency, and craftsmanship they can rely on.",
                 "With decades of combined roofing experience, our team approaches every project with careful planning, experienced oversight, and a commitment to doing things the right way.",
-                "We're not focused on being the biggest roofing company in Southern Nevada: we're focused on being the most trusted.",
+                "We're not focused on being the biggest roofing company in Southern Nevada, we're focused on being the most trusted.",
               ].map((text, i) => (
                 <motion.p
                   key={i}
@@ -63,7 +63,7 @@ const BrandPositioning = () => {
                 >
                   {text}
                 </motion.p>
-             ))}
+              ))}
 
               <motion.p
                 className="font-display text-xl font-semibold text-gold italic pt-2"
@@ -85,7 +85,7 @@ const BrandPositioning = () => {
         </div>
       </div>
     </section>
- );
+  );
 };
 
 export default BrandPositioning;
