@@ -25,7 +25,7 @@ type AnyComp = ComponentType<any>;
 function makePage<T extends AnyComp>(
   // Async import used on the client (becomes its own chunk).
   dynamicImport: () => Promise<{ default: T }>,
-  // Eagerly-loaded server module — only referenced under `import.meta.env.SSR`.
+  // Eagerly-loaded server module, only referenced under `import.meta.env.SSR`.
   ssrModule: { default: AnyComp } | undefined,
 ): T {
   if (import.meta.env.SSR && ssrModule) {

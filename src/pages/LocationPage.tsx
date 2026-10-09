@@ -90,7 +90,7 @@ const LocationPage = ({ city, slug }: Props) => {
               <div>
                 <h2 className="font-display text-3xl font-semibold text-foreground mb-4">Residential Roofing Services in {city}</h2>
                 <p>
-                  Whether you're dealing with a roof that's past its prime, storm damage from a recent monsoon, or simply need a professional inspection before buying or selling a home, Zenith Roofing Solutions has you covered. We specialize in the unique demands of the {city} climate — from extreme summer heat that deteriorates roofing materials faster than in most parts of the country to monsoon winds and occasional hail events.
+                  Whether you're dealing with a roof that's past its prime, storm damage from a recent monsoon, or simply need a professional inspection before buying or selling a home, Zenith Roofing Solutions has you covered. We specialize in the unique demands of the {city} climate, from extreme summer heat that deteriorates roofing materials faster than in most parts of the country to monsoon winds and occasional hail events.
                 </p>
                 <p className="mt-4">
                   Our team approaches every project in {city} with careful planning, experienced oversight, and a commitment to doing things the right way. We explain your options clearly, provide transparent pricing, and follow through on every promise.
@@ -100,7 +100,7 @@ const LocationPage = ({ city, slug }: Props) => {
               <div>
                 <h2 className="font-display text-3xl font-semibold text-foreground mb-4">Roof Replacement in {city}</h2>
                 <p>
-                  When your roof has reached the end of its useful life, a complete <Link to="/services/roof-replacement" className="text-gold hover:text-gold-light underline underline-offset-2 transition-colors">roof replacement</Link> is the most effective long-term investment. We install premium roofing systems using materials specifically rated for the Southern Nevada climate — including high-wind shingles, concrete and clay tile systems, and energy-efficient options that help reduce cooling costs.
+                  When your roof has reached the end of its useful life, a complete <Link to="/services/roof-replacement" className="text-gold hover:text-gold-light underline underline-offset-2 transition-colors">roof replacement</Link> is the most effective long-term investment. We install premium roofing systems using materials specifically rated for the Southern Nevada climate, including high-wind shingles, concrete and clay tile systems, and energy-efficient options that help reduce cooling costs.
                 </p>
                 <p className="mt-4">
                   Every roof replacement in {city} includes a complete tear-off, thorough deck inspection, new synthetic underlayment, precision installation, and a detailed final walkthrough. We stand behind our workmanship with comprehensive warranties.
@@ -113,7 +113,7 @@ const LocationPage = ({ city, slug }: Props) => {
                   Tile roofing is one of the most common systems in {city} and throughout the Las Vegas Valley. While tiles themselves can last 40+ years, the underlayment beneath them typically deteriorates after 20-25 years in the desert climate.
                 </p>
                 <p className="mt-4">
-                  Our <Link to="/services/tile-lift-and-relay" className="text-gold hover:text-gold-light underline underline-offset-2 transition-colors">tile lift and relay</Link> service preserves your existing tiles while replacing the deteriorated underlayment — saving you significant cost compared to a full replacement. Not sure which option is right for your {city} home? Read our guide: <Link to="/roofing-resources/tile-lift-relay-vs-full-roof-replacement" className="text-gold hover:text-gold-light underline underline-offset-2 transition-colors">Tile Lift and Relay vs Full Roof Replacement</Link>.
+                  Our <Link to="/services/tile-lift-and-relay" className="text-gold hover:text-gold-light underline underline-offset-2 transition-colors">tile lift and relay</Link> service preserves your existing tiles while replacing the deteriorated underlayment, saving you significant cost compared to a full replacement. Not sure which option is right for your {city} home? Read our guide: <Link to="/roofing-resources/tile-lift-relay-vs-full-roof-replacement" className="text-gold hover:text-gold-light underline underline-offset-2 transition-colors">Tile Lift and Relay vs Full Roof Replacement</Link>.
                 </p>
               </div>
 
@@ -127,7 +127,7 @@ const LocationPage = ({ city, slug }: Props) => {
                     "Transparent pricing with no hidden fees",
                     "Workmanship warranty on every project",
                     `Roofing materials designed for the ${city} desert climate`,
-                    "Honest evaluations — we recommend what's genuinely best for your home",
+                    "Honest evaluations, we recommend what's genuinely best for your home",
                     "Serving residential homeowners and property managers",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3">
@@ -162,7 +162,7 @@ const LocationPage = ({ city, slug }: Props) => {
               <div>
                 <h2 className="font-display text-3xl font-semibold text-foreground mb-4">Schedule Your Free Roof Inspection</h2>
                 <p>
-                  Whether your roof is showing signs of wear, you've recently experienced storm damage, or you simply want a professional evaluation, our team is ready to help. We provide complimentary roof inspections with detailed photo documentation and honest recommendations — no pressure, no obligations.
+                  Whether your roof is showing signs of wear, you've recently experienced storm damage, or you simply want a professional evaluation, our team is ready to help. We provide complimentary roof inspections with detailed photo documentation and honest recommendations, no pressure, no obligations.
                 </p>
                 <div className="flex flex-wrap gap-4 mt-8">
                   <Link to="/contact" className="btn-gold">

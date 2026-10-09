@@ -85,7 +85,7 @@ const Process = () => {
 
           {/* Timeline-connected steps */}
           <div className="relative">
-            {/* Vertical connecting line — left rail on mobile, centered between number/icon and content on desktop */}
+            {/* Vertical connecting line, left rail on mobile, centered between number/icon and content on desktop */}
             <div
               aria-hidden="true"
               className="absolute left-8 lg:left-[3.25rem] top-4 bottom-4 w-px bg-gradient-to-b from-transparent via-gold/25 to-transparent"

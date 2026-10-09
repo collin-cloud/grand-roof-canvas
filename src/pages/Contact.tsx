@@ -209,7 +209,7 @@ const Contact = () => {
                   <Send className="w-7 h-7 text-gold" />
                 </div>
                 <h3 className="font-display text-2xl font-semibold mb-3">Your Message Was Sent!</h3>
-                <p className="text-muted-foreground font-body">Thank you — we'll be in touch soon.</p>
+                <p className="text-muted-foreground font-body">Thank you, we'll be in touch soon.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="card-luxury p-8 lg:p-10 space-y-5">

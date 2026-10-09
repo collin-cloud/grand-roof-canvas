@@ -10,7 +10,7 @@ export const faqs: FAQItem[] = [
   },
   {
     q: "How much does a roof replacement cost in Las Vegas?",
-    a: "Roof replacement costs in Southern Nevada vary based on the size of your roof, the material you choose, and the scope of work required. Shingle roofs generally cost less than tile systems, and factors like roof access, existing damage, and code requirements can also affect pricing. We provide free inspections and detailed written proposals with transparent pricing — no hidden fees, no surprises.",
+    a: "Roof replacement costs in Southern Nevada vary based on the size of your roof, the material you choose, and the scope of work required. Shingle roofs generally cost less than tile systems, and factors like roof access, existing damage, and code requirements can also affect pricing. We provide free inspections and detailed written proposals with transparent pricing, no hidden fees, no surprises.",
   },
   {
     q: "Do you help with insurance claims for roof damage?",
@@ -22,7 +22,7 @@ export const faqs: FAQItem[] = [
   },
   {
     q: "What are the signs that my roof needs to be replaced?",
-    a: "Common signs include missing, cracked, or curling shingles; visible granule loss in your gutters; water stains on interior ceilings; sagging areas on the roofline; daylight showing through attic boards; and age — most shingle roofs in the Las Vegas climate last 20 to 25 years, while tile roofs can last 30 to 50 years but often need underlayment replacement sooner. Our free inspection will give you a clear, honest assessment of your roof's condition.",
+    a: "Common signs include missing, cracked, or curling shingles; visible granule loss in your gutters; water stains on interior ceilings; sagging areas on the roofline; daylight showing through attic boards; and age, most shingle roofs in the Las Vegas climate last 20 to 25 years, while tile roofs can last 30 to 50 years but often need underlayment replacement sooner. Our free inspection will give you a clear, honest assessment of your roof's condition.",
   },
   {
     q: "Do you offer financing for roofing projects?",
@@ -46,7 +46,7 @@ export const faqs: FAQItem[] = [
   },
   {
     q: "What should I do if my roof is damaged in a storm?",
-    a: "First, ensure your family's safety and document any visible damage with photos from ground level — do not climb on the roof. Then contact us for an emergency assessment. We offer rapid response for storm damage including emergency tarping to prevent further water intrusion. We'll document everything thoroughly for your insurance claim and guide you through the next steps. Call us at 702-884-6320.",
+    a: "First, ensure your family's safety and document any visible damage with photos from ground level, do not climb on the roof. Then contact us for an emergency assessment. We offer rapid response for storm damage including emergency tarping to prevent further water intrusion. We'll document everything thoroughly for your insurance claim and guide you through the next steps. Call us at 702-884-6320.",
   },
   {
     q: "Do you work with property managers and HOAs?",

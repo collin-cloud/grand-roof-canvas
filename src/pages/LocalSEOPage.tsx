@@ -30,7 +30,7 @@ const LocalSEOPage = ({ city, slug }: Props) => {
               <div>
                 <h2 className="font-display text-2xl font-semibold text-foreground mb-3">Roofing Services in {city}</h2>
                 <p>
-                  Whether you need a complete roof replacement, emergency repair, or annual inspection, our experienced team handles every project with the care and precision your home deserves. We specialize in the unique demands of the {city} climate — from extreme heat to monsoon seasons.
+                  Whether you need a complete roof replacement, emergency repair, or annual inspection, our experienced team handles every project with the care and precision your home deserves. We specialize in the unique demands of the {city} climate, from extreme heat to monsoon seasons.
                 </p>
               </div>
               <div>

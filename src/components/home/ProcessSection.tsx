@@ -13,7 +13,7 @@ const steps = [
     icon: FileText,
     num: "02",
     title: "Clear Recommendations",
-    desc: "You'll receive straightforward options with transparent pricing — no pressure, no hidden costs, no surprises.",
+    desc: "You'll receive straightforward options with transparent pricing, no pressure, no hidden costs, no surprises.",
   },
   {
     icon: ClipboardList,
