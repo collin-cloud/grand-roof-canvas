@@ -24,16 +24,16 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "what-to-do-after-roof-wind-damage-las-vegas",
     title: "After the Wind: What Las Vegas Homeowners Should Do About Roof Damage",
-    excerpt: "High winds hit Las Vegas roofs hard, missing shingles, slipped tiles, torn underlayment. Here's what to do in the first 48 hours, and how insurance claims really work.",
+    excerpt: "High winds hit Las Vegas roofs hard: missing shingles, slipped tiles, torn underlayment. Here's what to do in the first 48 hours, and how insurance claims really work.",
     category: "Storm Damage",
     date: "2026-10-09",
     image: "/placeholder.svg",
     content: `
 # After the Wind: What Las Vegas Homeowners Should Do About Roof Damage
 
-Las Vegas doesn't get hurricanes, but ask any roofer in the valley what fills the phone lines and it isn't rain, it's wind. Our storm systems routinely push gusts past 50 and 60 miles per hour across open desert, and those winds arrive hardest in exactly the seasons when rain is coming right behind them. A roof that loses shingles or tiles in Tuesday's windstorm often meets Thursday's rain with its underlayment exposed.
+Las Vegas doesn't get hurricanes, but ask any roofer in the valley what fills the phone lines and it isn't rain. It's wind. Our storm systems routinely push gusts past 50 and 60 miles per hour across open desert, and those winds arrive hardest in exactly the seasons when rain is coming right behind them. A roof that loses shingles or tiles in Tuesday's windstorm often meets Thursday's rain with its underlayment exposed.
 
-We've written before about what causes wind damage to shingles and how to spot damage after a windstorm, this guide covers what comes next: what to do in the first 48 hours after a blow, and an honest guide to the insurance side.
+We've written before about what causes wind damage to shingles and how to spot damage after a windstorm. This guide covers what comes next: what to do in the first 48 hours after a blow, and an honest guide to the insurance side.
 
 ## What Wind Does to a Roof Here
 
@@ -260,7 +260,7 @@ Zenith Roofing Solutions (NV Lic #0092744) provides photo-documented, transactio
       },
       {
             "question": "The inspection found the roof needs major work. Should I walk away?",
-            "answer": "Usually it's a negotiation, not an exit. Roof work is quantifiable, that's its advantage over mystery problems. A documented scope with real numbers converts cleanly into a credit, a price reduction, or seller-completed work with warranty. Walking away makes sense when the seller won't engage with documented findings at all."
+            "answer": "Usually it's a negotiation, not an exit. Roof work is quantifiable, and that's its advantage over mystery problems. A documented scope with real numbers converts cleanly into a credit, a price reduction, or seller-completed work with warranty. Walking away makes sense when the seller won't engage with documented findings at all."
       },
       {
             "question": "Do workmanship warranties transfer to a new owner?",
@@ -332,7 +332,7 @@ What you shouldn't accept: a tube-of-sealant "fix" on top of the problem. Sealan
 
 If your roof is tile and more than 12–15 years old, get the underlayment inspected before you sign a solar contract. If it's near end of life, do the lift and relay first. The math is simple: a detach-and-reset of a full array costs thousands, and underlayment replacement is coming during the 25+ year life of your panels. Sequence it right and you pay for panel handling zero extra times; sequence it wrong and you pay for it in full, on top of the roof work, mid-ownership.
 
-Solar and tile roofs can absolutely coexist well, we see clean, properly flashed installations too. The difference is almost always whether the installer treated the roof as a roofing system or as a mounting surface.
+Solar and tile roofs can absolutely coexist well; we see clean, properly flashed installations too. The difference is almost always whether the installer treated the roof as a roofing system or as a mounting surface.
 
 ## The Bottom Line
 
@@ -372,7 +372,7 @@ Zenith Roofing Solutions (NV Lic #0092744) diagnoses solar-related roof leaks ac
 
 Flat and low-slope roofs are everywhere in Las Vegas, on mid-century homes, additions, patio sections, and commercial buildings. And at some point, nearly every owner of one hears the pitch for a roof coating: a fluid-applied membrane that restores the surface, reflects the sun, and buys years of life without a tear-off.
 
-Coatings are a legitimate, cost-effective restoration tool, we install them. But there's one question that should decide which coating goes on your roof before any other factor, and it's the question cheap bids conveniently skip: does your roof pond water?
+Coatings are a legitimate, cost-effective restoration tool, and we install them. But there's one question that should decide which coating goes on your roof before any other factor, and it's the question cheap bids conveniently skip: does your roof pond water?
 
 ## What Ponding Water Is
 
@@ -390,7 +390,7 @@ In a ponding area, an acrylic coating fails in exactly the spot your roof needs 
 
 ## Silicone: Built for the Birdbath
 
-Silicone coatings are moisture-cure, they're unaffected by standing water once cured. Water can sit in a low spot on silicone through our occasional dissipating ponds without softening it, which is why silicone carries manufacturer acceptance for ponding conditions that acrylic can't touch.
+Silicone coatings are moisture-cure, so they're unaffected by standing water once cured. Water can sit in a low spot on silicone through our occasional dissipating ponds without softening it, which is why silicone carries manufacturer acceptance for ponding conditions that acrylic can't touch.
 
 Silicone also shrugs off UV, a serious consideration under our sun, and maintains flexibility through the desert's temperature swings.
 
@@ -402,7 +402,7 @@ Our rule is simple and we apply it the same way on every flat roof we look at:
 
 - Roof drains fully, no ponding: acrylic is a legitimate money-saver, and we'll tell you so.
 - Roof has ponding areas, even a few, where water dissipates within about 48 hours: silicone. The chemistry decision is made for you.
-- Water standing well beyond 48 hours in significant areas: that's not a coating conversation yet, it's a drainage and slope conversation. Coating over chronic deep ponding is burying a problem, and we'd rather fix the low spot or add drainage first.
+- Water standing well beyond 48 hours in significant areas: that's not a coating conversation yet; it's a drainage and slope conversation. Coating over chronic deep ponding is burying a problem, and we'd rather fix the low spot or add drainage first.
 
 If a bid for your flat roof doesn't mention ponding at all, that's the tell. The contractor either didn't look or doesn't want the answer to complicate a cheap acrylic number.
 
@@ -463,7 +463,7 @@ Attic ventilation is the least glamorous upgrade in roofing and one of the highe
 
 ## The Two-Sided Oven Problem
 
-Your roofing materials are engineered to take heat from above, that's the job. What shortens their life prematurely is heat from below. When an attic can't exhaust hot air, the roof deck and everything on it sits above a reservoir of trapped 140-plus-degree air for months at a time.
+Your roofing materials are engineered to take heat from above; that's the job. What shortens their life prematurely is heat from below. When an attic can't exhaust hot air, the roof deck and everything on it sits above a reservoir of trapped 140-plus-degree air for months at a time.
 
 For shingle roofs, sustained underside heat accelerates the aging of the asphalt, shingles dry out, curl, and shed granules years ahead of schedule, and manufacturers know it: several tie full warranty coverage to adequate ventilation, which means an unventilated attic can quietly cost you both roof life and warranty standing. For tile roofs, the tile shades the deck but the underlayment, the layer that actually waterproofs your home, and the one Las Vegas heat already attacks hardest, ages faster over a super-heated attic.
 
@@ -605,7 +605,7 @@ Zenith Roofing Solutions is a licensed Las Vegas roofing contractor (NV Lic #009
       },
       {
             "question": "Will spot repairs fix it?",
-            "answer": "Spot repairs address symptoms, a broken tile here, a patched area there. If the underlayment across the roof is at end of life, repairs buy time but don't change the trajectory, which is why we're honest that repairs on an aged roof come without a warranty."
+            "answer": "Spot repairs address symptoms: a broken tile here, a patched area there. If the underlayment across the roof is at end of life, repairs buy time but don't change the trajectory, which is why we're honest that repairs on an aged roof come without a warranty."
       },
       {
             "question": "How long does a lift and relay take?",
@@ -746,7 +746,7 @@ Shingle manufacturers publish lifespan estimates based on average national condi
 - **Architectural (Dimensional) Shingles**, 18 to 25 years in Las Vegas vs 25 to 30 years nationally
 - **Premium / Designer Shingles**, 22 to 30 years in Las Vegas vs 30 to 50 years nationally
 
-In every category, expect to lose roughly 25–40% of the published lifespan to the Southern Nevada environment. This isn't pessimism, it's what we see in the field, year after year.
+In every category, expect to lose roughly 25–40% of the published lifespan to the Southern Nevada environment. This isn't pessimism; it's what we see in the field, year after year.
 
 ## Why Las Vegas Shortens Shingle Life
 
@@ -1340,7 +1340,7 @@ If you can safely access your attic, look for:
 
 ### Ceiling and Wall Stains
 
-New water stains on ceilings or upper walls often indicate roof damage. These may not appear immediately, sometimes it takes a subsequent rain event to reveal the leak path.
+New water stains on ceilings or upper walls often indicate roof damage. These may not appear immediately; sometimes it takes a subsequent rain event to reveal the leak path.
 
 ## Common Wind Damage Patterns in Las Vegas
 
