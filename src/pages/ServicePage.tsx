@@ -9,7 +9,7 @@ import { ArrowLeft, ArrowRight, Layers, Grid3X3, Wrench, Search, Shield, RotateC
  * Per-service project gallery configuration.
  * Add a new entry here to enable an "Our Work" section on a service page.
  * Replace the empty `{}` photo slots with `{ src, alt, caption }` as real
- * project photography becomes available — the page will pick it up automatically.
+ * project photography becomes available, the page will pick it up automatically.
  */
 const galleryBySlug: Record<
   string,
@@ -23,7 +23,7 @@ const galleryBySlug: Record<
       {
         src: "/projects/DJI_0543.jpg",
         alt: "Full shingle roof replacement completed by Zenith Roofing Solutions in Las Vegas, NV",
-        caption: "Full Shingle Replacement — Las Vegas",
+        caption: "Full Shingle Replacement, Las Vegas",
       },
       {
         src: "/projects/DJI_0552.jpg",
@@ -33,7 +33,7 @@ const galleryBySlug: Record<
       {
         src: "/projects/DJI_0572.jpg",
         alt: "Full shingle roof replacement completed by Zenith Roofing Solutions in Las Vegas, NV",
-        caption: "Full Shingle Replacement — Las Vegas",
+        caption: "Full Shingle Replacement, Las Vegas",
       },
       {
         src: "/projects/DJI_0558.jpg",
@@ -103,7 +103,7 @@ const serviceData: Record<string, {
     headline: "Professional Roof Repair",
     metaTitle: "Roof Repairs Las Vegas | Zenith Roofing Solutions",
     metaDesc: "Expert roof repair services in Las Vegas. Leaks, storm damage, missing shingles, and more. Fast response times. Call 702-884-6320.",
-    intro: "Leaks, storm damage, or general wear — whatever the issue, Zenith Roofing Solutions provides fast, reliable roof repairs with honest diagnostics and quality workmanship.",
+    intro: "Leaks, storm damage, or general wear, whatever the issue, Zenith Roofing Solutions provides fast, reliable roof repairs with honest diagnostics and quality workmanship.",
     details: [
       "We start with a thorough inspection to identify the root cause of the problem, not just the symptoms. You'll receive a clear explanation of what we found and what we recommend.",
       "Our repair crews carry the materials and expertise to handle most repairs quickly. From a single missing shingle to complex flashing failures, we fix it right the first time.",
@@ -118,11 +118,11 @@ const serviceData: Record<string, {
     headline: "Roof Inspections & Certifications",
     metaTitle: "Roof Inspections & Certifications Las Vegas | Zenith Roofing Solutions",
     metaDesc: "Certified roof inspections in Las Vegas for home buyers, sellers, and insurance purposes. Detailed reports you can trust. Call 702-884-6320.",
-    intro: "Whether you're buying a home, selling a property, filing an insurance claim, or simply checking condition — our detailed roof inspections give you the honest information you need.",
+    intro: "Whether you're buying a home, selling a property, filing an insurance claim, or simply checking condition, our detailed roof inspections give you the honest information you need.",
     details: [
       "Every inspection includes a comprehensive walkthrough with photo documentation of all findings. We assess overall condition, identify problem areas, and estimate remaining roof life.",
       "Our certification reports are accepted by real estate agents, insurance companies, and property managers throughout Southern Nevada.",
-      "We provide honest assessments — if your roof has years of life remaining, we'll tell you. If it needs attention, we'll explain your options clearly.",
+      "We provide honest assessments, if your roof has years of life remaining, we'll tell you. If it needs attention, we'll explain your options clearly.",
     ],
     features: ["Comprehensive photo report", "Real estate inspections", "Insurance documentation", "Certification reports", "Annual maintenance checks", "Honest assessments"],
     relatedSlugs: ["roof-maintenance", "insurance-claim-assistance", "roof-repairs"],
@@ -133,11 +133,11 @@ const serviceData: Record<string, {
     headline: "Insurance Claim Support",
     metaTitle: "Roofing Insurance Claim Help Las Vegas | Zenith Roofing Solutions",
     metaDesc: "Expert insurance claim assistance for roof damage in Las Vegas. We guide you through the entire claims process. Call 702-884-6320.",
-    intro: "Navigating a roofing insurance claim can be overwhelming. Zenith Roofing Solutions guides you through every step — from initial documentation to project completion.",
+    intro: "Navigating a roofing insurance claim can be overwhelming. Zenith Roofing Solutions guides you through every step, from initial documentation to project completion.",
     details: [
       "We start with a thorough damage assessment and create detailed documentation with photos and measurements that meet insurance company requirements.",
       "Our team coordinates directly with your insurance adjuster, ensuring nothing is overlooked in the scope of the claim. We advocate for fair coverage on your behalf.",
-      "Once approved, we manage the entire restoration project, keeping you informed at every stage. You focus on your life — we handle the roof.",
+      "Once approved, we manage the entire restoration project, keeping you informed at every stage. You focus on your life, we handle the roof.",
     ],
     features: ["Damage documentation", "Adjuster coordination", "Claim filing support", "Scope review", "Full project management", "Fair coverage advocacy"],
     relatedSlugs: ["storm-damage-response", "roof-replacement", "inspections-and-certifications"],
@@ -182,7 +182,7 @@ const serviceData: Record<string, {
     details: [
       "Our team responds quickly with emergency tarping and temporary protection to prevent further damage to your home or building interior.",
       "We conduct a thorough storm damage assessment with detailed documentation suitable for insurance claim filing. Every area of concern is photographed and noted.",
-      "From emergency response through full restoration, we manage the entire process — including insurance coordination — so you can focus on getting back to normal.",
+      "From emergency response through full restoration, we manage the entire process, including insurance coordination, so you can focus on getting back to normal.",
     ],
     features: ["Emergency tarping", "Rapid response", "Thorough damage assessment", "Insurance documentation", "Full restoration", "Wind & hail damage"],
     relatedSlugs: ["insurance-claim-assistance", "roof-repairs", "roof-replacement"],
@@ -195,7 +195,7 @@ const serviceData: Record<string, {
     metaDesc: "Attic ventilation upgrades for Las Vegas homes. Reduce energy costs, prevent moisture damage, and extend your roof's life. Call 702-884-6320.",
     intro: "In the extreme heat of Southern Nevada, proper attic ventilation is critical. It reduces energy costs, extends shingle life, and prevents moisture buildup that can cause structural damage.",
     details: [
-      "We assess your current ventilation system and design upgrades that create balanced airflow — proper intake at the soffits and exhaust at the ridge.",
+      "We assess your current ventilation system and design upgrades that create balanced airflow, proper intake at the soffits and exhaust at the ridge.",
       "Options include ridge vents, soffit vents, powered ventilators, and solar-powered fans. We recommend the right solution based on your roof design and attic configuration.",
       "Proper ventilation can significantly reduce cooling costs in the summer and prevent ice damming and moisture issues year-round.",
     ],
@@ -210,7 +210,7 @@ const serviceData: Record<string, {
     metaDesc: "Professional skylight installation and leak-free repair in Las Vegas. Brighten your home with expert skylight solutions. Call 702-884-6320.",
     intro: "Bring natural light into your home with professionally installed skylights. From new installations to leak repair and replacement, we ensure a watertight, beautiful result.",
     details: [
-      "We help you choose the right skylight for your space — fixed, venting, or tubular — and install it with proper flashing and sealing to prevent leaks.",
+      "We help you choose the right skylight for your space, fixed, venting, or tubular, and install it with proper flashing and sealing to prevent leaks.",
       "If your existing skylight is leaking, cloudy, or damaged, we provide expert repair and replacement services. Most skylight leaks are caused by deteriorated flashing, not the skylight itself.",
       "Energy-efficient skylight options can reduce your lighting costs while adding architectural beauty to any room.",
     ],

@@ -20,7 +20,7 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "Full Shingle Roof Replacement — Las Vegas",
+    title: "Full Shingle Roof Replacement, Las Vegas",
     location: "Las Vegas, NV",
     type: "Residential",
     image: "/projects/DJI_0543.jpg",
@@ -30,7 +30,7 @@ const projects: Project[] = [
     insuranceClaim: true,
   },
   {
-    title: "Full Shingle Roof Replacement — Las Vegas",
+    title: "Full Shingle Roof Replacement, Las Vegas",
     location: "Las Vegas, NV",
     type: "Residential",
     image: "/projects/DJI_0572.jpg",
@@ -40,7 +40,7 @@ const projects: Project[] = [
     insuranceClaim: true,
   },
   {
-    title: "Complete Shingle Roof Replacement — Garnet",
+    title: "Complete Shingle Roof Replacement, Garnet",
     location: "Garnet, Las Vegas, NV",
     type: "Residential",
     gallery: [
@@ -58,7 +58,7 @@ const projects: Project[] = [
     insuranceClaim: true,
   },
   {
-    title: "Complete Shingle Roof Replacement — Gerlach",
+    title: "Complete Shingle Roof Replacement, Gerlach",
     location: "Gerlach, Las Vegas, NV",
     type: "Residential",
     beforeAfter: {
@@ -138,7 +138,7 @@ const ProjectsSection = () => {
             Recent Roofing Projects
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto font-body leading-relaxed">
-            A selection of recent projects across Southern Nevada — each one completed with precision, quality materials, and honest service.
+            A selection of recent projects across Southern Nevada, each one completed with precision, quality materials, and honest service.
           </p>
         </AnimatedSection>
 

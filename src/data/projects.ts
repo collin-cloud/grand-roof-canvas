@@ -1,7 +1,7 @@
 // src/data/projects.ts
 // Completed project pins for the /service-areas map.
 // PRIVACY: neighborhood-level only. No addresses, names, prices, or payment methods.
-// To add a job later, append an object below — it auto-appears on the map.
+// To add a job later, append an object below, it auto-appears on the map.
 
 export type ProjectCategory = "Tile Roofing" | "Roof Replacement" | "Roof Repairs";
 

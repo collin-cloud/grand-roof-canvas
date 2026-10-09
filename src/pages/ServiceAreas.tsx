@@ -108,7 +108,7 @@ const ServiceAreas = () => {
             </p>
             <p className="text-lg lg:text-xl text-muted-foreground font-body leading-relaxed">
               Southern Nevada's relentless sun, monsoon winds, and dramatic temperature swings demand roofing
-              that is built for the desert. Every pin on the map below represents a finished project — a roof
+              that is built for the desert. Every pin on the map below represents a finished project, a roof
               we stand behind for the long run.
             </p>
           </AnimatedSection>

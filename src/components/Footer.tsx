@@ -31,7 +31,7 @@ const Footer = () => {
               href="https://www.bbb.org/us/nv/las-vegas/profile/roofing-contractors/zenith-roofing-solutions-llc-1086-90092760"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Zenith Roofing Solutions — BBB Accredited Business, Rated A. Opens BBB profile in a new tab."
+              aria-label="Zenith Roofing Solutions, BBB Accredited Business, Rated A. Opens BBB profile in a new tab."
               className="mt-5 inline-flex items-center gap-3 rounded-md border border-gold/40 bg-charcoal-deep/60 px-4 py-3 hover:border-gold hover:bg-charcoal-deep transition-colors group"
             >
               <ShieldCheck className="w-8 h-8 text-gold shrink-0" strokeWidth={1.75} />

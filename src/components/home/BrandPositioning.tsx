@@ -22,7 +22,7 @@ const BrandPositioning = () => {
           />
 
           <div className="grid lg:grid-cols-[1fr_1.5fr] gap-16 items-start">
-            {/* Left — Title */}
+            {/* Left, Title */}
             <div>
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
@@ -47,12 +47,12 @@ const BrandPositioning = () => {
               </motion.h2>
             </div>
 
-            {/* Right — Copy */}
+            {/* Right, Copy */}
             <div className="space-y-6">
               {[
-                "Zenith Roofing Solutions was built on a simple belief — homeowners deserve honesty, transparency, and craftsmanship they can rely on.",
+                "Zenith Roofing Solutions was built on a simple belief, homeowners deserve honesty, transparency, and craftsmanship they can rely on.",
                 "With decades of combined roofing experience, our team approaches every project with careful planning, experienced oversight, and a commitment to doing things the right way.",
-                "We're not focused on being the biggest roofing company in Southern Nevada — we're focused on being the most trusted.",
+                "We're not focused on being the biggest roofing company in Southern Nevada, we're focused on being the most trusted.",
               ].map((text, i) => (
                 <motion.p
                   key={i}

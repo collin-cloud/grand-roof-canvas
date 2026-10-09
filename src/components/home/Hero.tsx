@@ -16,7 +16,7 @@ type TrustItem = {
 const trustItems: TrustItem[] = [
   { label: "35+ Years Combined Roofing Experience" },
   { label: "Residential & Property Management Solutions" },
-  { label: "BBB Accredited — Rated A", href: BBB_URL, icon: ShieldCheck },
+  { label: "BBB Accredited, Rated A", href: BBB_URL, icon: ShieldCheck },
   { label: "Serving the Las Vegas Valley & Southern Nevada" },
 ];
 
@@ -112,7 +112,7 @@ const Hero = () => {
             </span>
           </motion.div>
 
-          {/* Headline — staggered word reveal */}
+          {/* Headline, staggered word reveal */}
           <div className="overflow-hidden mb-4">
             <motion.h1
               className="font-display text-5xl sm:text-6xl lg:text-7xl xl:text-[5.5rem] font-bold leading-[0.95]"

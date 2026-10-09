@@ -16,7 +16,7 @@ interface ProjectGalleryProps {
   eyebrow?: string;
   /** Optional subheading shown beneath the heading. */
   subheading?: string;
-  /** Photo slots — empty entries render as themed placeholders. */
+  /** Photo slots, empty entries render as themed placeholders. */
   photos: ProjectPhoto[];
   /** Number of columns on large screens (default: 4). Mobile is always 2. */
   columns?: 2 | 3 | 4;
