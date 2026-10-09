@@ -370,7 +370,7 @@ A leak under solar panels is almost never a coincidence. It's penetrations, foot
     content: `
 # Silicone vs. Acrylic Roof Coatings: Why Ponding Water Changes Everything
 
-Flat and low-slope roofs are everywhere in Las Vegas, on mid-century homes, additions, patio sections, and commercial buildings. And at some point, nearly every owner of one hears the pitch for a roof coating: a fluid-applied membrane that restores the surface, reflects the sun, and buys years of life without a tear-off.
+Flat and low-slope roofs are everywhere in [Las Vegas](/roofing-contractor-las-vegas), on mid-century homes, additions, patio sections, and commercial buildings. And at some point, nearly every owner of one hears the pitch for a roof coating: a fluid-applied membrane that restores the surface, reflects the sun, and buys years of life without a tear-off.
 
 Coatings are a legitimate, cost-effective restoration tool, and we install them. But there's one question that should decide which coating goes on your roof before any other factor, and it's the question cheap bids conveniently skip: does your roof pond water?
 
@@ -419,7 +419,7 @@ That coverage-rate question, by the way, is how two "identical" silicone bids ca
 
 ## Is Coating Ever the Wrong Move Entirely?
 
-Yes. If the existing roof is saturated underneath (moisture trapped in the system), badly deteriorated, or at the end of its structural life, a coating is cosmetics over a failure. A honest evaluation sometimes ends with "this roof needs replacement, not restoration", and you want a contractor willing to say that even when the coating sale was easier.
+Yes. If the existing roof is saturated underneath (moisture trapped in the system), badly deteriorated, or at the end of its structural life, a coating is cosmetics over a failure. A honest evaluation sometimes ends with "this roof needs [replacement](/services/roof-replacement), not restoration", and you want a contractor willing to say that even when the coating sale was easier.
 
 ## The Bottom Line
 
