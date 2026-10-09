@@ -12,13 +12,13 @@ import {
 } from "@/components/ui/accordion";
 
 const blogSeoBySlug: Record<string, { title: string; description: string }> = {
-  "how-long-does-tile-roof-underlayment-last-las-vegas": {"title": "How Long Does Tile Roof Underlayment Last in Las Vegas? | Zenith Roofing", "description": "Most tile roof underlayment in Las Vegas lasts 15–25 years, far less than the tile above it. Learn the warning signs and what replacement actually involves."},
+  "how-long-does-tile-roof-underlayment-last-las-vegas": {"title": "How Long Does Tile Roof Underlayment Last in Las Vegas? | Zenith Roofing", "description": "Most tile roof underlayment in Las Vegas lasts 15–25 years: far less than the tile above it. Learn the warning signs and what replacement actually involves."},
   "attic-ventilation-las-vegas": {"title": "Attic Ventilation in Las Vegas: Why Your Roof and Power Bill Need It | Zenith Roofing", "description": "Poor attic ventilation cooks your roof from underneath and drives up cooling costs. Here's how balanced ventilation works in the desert, and what low-profile vents fix."},
-  "silicone-vs-acrylic-roof-coating-las-vegas": {"title": "Silicone vs. Acrylic Roof Coatings: Why Ponding Water Decides | Zenith Roofing", "description": "Acrylic coatings are water-based and fail under ponding water. Silicone doesn't. Here's how to choose the right flat roof coating in Las Vegas, honestly."},
-  "roof-leak-under-solar-panels-las-vegas": {"title": "Roof Leaking Under Your Solar Panels? What's Really Happening | Zenith Roofing", "description": "Leaks under solar panels usually trace back to the installation, penetrations, flashing, or underlayment damage. Here's how to diagnose it and who should fix what."},
+  "silicone-vs-acrylic-roof-coating-las-vegas": {"title": "Silicone vs. Acrylic Roof Coatings: Why Ponding Water Decides | Zenith Roofing", "description": "Acrylic coatings are water-based and fail under ponding water. Silicone doesn't. Here's how to choose the right flat roof coating in Las Vegas: honestly."},
+  "roof-leak-under-solar-panels-las-vegas": {"title": "Roof Leaking Under Your Solar Panels? What's Really Happening | Zenith Roofing", "description": "Leaks under solar panels usually trace back to the installation: penetrations, flashing, or underlayment damage. Here's how to diagnose it and who should fix what."},
   "roof-inspection-when-buying-home-las-vegas": {"title": "Buying a Home in Las Vegas? What a Roof Inspection Should Tell You | Zenith Roofing", "description": "A general home inspection rarely tells you what a Las Vegas tile roof is really worth. Here's what a proper roof inspection covers, and the questions to ask in escrow."},
-  "prepare-roof-winter-rain-las-vegas": {"title": "Is Your Las Vegas Roof Ready for Winter Rain? Fall Checklist | Zenith Roofing", "description": "Las Vegas gets most of its rain between now and spring. Here's the fall roof checklist that catches problems while they're still cheap, before the storms test your roof."},
-  "what-to-do-after-roof-wind-damage-las-vegas": {"title": "Wind Damage in Las Vegas: Missing Shingles, Lifted Tiles & Claims | Zenith Roofing", "description": "High winds hit Las Vegas roofs hard, missing shingles, slipped tiles, torn underlayment. Here's what to do in the first 48 hours, and how insurance claims really work."},
+  "prepare-roof-winter-rain-las-vegas": {"title": "Is Your Las Vegas Roof Ready for Winter Rain? Fall Checklist | Zenith Roofing", "description": "Las Vegas gets most of its rain between now and spring. Here's the fall roof checklist that catches problems while they're still cheap: before the storms test your roof."},
+  "what-to-do-after-roof-wind-damage-las-vegas": {"title": "Wind Damage in Las Vegas: Missing Shingles, Lifted Tiles & Claims | Zenith Roofing", "description": "High winds hit Las Vegas roofs hard: missing shingles, slipped tiles, torn underlayment. Here's what to do in the first 48 hours, and how insurance claims really work."},
   "does-homeowners-insurance-cover-roof-replacement-nevada": {
     title: "Does Insurance Cover Roof Replacement in Nevada? | Zenith Roofing",
     description: "Learn whether your homeowners insurance covers roof replacement in Nevada. Expert guidance on filing claims and getting the coverage you deserve.",
@@ -62,9 +62,9 @@ const BlogPost = () => {
                 <div className="w-1.5 h-1.5 rounded-full bg-gold mt-2 shrink-0" />
                 <span dangerouslySetInnerHTML={{ __html: processInlineLinks(item) }} />
               </li>
-            ))}
+           ))}
           </ul>
-        );
+       );
         listItems = [];
       }
     };
@@ -73,13 +73,13 @@ const BlogPost = () => {
       return text.replace(
         /\[([^\]]+)\]\(([^)]+)\)/g,
         '<a href="$2" class="text-gold hover:text-gold-light underline underline-offset-2 transition-colors">$1</a>'
-      ).replace(
+     ).replace(
         /\*\*([^*]+)\*\*/g,
         '<strong class="text-foreground font-semibold">$1</strong>'
-      ).replace(
+     ).replace(
         /\*([^*]+)\*/g,
         '<em>$1</em>'
-      );
+     );
     };
 
     for (let i = 0; i < lines.length; i++) {
@@ -103,13 +103,13 @@ const BlogPost = () => {
           <h3 key={i} className="font-display text-xl font-semibold mt-10 mb-4">
             {line.replace("### ", "")}
           </h3>
-        );
+       );
       } else if (line.startsWith("## ")) {
         elements.push(
           <h2 key={i} className="font-display text-2xl lg:text-3xl font-semibold mt-12 mb-5">
             {line.replace("## ", "")}
           </h2>
-        );
+       );
       } else if (line.startsWith("[") && line.includes("→")) {
         const match = line.match(/\[([^\]]+)\]\(([^)]+)\)/);
         if (match) {
@@ -119,7 +119,7 @@ const BlogPost = () => {
                 {match[1]}
               </Link>
             </div>
-          );
+         );
         }
       } else if (line.match(/^\d+\./)) {
         listItems.push(line.replace(/^\d+\.\s*/, ""));
@@ -130,7 +130,7 @@ const BlogPost = () => {
             className="text-muted-foreground font-body leading-relaxed my-4"
             dangerouslySetInnerHTML={{ __html: processInlineLinks(line) }}
           />
-        );
+       );
       }
     }
     flushList();
@@ -214,10 +214,10 @@ const BlogPost = () => {
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>
-                ))}
+               ))}
               </Accordion>
             </AnimatedSection>
-          )}
+         )}
 
           {/* Author Bio */}
           <AnimatedSection delay={0.2} className="mt-16">
@@ -265,7 +265,7 @@ const BlogPost = () => {
                       </div>
                     </Link>
                   </AnimatedSection>
-                ))}
+               ))}
               </div>
             </AnimatedSection>
           </div>
@@ -348,9 +348,9 @@ const BlogPost = () => {
             }),
           }}
         />
-      )}
+     )}
     </>
-  );
+ );
 };
 
 export default BlogPost;

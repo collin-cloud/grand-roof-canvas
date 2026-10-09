@@ -16,7 +16,7 @@ type TrustItem = {
 const trustItems: TrustItem[] = [
   { label: "35+ Years Combined Roofing Experience" },
   { label: "Residential & Property Management Solutions" },
-  { label: "BBB Accredited, Rated A", href: BBB_URL, icon: ShieldCheck },
+  { label: "BBB Accredited: Rated A", href: BBB_URL, icon: ShieldCheck },
   { label: "Serving the Las Vegas Valley & Southern Nevada" },
 ];
 
@@ -134,7 +134,7 @@ const Hero = () => {
                 >
                   {word}
                 </motion.span>
-              ))}
+             ))}
               <br />
               <motion.span
                 className="inline-block"
@@ -217,7 +217,7 @@ const Hero = () => {
                   {Icon && <Icon className="w-4 h-4 text-gold" />}
                   {item.label}
                 </span>
-              );
+             );
               return (
                 <motion.div
                   key={item.label}
@@ -235,17 +235,17 @@ const Hero = () => {
                     >
                       {content}
                     </a>
-                  ) : (
+                 ) : (
                     content
-                  )}
+                 )}
                 </motion.div>
-              );
+             );
             })}
           </div>
         </div>
       </motion.div>
     </section>
-  );
+ );
 };
 
 export default Hero;

@@ -30,7 +30,7 @@ const LocalSEOPage = ({ city, slug }: Props) => {
               <div>
                 <h2 className="font-display text-2xl font-semibold text-foreground mb-3">Roofing Services in {city}</h2>
                 <p>
-                  Whether you need a complete roof replacement, emergency repair, or annual inspection, our experienced team handles every project with the care and precision your home deserves. We specialize in the unique demands of the {city} climate, from extreme heat to monsoon seasons.
+                  Whether you need a complete roof replacement, emergency repair, or annual inspection, our experienced team handles every project with the care and precision your home deserves. We specialize in the unique demands of the {city} climate: from extreme heat to monsoon seasons.
                 </p>
               </div>
               <div>
@@ -48,7 +48,7 @@ const LocalSEOPage = ({ city, slug }: Props) => {
                       <div className="w-1.5 h-1.5 rounded-full bg-gold mt-2 shrink-0" />
                       <span>{item}</span>
                     </li>
-                  ))}
+                 ))}
                 </ul>
               </div>
               <div>
@@ -65,7 +65,7 @@ const LocalSEOPage = ({ city, slug }: Props) => {
                     <Link key={s.title} to={s.href} className="card-luxury p-5 hover:border-gold/30 transition-colors group">
                       <span className="font-body font-semibold text-sm text-foreground group-hover:text-gold transition-colors">{s.title}</span>
                     </Link>
-                  ))}
+                 ))}
                 </div>
               </div>
             </div>
@@ -74,7 +74,7 @@ const LocalSEOPage = ({ city, slug }: Props) => {
       </section>
       <CTASection />
     </>
-  );
+ );
 };
 
 export default LocalSEOPage;

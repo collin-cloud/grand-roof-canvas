@@ -209,9 +209,9 @@ const Contact = () => {
                   <Send className="w-7 h-7 text-gold" />
                 </div>
                 <h3 className="font-display text-2xl font-semibold mb-3">Your Message Was Sent!</h3>
-                <p className="text-muted-foreground font-body">Thank you, we'll be in touch soon.</p>
+                <p className="text-muted-foreground font-body">Thank you: we'll be in touch soon.</p>
               </div>
-            ) : (
+           ) : (
               <form onSubmit={handleSubmit} className="card-luxury p-8 lg:p-10 space-y-5">
                 <h3 className="font-display text-xl font-semibold mb-2">Request a Free Inspection</h3>
                 <div className="gold-line mb-4" />
@@ -220,7 +220,7 @@ const Contact = () => {
                   <div className="bg-destructive/10 border border-destructive/30 rounded-md px-4 py-3 text-sm font-body text-destructive">
                     {submitError}
                   </div>
-                )}
+               )}
 
                 <div>
                   <input type="text" placeholder="Full Name *" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} className={inputClass} />
@@ -253,13 +253,13 @@ const Contact = () => {
                   By submitting this form, you consent to being contacted by Zenith Roofing Solutions via phone, email, or text regarding your inquiry. Standard message and data rates may apply.
                 </p>
               </form>
-            )}
+           )}
           </AnimatedSection>
         </div>
       </div>
       </section>
     </>
-  );
+ );
 };
 
 export default Contact;

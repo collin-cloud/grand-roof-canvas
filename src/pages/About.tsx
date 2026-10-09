@@ -95,13 +95,13 @@ const About = () => {
                     Before Collin Martinez ever set foot on a rooftop, he spent years in two industries that demand one thing above all else: an exceptional client experience.
                   </p>
                   <p>
-                    Collin's career began in Las Vegas hospitality, where he learned firsthand what it takes to deliver premium, detail-oriented service. That foundation carried him into luxury real estate at Huntington & Ellis, where he earned the designation of Luxury Agent, closed over 100 transactions, and was recognized four consecutive years as a Top 20 Real Estate Agent by Deluxe Version Magazine (2019–2022). His portfolio included multi-million dollar homes in Summerlin and MacDonald Highlands, including setting the record for highest price per square foot in Canyon Fairways history.
+                    Collin's career began in Las Vegas hospitality, where he learned firsthand what it takes to deliver premium, detail-oriented service. That foundation carried him into luxury real estate at Huntington & Ellis, where he earned the designation of Luxury Agent, closed over 100 transactions, and was recognized four consecutive years as a Top 20 Real Estate Agent by Deluxe Version Magazine (2019–2022). His portfolio included multi-million dollar homes in Summerlin and MacDonald Highlands: including setting the record for highest price per square foot in Canyon Fairways history.
                   </p>
                   <p>
-                    That experience gave Collin something most roofing contractors don't have: a deep understanding of what a home represents. He's sat across the table from homeowners making the biggest financial decision of their lives. He knows what's at stake when it comes to protecting that investment, and he saw firsthand how often the roofing industry falls short on communication, transparency, and follow-through.
+                    That experience gave Collin something most roofing contractors don't have: a deep understanding of what a home represents. He's sat across the table from homeowners making the biggest financial decision of their lives. He knows what's at stake when it comes to protecting that investment: and he saw firsthand how often the roofing industry falls short on communication, transparency, and follow-through.
                   </p>
                   <p>
-                    Collin founded Zenith Roofing Solutions in 2024 to bring a different standard to residential roofing in Southern Nevada. Zenith operates with a fully paperless, streamlined process, clear communication at every step, and a team of experienced professionals who treat every project like their own home is on the line. From roof replacements to insurance claim support, Zenith delivers the kind of service Collin built his entire career around, because your roof isn't just shingles and underlayment. It's the first line of defense for everything that matters to you.
+                    Collin founded Zenith Roofing Solutions in 2024 to bring a different standard to residential roofing in Southern Nevada. Zenith operates with a fully paperless, streamlined process, clear communication at every step, and a team of experienced professionals who treat every project like their own home is on the line. From roof replacements to insurance claim support, Zenith delivers the kind of service Collin built his entire career around: because your roof isn't just shingles and underlayment. It's the first line of defense for everything that matters to you.
                   </p>
                 </div>
               </AnimatedSection>
@@ -112,23 +112,23 @@ const About = () => {
           <AnimatedSection className="mt-20 max-w-3xl mx-auto">
             <div className="space-y-8 text-muted-foreground font-body leading-relaxed text-lg">
               <p>
-                At Zenith Roofing Solutions, we bring over 35 years of combined roofing knowledge and hands-on experience to every project we take on. Decades in the field have taught us more than just how to install a quality roof, they've shown us what truly matters: doing the right thing, standing behind your word, and putting people first.
+                At Zenith Roofing Solutions, we bring over 35 years of combined roofing knowledge and hands-on experience to every project we take on. Decades in the field have taught us more than just how to install a quality roof: they've shown us what truly matters: doing the right thing, standing behind your word, and putting people first.
               </p>
 
               <div className="gold-line" />
 
               <p>
-                In an industry where honesty and accountability are often hard to come by, we've built Zenith on a different foundation, one rooted in integrity, transparency, and service. Whether we're working on a single-family home or an entire multi-building complex, our commitment remains the same: clear communication, quality products, and results you can rely on.
+                In an industry where honesty and accountability are often hard to come by, we've built Zenith on a different foundation: one rooted in integrity, transparency, and service. Whether we're working on a single-family home or an entire multi-building complex, our commitment remains the same: clear communication, quality products, and results you can rely on.
               </p>
 
               <p>
-                We understand the importance of a roof, not just as a structure, but as protection for everything that matters underneath it. That's why every project is approached with careful planning, experienced oversight, and a commitment to quality that never cuts corners. We guide our clients through the process with honesty, explain every step, and follow through on what we promise, every time.
+                We understand the importance of a roof: not just as a structure, but as protection for everything that matters underneath it. That's why every project is approached with careful planning, experienced oversight, and a commitment to quality that never cuts corners. We guide our clients through the process with honesty, explain every step, and follow through on what we promise: every time.
               </p>
 
               <div className="gold-line" />
 
               <p>
-                Proudly serving homeowners and property managers across Southern Nevada, Zenith Roofing Solutions exists to raise the bar for what a roofing company should be. We don't aim to be the biggest, we aim to be the most trusted.
+                Proudly serving homeowners and property managers across Southern Nevada, Zenith Roofing Solutions exists to raise the bar for what a roofing company should be. We don't aim to be the biggest: we aim to be the most trusted.
               </p>
             </div>
           </AnimatedSection>
@@ -148,7 +148,7 @@ const About = () => {
       </section>
       <CTASection />
     </>
-  );
+ );
 };
 
 export default About;

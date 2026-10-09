@@ -134,10 +134,10 @@ const ServiceAreas = () => {
                       style={{ background: f.swatch }}
                       aria-hidden="true"
                     />
-                  )}
+                 )}
                   {f.label}
                 </button>
-              );
+             );
             })}
           </div>
 
@@ -160,11 +160,11 @@ const ServiceAreas = () => {
                 >
                   <ServiceAreasMap projects={filtered} />
                 </Suspense>
-              ) : (
+             ) : (
                 <div className="w-full h-full flex items-center justify-center text-muted-foreground font-body">
                   Loading map…
                 </div>
-              )}
+             )}
             </div>
           </div>
 
@@ -222,7 +222,7 @@ const ServiceAreas = () => {
                   </div>
                 </div>
               </div>
-            ))}
+           ))}
           </div>
         </div>
       </section>
@@ -250,7 +250,7 @@ const ServiceAreas = () => {
         </div>
       </section>
     </>
-  );
+ );
 };
 
 export default ServiceAreas;

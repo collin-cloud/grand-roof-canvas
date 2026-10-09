@@ -13,7 +13,7 @@ const steps = [
     icon: FileText,
     num: "02",
     title: "Clear Recommendations",
-    desc: "You'll receive straightforward options with transparent pricing, no pressure, no hidden costs, no surprises.",
+    desc: "You'll receive straightforward options with transparent pricing: no pressure, no hidden costs, no surprises.",
   },
   {
     icon: ClipboardList,
@@ -110,12 +110,12 @@ const ProcessSection = () => {
                   <p className="text-sm text-muted-foreground font-body leading-relaxed max-w-lg">{step.desc}</p>
                 </div>
               </motion.div>
-            ))}
+           ))}
           </div>
         </div>
       </div>
     </section>
-  );
+ );
 };
 
 export default ProcessSection;
